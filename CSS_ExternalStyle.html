@@ -1,0 +1,53 @@
+<!-- 
+1. CSS  =  Cascading Style Sheets: quy định cách hiển thị của các thẻ HTML trên trình duyệt.
+- HTML để đánh dấu nội dung
+- CSS để trình bày nội dung sao cho đẹp và bắt mắt. 
+- Có 3 kiểu style:
+	+/ Inline Style: tùy chỉnh giao diện cho từng element, sử dụng attribute style.
+		<h3 style="color: blue;">Tổng quan về HTML</h3>
+	+/ Internal Style: sử dụng thẻ <style> để nhúng CSS trực tiếp vào trong trang web.
+		<style>	h2  {color: green;}	</style>
+	+/ External Style: sử dụng thẻ <link> để liên kết với 1 file CSS ở bên ngoài trang HTML. Bằng cách này chúng ta có thể sử dụng style đó cho nhiều trang khác nhau.
+- 3 kiểu hiển thị màu hay dùng trong thẻ style:
+	- color name: sử dụng tên màu để xác định màu hiển thị:
+		style="color: blue;"
+	- hexadecimal color: dùng mã hexa để mô tả màu:
+		<style>	h2  {color: #0000ff;}</style>
+	- RGB color: sử dụng mã phối màu trong hệ RGB. Giá trị màu R,G,B từ 00-255:
+		<style>	h2  {color: rgb(00,00,00);}	</style>
+	- Các kiểu hiển thị màu còn lại:
+		+/ RGBA colors: như RGB và thêm kênh A(alpha) quy định độ mờ của vật thể: color: rgba(255, 0, 0, 0.3);   /* red with opacity */
+		+/ HSL colors: sử dụng cấu trúc hsl(hue, saturation, lightness):
+			color: hsl(120, 100%, 50%);  /* green */
+			color: hsl(120, 100%, 75%);  /* light green */
+			color: hsl(120, 100%, 25%);  /* dark green */
+			color: hsl(120, 60%, 70%);   /* pastel green */
+		+/ HSLA colors: giống HSL và thêm kênh A(alpha) quy định độ mờ của vật thể:
+			<style>
+			#p1 {background-color:hsla(120,100%,50%,0.3);}
+			#p2 {background-color:hsla(120,100%,75%,0.3);}
+			#p3 {background-color:hsla(120,100%,25%,0.3);}
+			#p4 {background-color:hsla(120,60%,70%,0.3);}
+			#p5 {background-color:hsla(290,100%,50%,0.3);}
+			#p6 {background-color:hsla(290,60%,70%,0.3);}
+			</style>
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>External Style</title>
+	<!-- href="ExternalStyle.css" href="HSLAcolor.css" -->
+	<link rel="stylesheet" type="text/css" href="HSLcolor.css">
+</head>
+<body>
+	<h2><b>Cái này sử dụng ExternalStyle.css để link Style màu cho đoạn văn bản này.</b></h2>
+	<p>HSL colors:</p>
+	<p id="p1">Green</p>
+	<p id="p2">Light green</p>
+	<p id="p3">Dark green</p>
+	<p id="p4">Pastel green</p>
+	<p id="p5">Violet</p>
+	<p id="p6">Pastel violet</p>
+</body>
+</html>

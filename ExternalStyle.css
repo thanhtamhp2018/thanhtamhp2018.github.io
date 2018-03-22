@@ -1,0 +1,12 @@
+h2
+	{
+		color: red;/*màu xanh*/
+		color: green;/*màu xanh*/
+		color: blue;/*màu xanh*/
+		color: #ff0000;   /* red */
+		color: #00ff00;   /* green */
+		color: #0000ff;   /* blue */
+		color: rgb(255, 00, 00);/*màu red*/
+		color: rgb(00, 255, 00); /*màu green*/
+		color: rgb(00, 00, 255);/*màu blue*/
+	}

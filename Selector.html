@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Slectors</title>
+	<style>
+		h1,h2{
+			color: yellow;
+			background-color: purple;
+		}
+		h2{
+			background-color: red;
+		}
+		#p1 {
+			color:red;
+		}
+		#p2 {
+			color:green;
+		}
+		#p3 {
+			color:black;
+		}
+		.story1{
+			background-color: yellow;
+		}
+		.story2{
+			background-color: brown;
+		}
+		.story3{
+			background-color: grey;
+		}
+		.background{
+			background-color: lightgreen;
+		}
+		/*thông thường thì trong 1 trang html thì chỉ sử dụng 1 class màu cho một thuộc tính: có thể chọn đồng thời cả id và class
+		+/ Ví dụ một số selector hay dùng (chú ý đến dấu cách, dấu phẩy):
+		*	Chọn tất cả element
+		#menu	Chọn element có id="menu"
+		.box	Chọn những element có class="box"
+		.box1, .box2	Chọn toàn bộ element có class="box1" và toàn bộ element có class="box2"
+		.box1.box2	Chọn những element mà có đồng thời cả 2 class "box1" và "box2" (class="box1 box2")
+		.parent .children	Chọn toàn bộ element có class="children" mà nằm bên trong element có class="parent"
+		.parent > .children	Chọn những element có class="children" mà bao quanh trực tiếp bởi element có class="parent"
+		*/
+	</style>
+</head>
+<body>
+	<h1>Truyện cười</h1>
+
+<h2>Thân quen</h2>
+<p id="p1" class ="background">
+    Máy vi tính hỏi virus: "Cậu từ đâu đến đây thế?".<br/>
+    - Thế cậu ở đâu ra?<br/>
+    - Tớ đến từ USA.<br/>
+    - Vậy tớ là hàng xóm của cậu rồi. Tớ đến từ… USB.<br/>
+</p>
+
+<h2>Người thứ tư!</h2>
+<p id = "p2" class="background">
+    Một nhóm học sinh đi chung trên một chiếc xe máy, đang chạy xe trên đường thì bị cảnh sát thổi, cả nhóm dừng lại.<br/>
+    Cảnh sát hỏi:"Tại sao mấy đứa dám kẹp ba mà lại không đội nón bảo hiểm vậy hả? Có biết như vậy là vi phạm luật giao thông hay ko?" <br/>
+    Cả nhóm hốt hoảng quay lại nhìn phía sau và hét lên:"Chết cha còn thằng thứ tư đâu mất tiêu rồi!!!"<br/>
+    Cảnh sát: !!!???Bật ngửa
+</p>
+
+<h2>Tại sao Ế</h2>
+<p id="p3" class="background">
+    - Ế đang là một xu thế của quốc tế trong khi nền kinh tế rất chi lề mề và trì trệ, còn lạm phát thì cao hơn điện thế.<br/>
+    - Ế là phong cách sống của các con người tinh tế và các bậc vai vế, chỉ thích ngồi trên ghế, nhâm nhi cafe, chơi đế chế hoặc nghịch dế.<br/>
+    - Ế là một lợi thế để chúng ta bàn mưu tính kế, xoay chuyển tình thế, quản lý tiền tệ... Rồi 1 ngày kinh tế sẽ đủ sức khống chế tình yêu.<br/>
+    - Tóm lại, ngắn gọn 1 câu: "Ế là một phong cách sống cực kỳ tinh tế" :))
+</p>
+</body>
+</html>
