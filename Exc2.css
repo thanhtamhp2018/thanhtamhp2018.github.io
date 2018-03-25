@@ -1,0 +1,27 @@
+h3,#p8{
+	text-decoration:underline;
+}
+#center{
+	text-align: center;
+	font-weight: bold;
+}
+#indent{
+	text-indent: 30px;
+}
+h1,h4,h3{
+		text-align: center;
+	}
+p#p6,#p7,#p8{
+	text-align: center;
+}
+p#p1,#p2,#p3,#p4,#p5{
+	text-indent: 30px;
+}
+b{
+	font-style: italic;
+	font-weight: normal;
+}
+i{
+	font-style: normal;
+	font-weight: bold;
+}
