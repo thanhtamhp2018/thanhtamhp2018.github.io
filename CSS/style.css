@@ -1,0 +1,26 @@
+/*File style cho trang web sử dụng phương thức external style*/
+
+/*link chưa click*/
+a:link {
+		color: black;
+}
+/*Link sau khi đã click*/
+a:visited {
+		color: grey;
+}
+/*Link sau khi trỏ con chuột vào mà chưa click*/
+a:hover {
+		color: red;
+}
+/*Link sau khi đã click*/
+a:active {
+		color: blue;
+}
+/*thiết lập lại style cho ảnh*/
+img{
+	width: 33%;
+	border: 10px;
+}
+img:hover{
+	border-radius: 50%;
+}

@@ -1,0 +1,30 @@
+a:link {
+		color: black;
+}
+/*Link sau khi đã click*/
+a:visited {
+		color: grey;
+}
+/*Link sau khi trỏ con chuột vào mà chưa click*/
+a:hover {
+		color: red;
+}
+/*Link sau khi đã click*/
+a:active {
+		color: blue;
+}
+h1{
+	text-transform: uppercase;
+	text-align: center;
+}
+b{
+	color: lightred;
+}
+#lap_1 {
+	width: 300px;
+	height: 300px;
+}
+.lap_2{
+	width: 500px;
+	height: 500px;
+}
