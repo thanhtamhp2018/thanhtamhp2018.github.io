@@ -1,0 +1,62 @@
+h1{
+	font-size: 24px;
+}
+
+#main-menu a{
+	font-size: 20px;
+	color: #737373;
+	text-decoration: none;
+}
+
+#main-menu a:hover, #main-menu a.active{
+	color: black;
+}
+
+#main-menu a.active{
+	font-weight: bold;
+}
+
+img{
+	max-width: 100%;
+	max-height: 300px;
+}
+/*box là class chung cho tất cả các thẻ div*/
+.box{
+	/*padding dùng để dãn cách nội dung và viền của element, margin dùng để dãn cách giữa các element với nhau*/
+	padding: 15px;
+	margin: 0;/*Đây là kiểu viết tắt: nếu bằng 0 thì ko cần ghi px, còn lớn hơn 0 thì ghi px sau giá trị: margin:5px;*/
+	/* Viết đầy đủ là
+	margin-top:5px;
+	margin-bottom:5px;
+	margin-left:5px;
+	margin-right:5px;*/
+	float: left;
+	width: 30%;
+	border:1px solid #dddddd;
+	border-top-width: 5px;
+}
+/*các class còn lại để ta có thể style riêng cho từng thẻ div*/
+.info{
+	border-color: #76a7fa;
+}
+/*chọn ra thẻ span nằm trong element có class là info, contact,company để style màu cho text*/
+.info span{
+	color: #76a7fa;
+}
+
+.contact{
+	border-color: #f9b256;
+}
+
+.contact span{
+	color: #f9b256;
+}
+
+.company{
+	border-color: #4dbf9d;
+}
+
+.company span{
+	color: #4dbf9d;
+}
+
