@@ -1,0 +1,33 @@
+/*CSS: RESET CSS*/
+/*các element trong trang sẽ bị khởi tạo lại tất cả ccacs thuộc tính*/
+*{
+	margin: 0;
+	padding: 0;
+	border:0;
+	box-sizing: border-box;
+}
+/*style mặc định cho thẻ body*/
+body{
+	font-family: "Helvetica",Helvetica,Arial,sans-serif;/*loại font*/
+	font-size: 14px;/*kích thước*/
+	line-height: 1.4;/*chiều cao của dòng*/
+	color: #333333;/*màu sắc*/
+}/*những thuộc tính này có thể kế thừa xuống các phần tử con của thẻ body*/
+/*style mặc định của thẻ heading*/
+h1{
+	font-size: 36px;
+}
+
+h1,h2,h3{
+	margin-top: 20px;
+	margin-bottom: 10px;
+	font-weight: 500;
+	line-height: 1.1;
+}
+/*style mặc định cho thẻ paragraph*/
+p{
+	margin: 0 0 10px 0;
+}
+/*****************************************************************/
+/*CSS VENDOR PREFIX*/
+/*đây là cách trình duyệt hỗ trợ các css mới mà còn đang trong giai đoạn thử nghiệm*/
