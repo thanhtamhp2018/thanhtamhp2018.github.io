@@ -1,0 +1,11 @@
+#main-menu a{
+	font-size: 20px;
+	color: #737373;
+	text-decoration: none;
+}
+
+
+.wrap{
+	max-width: 1000px;
+	margin: auto;
+}
