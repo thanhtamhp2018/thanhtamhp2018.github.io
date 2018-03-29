@@ -1,0 +1,41 @@
+*{
+	box-sizing: border-box;
+}
+div.gallery {
+    	margin-top: 25px;
+    	/*border: 1px solid #ccc;
+    	border-top-width: 5px;*/
+    	float: left;
+        padding:2px;
+        width: 250px;
+        height: 250px;
+}
+
+div.gallery:hover {
+    border: 2px solid #777;
+}
+img{
+	max-width: 100%;
+}
+div.gallery img{
+	width: 100%;
+	height: 150px;
+}
+
+div.main_menu a{
+	padding: 10px;
+	margin-top: 40px;
+}
+div.image_info {
+    padding: 10px;
+    text-align: center;
+    /*background-color: #ccc;*/
+}
+.wrap{
+	max-width: 1000px;
+	margin: auto;
+}
+div#banner{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
