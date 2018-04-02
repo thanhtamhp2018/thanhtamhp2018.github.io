@@ -13,7 +13,7 @@
     display: none;
 }
 /* Caption text */
-.text {
+.text,.numbertext {
   color: #f2f2f2;
   font-size: 100px;
   font-family: "SVN-Bareken";
