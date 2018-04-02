@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Travel around the World</title>
+	<link rel="stylesheet" type="text/css" href="css/all.css">
+	<link rel="stylesheet" type="text/css" href="css/heater.css">
+	<link rel="stylesheet" type="text/css" href="css/navigation.css">
+	<link rel="stylesheet" type="text/css" href="css/content.css">
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+	<link rel="stylesheet" type="text/css" href="css/imageslide.css">
+	<link rel="stylesheet" type="text/css" href="css/mostview.css">
+</head>
+<body>
+	<div class="home">
+		<!-- Phần banner -->
+		<div class="main-heater">
+			<img src="image/banner1.jpg" alt="banner">
+		</div>
+		<!-- Phần menu đa cấp sổ ra nhiều lựa chọn -->
+		<div class="main-navigation-menu">
+			<a href="#index" title="Home">Home</a>
+			<!-- Tạo menu drop down sau khi trỏ chuột vào menu này -->
+			<div class="drop">
+				<button class="drop-button">
+					<a href="#location" title="Location">Location &#x25BC;</a>
+				</button>
+				<div class="drop-content">
+					<a href="#" title="">Hà Nội</a>
+					<a href="#" title="">Sapa</a>
+					<a href="#" title="">Lạng Sơn</a>
+					<a href="#" title="">Hà Giang</a>
+					<a href="#" title="">Hải Phòng</a>
+					<a href="#" title="">Quảng Ninh</a>
+					<a href="#" title="">Tp Hồ Chí Minh</a>
+					<a href="#" title="">Cà Mau</a>
+				</div>
+			</div>
+			<div class="drop">
+				<button class="drop-button">
+					<a href="#blog" title="Blog">Blog &#x25BC;</a>
+				</button>
+				<div class="drop-content">
+					<a href="https://www.google.com.vn/search?safe=off&biw=1536&bih=734&tbm=isch&sa=1&ei=2KfBWubdHcLd8QXNkIQo&q=travel&oq=travel&gs_l=psy-ab.3..0i67k1l2j0j0i67k1j0l6.750774.751775.0.752028.6.6.0.0.0.0.202.445.1j1j1.3.0....0...1c.1.64.psy-ab..3.3.445....0.vX5pXK0MVxA" title="">Travel</a>
+					<a href="https://www.google.com.vn/search?safe=off&biw=1536&bih=734&tbm=isch&sa=1&ei=bqvBWryLMojT8QW9lpWwBg&q=people+are+awesome&oq=people+are+awesome&gs_l=psy-ab.12...0.0.0.7067.0.0.0.0.0.0.0.0..0.0....0...1c..64.psy-ab..0.0.0....0.4zir-2GjLaI" title="">People</a>
+					<a href="https://www.google.com.vn/search?safe=off&biw=1536&bih=734&tbm=isch&sa=1&ei=36rBWtm7Koz38QWHt6bwAg&q=fashion&oq=fas&gs_l=psy-ab.3.0.0l4j0i67k1j0l4j0i67k1.14200.15844.0.17236.7.6.0.0.0.0.138.340.3j1.5.0....0...1c.1.64.psy-ab..2.4.339.0...123.SG6bPbuHIJI" title="">Fashion</a>
+					<a href="https://www.google.com.vn/search?safe=off&biw=1536&bih=734&tbm=isch&sa=1&ei=86rBWtzAI4im8AXrtIDgBQ&q=animals&oq=ani&gs_l=psy-ab.3.0.0i67k1l3j0j0i67k1j0j0i67k1l3j0.12478.12719.0.14497.3.3.0.0.0.0.98.256.3.3.0....0...1c.1.64.psy-ab..0.3.255....0.XCAnegP4Szs" title="">Animals</a>
+					<a href="https://www.google.com.vn/search?safe=off&biw=1536&bih=734&tbm=isch&sa=1&ei=AqvBWu3XKMb-8QXKmKfIBA&q=hot+girl&oq=hot+girl&gs_l=psy-ab.3..0l10.19219.24005.0.24273.10.10.0.0.0.0.90.666.9.10.0....0...1c.1.64.psy-ab..0.9.665.0..0i67k1.86.jjGOTQXI8y0" title="">Hot-girl</a>
+					<a href="https://www.google.com.vn/search?safe=off&biw=1536&bih=734&tbm=isch&sa=1&ei=G6vBWvjQG8v28gXT8IzQDg&q=car+and+motorbike&oq=car+and+mo&gs_l=psy-ab.3.5.0i19k1l10.9373.13426.0.16266.20.14.5.1.1.0.141.1146.8j5.14.0....0...1c.1.64.psy-ab..0.19.1159.0..0j0i67k1j0i30k1.70.4hQTTBFwLJY" title="">Car-MotorBike</a>
+					<a href="https://www.google.com.vn/search?safe=off&biw=1536&bih=734&tbm=isch&sa=1&ei=PKvBWoThNIuq8QXNioWIDg&q=food&oq=food&gs_l=psy-ab.3..0i67k1j0l9.7742.7742.0.7889.1.1.0.0.0.0.102.102.0j1.1.0....0...1c.1.64.psy-ab..0.1.102....0.srIPI4J_sB4" title="">Food</a>
+					<a href="https://www.google.com.vn/search?safe=off&biw=1536&bih=734&tbm=isch&sa=1&ei=RavBWojfFcyY8QXThobwDQ&q=lifestyle&oq=life+s&gs_l=psy-ab.3.0.0i10k1j0l9.14749.16302.0.17225.10.7.3.0.0.0.98.573.7.7.0....0...1c.1.64.psy-ab..0.10.578...0i67k1j0i10i67k1.0.F3mPU8CBYOQ" title="">Life-style</a>		
+				</div>
+			</div>	
+			<a href="#index" title="Home">Gallery</a>
+			<a href="#index" title="Home">Music</a>
+			<a href="#index" title="Home">Movie</a>
+			<a href="about.html" title="About">About</a>
+		</div>
+		<!-- Phần hiển thị slide ảnh -->
+		<div class="main-slider">
+			<!-- Slideshow container -->
+			<div class="slideshow-container">
+			  <!-- Full-width images with number and caption text -->
+			   <div class="mySlides fade">
+			    <div class="numbertext">2 / 3</div>
+			    <img src="image/slide-5.jpg" style="width:100%">
+			    <!-- <div class="text">Caption Two</div> -->
+			  </div>
+			  <div class="mySlides fade">
+			    <div class="numbertext">1 / 3</div>
+			    <img src="image/slide-1.jpg" style="width:100%">
+			    <div class="text">Fly with Airplane</div>
+			  </div>
+			  <div class="mySlides fade">
+			    <div class="numbertext">3 / 3</div>
+			    <img src="image/slide-6.jpg" style="width:100%">
+			    <div class="text">Travel with Balloon</div>
+			  </div>
+
+			  <!-- Next and previous buttons -->
+			  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+			</div>
+			<br>
+
+			<!-- The dots/circles -->
+			<div style="text-align:center">
+			  <span class="dot" onclick="currentSlide(1)"></span> 
+			  <span class="dot" onclick="currentSlide(2)"></span> 
+			  <span class="dot" onclick="currentSlide(3)"></span> 
+			</div>
+		</div>
+		<!-- Script cho slide show ảnh -->
+			<script>
+				
+			var slideIndex = 1;
+			showSlides(slideIndex);
+
+			// Next/previous controls
+			function plusSlides(n) {
+			  showSlides(slideIndex += n);
+			}
+
+			// Thumbnail image controls
+			function currentSlide(n) {
+			  showSlides(slideIndex = n);
+			}
+
+			function showSlides(n) {
+			  var i;
+			  var slides = document.getElementsByClassName("mySlides");
+			  var dots = document.getElementsByClassName("dot");
+			  if (n > slides.length) {slideIndex = 1} 
+			  if (n < 1) {slideIndex = slides.length}
+			  for (i = 0; i < slides.length; i++) {
+			      slides[i].style.display = "none"; 
+			  }
+			  for (i = 0; i < dots.length; i++) {
+			      dots[i].className = dots[i].className.replace(" active", "");
+			  }
+			  slides[slideIndex-1].style.display = "block"; 
+			  dots[slideIndex-1].className += " active";
+			}
+
+			</script>
+
+
+		<!--Phần bài viết được xem nhiều -->
+		<div class="main-most-view-post">
+			<p style="text-align: center;">Những chủ đề được xem nhiều nhất</p>
+		        <div class="gallery-view">
+			        <a target="gallery_image" href="bai-viet-1.html">
+			          <img src="image/most-view1.jpg" alt="Travel">
+			        </a>
+			        <div class="image_info">Travel</div>
+			    </div>
+			    <div class="gallery-view">
+			        <a target="gallery_image" href="bai-viet-2.html">
+			          <img src="image/most-view2.jpg" alt="People">
+			        </a>
+			        <div class="image_info">People</div>
+			    </div>
+			    <div class="gallery-view">
+			        <a target="gallery_image" href="bai-viet-3.html">
+			          <img src="image/hot-girl.jpg" alt="Hot-girl">
+			        </a>
+			        <div class="image_info">Hot-Girl</div>
+			    </div>
+			    <div class="gallery-view">
+			        <a target="gallery_image" href="bai-viet-4.html">
+			          <img src="image/fashion.jpg" alt="Fashion">
+			        </a>
+			        <div class="image_info">Fashion</div>
+			    </div>
+		</div>
+		<!-- Phần bài viết chính sẽ được gộp vào chung 1 block -->
+		<div class="main-content-box">
+			<!-- Phần hiển thị bài viết kèm theo ảnh dưới dạng lưới2x2 -->
+			<div class="m-box-1">
+				<div class="img1">
+					<a href="#" title="Bai-viet-1">
+						<img src="image/content-1.jpg" alt="Travel around the World">
+						<p class="date">02/02/2018</p>
+						<p class="font-blog">Travel around the World</p>
+					</a>
+				</div>
+				<div class="img1">
+					<a href="#" title="Bai-viet-2">
+					<img src="image/content-2.jpg" alt="Packing baggage">
+					<p class="date">02/03/2018</p>
+					<p class="font-blog">How to packing your baggage(part1)</p>
+					</a>
+				</div>
+			</div>
+			<div class="m-box-2">
+				<div class="img2">
+					<a href="#" title="Bai-viet-3">
+					<img src="image/content-2.jpg" alt="Where should we go?">
+					<p class="date">15/03/2018</p>
+					<p class="font-blog">Where should we go?</p>
+					</a>
+				</div>
+				<div class="img2">
+					<a href="#" title="Bai-viet-4">
+					<img src="image/content-4.jpg" alt="Packing baggage">
+					<p class="date">20/03/2018</p>
+					<p class="font-blog">How to packing your baggage(part2)</p>
+					</a>
+				</div>
+			</div>
+			<div class="m-box-3">
+				<a href="#" title="About me">
+						<img src="image/about.jpg" alt="About me">
+						<p class="font-me">Lê Thanh Tâm</p>
+						<p class="font-about">Tốt nghiệp đại học ABC. Chuyên ngành CNTT và ra trường thì thất nghiệp dài hạn. Nên sau 5 năm lăn lộn trường đời thì mình lại quay lại học lập trình để bắt đầu lại đam mê thuở ăn chơi quên cả mưa rơi.				
+						</p>
+					</a>
+			</div>		
+		</div>
+		<!-- Phần cuối cùng thông tin liên hệ để dưới footer -->
+		<div class="main-footer">
+			
+		</div>
+	</div>
+</body>
+</html>

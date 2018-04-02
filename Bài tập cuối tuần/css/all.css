@@ -1,0 +1,10 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	font-family: Verdana, Geneva, sans-serif;
+    }
+.home{
+	max-width: 1000px;
+	margin: auto;
+}

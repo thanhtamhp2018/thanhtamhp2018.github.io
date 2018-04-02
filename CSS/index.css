@@ -1,0 +1,50 @@
+*{
+	box-sizing: border-box;
+}
+
+.parents{
+/*khi để thuộc tính này thì nó sẽ tự động lấy chiều cao của 2 thằng con phía dưới*/
+	width: 800px;
+	background-color: #fff;
+}
+.child-1{
+	width: 200px;
+	height: 300px;
+	background-color: aqua;
+	float: left;
+}
+
+.child-2{
+	width: 200px;
+	height: 300px;
+	background-color: yellow;
+	float: left;
+}
+
+.clear{
+	clear: both;
+}
+/*************************************************************************************************
+.parents{
+	position: relative; khi để thuộc tính này thì nó sẽ không thể lấy được chiều cao của 2 thằng con phía dưới và sẽ bị chồng lên nhau
+	width: 800px;
+	background-color: #fff;
+}
+.child-1{
+	width: 200px;
+	height: 300px;
+	background-color: aqua;
+	position: absolute;
+}
+
+.child-2{
+	width: 200px;
+	height: 300px;
+	background-color: yellow;
+	position: absolute;
+}
+
+.clear{
+	clear: both;
+}
+*/

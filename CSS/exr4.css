@@ -32,8 +32,27 @@ div.gallery img{
 }
 
 div.main_menu a{
+    font-size: 20px;
 	padding: 10px;
-	margin-top: 40px;
+    color: #737373;
+    text-decoration: none;
+    height: 100px;
+}
+/*link chưa click*/
+div.main-menu a:link {
+        color: black;
+}
+/*Link sau khi đã click*/
+div.main-menu a:visited {
+        color: grey;
+}
+/*Link sau khi trỏ con chuột vào mà chưa click*/
+div.main-menu a:hover {
+        color: red;
+}
+/*Link sau khi đã click*/
+div.main-menu a:active {
+        color: blue;
 }
 div.image_info {
     padding: 10px;
