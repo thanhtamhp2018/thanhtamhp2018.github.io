@@ -11,7 +11,8 @@ img{
 	float: left;
 }
 .m-box-right{
-	border: 2px solid #717171;
+	padding-top: 10px;
+	border: 1px solid #717171;
 	border-radius: 5%;
 	width: 30%;
 	float: left;
@@ -53,11 +54,13 @@ img{
     padding: 2px;
     text-align: center;
 }
-.footer {
-	text-align: center;
-    font-size: 1.1em;
-    color: #18919c;
-    padding: 10px;
-    border-top: 5px solid #18919c;
-    margin-top: 15px;
+.social img{
+	margin-left: 50px;
+	width: 50px;
+	height: 50px;
+}
+.social p{
+	float: right;
+	margin-top: 15px;
+	margin-right: 55px;
 }
