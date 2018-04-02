@@ -20,15 +20,18 @@ img{
 .home{
 	max-width: 1140px;
 	margin: auto;
+}
+.gallery{
 	position: relative;
+	width: 100%;
+	float: left;
 }
 .home-menu{
 	position: absolute;
     width: 150px;
-    position: fixed;
     z-index: 1;
-    top: 20px;
-    left: 10px;
+    top: 320px;
+    left: 25px;
     background: #eee;
     overflow-x: hidden;
     padding: 8px 0;
@@ -42,9 +45,8 @@ img{
 .home-menu a:hover {
     color: #064579;
 }
-.gallery{
-	width: 100%;
-	float: left;
+.gallery-image a:hover {
+    color: red;
 }
 .gallery-image{
 	width: 25%;
