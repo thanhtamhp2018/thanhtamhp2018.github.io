@@ -94,37 +94,36 @@
 		<!-- Script cho slide show ảnh -->
 			<script>
 				
-			var slideIndex = 1;
-			showSlides(slideIndex);
+				var slideIndex = 1;
+				showSlides(slideIndex);
 
-			// Next/previous controls
-			function plusSlides(n) {
-			  showSlides(slideIndex += n);
-			}
+				// Next/previous controls
+				function plusSlides(n) {
+				  showSlides(slideIndex += n);
+				}
 
-			// Thumbnail image controls
-			function currentSlide(n) {
-			  showSlides(slideIndex = n);
-			}
+				// Thumbnail image controls
+				function currentSlide(n) {
+				  showSlides(slideIndex = n);
+				}
 
-			function showSlides(n) {
-			  var i;
-			  var slides = document.getElementsByClassName("mySlides");
-			  var dots = document.getElementsByClassName("dot");
-			  if (n > slides.length) {slideIndex = 1} 
-			  if (n < 1) {slideIndex = slides.length}
-			  for (i = 0; i < slides.length; i++) {
-			      slides[i].style.display = "none"; 
-			  }
-			  for (i = 0; i < dots.length; i++) {
-			      dots[i].className = dots[i].className.replace(" active", "");
-			  }
-			  slides[slideIndex-1].style.display = "block"; 
-			  dots[slideIndex-1].className += " active";
-			}
+				function showSlides(n) {
+				  var i;
+				  var slides = document.getElementsByClassName("mySlides");
+				  var dots = document.getElementsByClassName("dot");
+				  if (n > slides.length) {slideIndex = 1} 
+				  if (n < 1) {slideIndex = slides.length}
+				  for (i = 0; i < slides.length; i++) {
+				      slides[i].style.display = "none"; 
+				  }
+				  for (i = 0; i < dots.length; i++) {
+				      dots[i].className = dots[i].className.replace(" active", "");
+				  }
+				  slides[slideIndex-1].style.display = "block"; 
+				  dots[slideIndex-1].className += " active";
+				}
 
 			</script>
-
 
 		<!--Phần bài viết được xem nhiều -->
 		<div class="main-most-view-post">
@@ -157,51 +156,57 @@
 		<!-- Phần bài viết chính sẽ được gộp vào chung 1 block -->
 		<div class="main-content-box">
 			<!-- Phần hiển thị bài viết kèm theo ảnh dưới dạng lưới2x2 -->
-			<div class="m-box-1">
-				<div class="img1">
+			<div class="m-box-left">
+				<div class="box-img">
 					<a href="#" title="Bai-viet-1">
 						<img src="image/content-1.jpg" alt="Travel around the World">
 						<p class="date">02/02/2018</p>
 						<p class="font-blog">Travel around the World</p>
 					</a>
 				</div>
-				<div class="img1">
+				<div class="box-img">
 					<a href="#" title="Bai-viet-2">
-					<img src="image/content-2.jpg" alt="Packing baggage">
-					<p class="date">02/03/2018</p>
-					<p class="font-blog">How to packing your baggage(part1)</p>
+						<img src="image/content-2.jpg" alt="Packing baggage">
+						<p class="date">02/03/2018</p>
+						<p class="font-blog">How to packing your baggage(part1)</p>
 					</a>
 				</div>
-			</div>
-			<div class="m-box-2">
-				<div class="img2">
+				<div class="box-img">
 					<a href="#" title="Bai-viet-3">
-					<img src="image/content-2.jpg" alt="Where should we go?">
-					<p class="date">15/03/2018</p>
-					<p class="font-blog">Where should we go?</p>
+						<img src="image/content-2.jpg" alt="Where should we go?">
+						<p class="date">15/03/2018</p>
+						<p class="font-blog">Where should we go?</p>
 					</a>
 				</div>
-				<div class="img2">
+				<div class="box-img">
 					<a href="#" title="Bai-viet-4">
-					<img src="image/content-4.jpg" alt="Packing baggage">
-					<p class="date">20/03/2018</p>
-					<p class="font-blog">How to packing your baggage(part2)</p>
+						<img src="image/content-4.jpg" alt="Packing baggage">
+						<p class="date">20/03/2018</p>
+						<p class="font-blog">How to packing your baggage(part2)</p>
 					</a>
 				</div>
 			</div>
-			<div class="m-box-3">
-				<a href="#" title="About me">
-						<img src="image/about.jpg" alt="About me">
-						<p class="font-me">Lê Thanh Tâm</p>
-						<p class="font-about">Tốt nghiệp đại học ABC. Chuyên ngành CNTT và ra trường thì thất nghiệp dài hạn. Nên sau 5 năm lăn lộn trường đời thì mình lại quay lại học lập trình để bắt đầu lại đam mê thuở ăn chơi quên cả mưa rơi.	
-						</p>
-						
-					</a>
-			</div>		
+				<!-- **************************** -->
+			<div class="m-box-right">
+				<h2 style="text-align: center;">Giới thiệu về tôi</h2>
+				<img src="image/about.jpg" alt="About me">
+				<p class="font-me">Lê Thanh Tâm</p>
+				<p class="font-about">Tốt nghiệp đại học ABC. Chuyên ngành CNTT và ra trường thì thất nghiệp dài hạn. Nên sau 5 năm lăn lộn trường đời thì mình lại quay lại học lập trình để bắt đầu lại đam mê thuở ăn chơi quên cả mưa rơi.</p>
+				<hr>
+				<p style="text-align: center;">Mạng xã hội</p>
+				<p><img src="image/about-fb.jpg" alt="FaceBook"> 1 lượt theo dõi</p>
+				<p><img src="image/about-you.jpg" alt="YouTube"> 1 lượt theo dõi</p>
+				<p><img src="image/about-twit.jpg" alt="Twitter"> 1 lượt theo dõi</p>
+				<p><img src="image/about-insta.jpg" alt="Instagram"> 1 lượt theo dõi</p>
+				<form action="#" class="subform">
+					<input type="email" name="email" id="email" placeholder="Email">
+					<button type="submit">Subscribes</button>
+				</form>
+			</div>
 		</div>
 		<!-- Phần cuối cùng thông tin liên hệ để dưới footer -->
-		<div class="main-footer">
-			
+		<div class="footer">
+			<p>ThanhTam's Blog &reg; 2018</p>
 		</div>
 	</div>
 </body>
