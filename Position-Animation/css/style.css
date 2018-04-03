@@ -16,11 +16,11 @@ img{
 /*dùng từ khóa keyframes để xác định element cần tạo hiệu ứng*/
 @keyframes title{ /*tạo hiệu ứng cho thẻ title*/
 	/*các giá trị màu thay đổi từ 0-100%*/
-	0%  {background-color: #EF7126; color: #EFD30F;}
-    25%  {background-color: #6F3662; color: #F80A0A;}
-    50%  {background-color: #9F6164; color: #00FF12;}
-    75%  {background-color: #44B3C2; color: #000CFF;}
-    100% {background-color: #218C8D; color: #FF00FC;}
+	0%  {/*background-color: #EF7126; */color: #EFD30F;}
+    25%  {/*background-color: #6F3662; */color: #F80A0A;}
+    50%  {/*background-color: #9F6164;*/ color: #00FF12;}
+    75%  {/*background-color: #44B3C2;*/ color: #000CFF;}
+    100% {/*background-color: #218C8D;*/ color: #FF00FC;}
 }
 @keyframes class{
 	0%   {left:0px; top:0px;}
@@ -42,7 +42,38 @@ img{
 	padding: 10px;
 	float: left;
 	cursor: pointer;
-	animation:fading 5s infinite;
+	/*animation:fading 5s infinite;*/
+}
+.fading img:hover{
+	animation: fading 5s infinite;
+}
+/***************************************/
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.shake{
+	border: 1px solid #ddd;
+	width: 20%;
+	padding: 10px;
+	float: left;
+	cursor: pointer;
+}
+.shake img:hover{
+	/* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s; 
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
 }
 /***************************************/
 .heater p{
@@ -59,7 +90,7 @@ img{
 	max-width: 1140px;
 	margin: auto;
 }
-	
+
 .gallery{
 	position: relative;
 	width: 100%;
@@ -99,7 +130,7 @@ img{
 .gallery-image img{
 	vertical-align: middle;
 	opacity: 1;
-	transition: opacity 0.7s;
+    transition: opacity 0.7s;
 	transition-timing-function: linear;
 }
 .gallery-image:hover img{
