@@ -108,7 +108,7 @@ img{
     padding: 8px 0;
 }
 .home-menu a{
-	animation: title 0.5s ease infinite; /*tạo hiệu ứng chuyển động cho thẻ title trong thẻ a, tên thẻ, thời gian delay, kiểu hiệu ứng, loại hiệu ứng*/
+	/*animation: title 0.5s ease infinite;*/ /*tạo hiệu ứng chuyển động cho thẻ title trong thẻ a, tên thẻ, thời gian delay, kiểu hiệu ứng, loại hiệu ứng*/
     padding: 5px;
     font-size: 25px;
     color: #2196F3;
