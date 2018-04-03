@@ -11,7 +11,45 @@ a{
 }
 img{
 	width: 100%;
-	height: 300px;
+	height: 200px;
+}
+/*dùng từ khóa keyframes để xác định element cần tạo hiệu ứng*/
+@keyframes title{ /*tạo hiệu ứng cho thẻ title*/
+	/*các giá trị màu thay đổi từ 0-100%*/
+	0%  {background-color: #EF7126; color: #EFD30F;}
+    25%  {background-color: #6F3662; color: #F80A0A;}
+    50%  {background-color: #9F6164; color: #00FF12;}
+    75%  {background-color: #44B3C2; color: #000CFF;}
+    100% {background-color: #218C8D; color: #FF00FC;}
+}
+@keyframes class{
+	0%   {left:0px; top:0px;}
+	10%   {left:100px; top:0px;}
+    /*25%  {left:100px; top:0px;}*/
+    /*50%  {left:200px; top:0px;}*/
+    80%  {left:300px; top:0px;}
+    100% {left:300px; top:0px;opacity: 0}
+}
+/***************************************/
+@keyframes fading{
+	0%{opacity:0}
+	50%{opacity:1}
+	100%{opacity:0}
+}
+.fading{
+	border: 1px solid #ddd;
+	width: 20%;
+	padding: 10px;
+	float: left;
+	cursor: pointer;
+	animation:fading 5s infinite;
+}
+/***************************************/
+.heater p{
+    position: relative;
+    animation-name: class;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
 }
 .heater img{
 	width: 100%;
@@ -21,6 +59,7 @@ img{
 	max-width: 1140px;
 	margin: auto;
 }
+	
 .gallery{
 	position: relative;
 	width: 100%;
@@ -37,6 +76,7 @@ img{
     padding: 8px 0;
 }
 .home-menu a{
+	animation: title 0.5s ease infinite; /*tạo hiệu ứng chuyển động cho thẻ title trong thẻ a, tên thẻ, thời gian delay, kiểu hiệu ứng, loại hiệu ứng*/
     padding: 5px;
     font-size: 25px;
     color: #2196F3;
@@ -49,9 +89,67 @@ img{
     color: red;
 }
 .gallery-image{
-	width: 25%;
-	padding: 15px;
+	border: 1px solid #ddd;
+	width: 20%;
+	padding: 10px;
 	float: left;
+	cursor: pointer;
+}
+/*hiệu ứng làm mờ ảnh*/
+.gallery-image img{
+	vertical-align: middle;
+	opacity: 1;
+	transition: opacity 0.7s;
+	transition-timing-function: linear;
+}
+.gallery-image:hover img{
+	opacity: 0.5;
+}
+/*************************/
+.gallery-image3{
+	border: 1px solid #ddd;
+	width: 20%;
+	padding: 10px;
+	float: left;
+	cursor: pointer;
+}
+.gallery-image3 img{
+	vertical-align: middle;
+}
+/*hiệu ứng ma trận 3d*/
+.gallery-image3:hover img{
+	transform: rotate3d(0,0,5,220deg);
+}
+/*************************/
+.gallery-image1, .gallery-image2{
+	border: 1px solid #ddd;
+	width: 20%;
+	padding: 10px;
+	float: left;
+	cursor: pointer;
+}
+.gallery-image1 img, .gallery-image2 img, .fading img{
+	vertical-align: middle;
+}
+.gallery-image1:hover{
+	/*transform: rotateY(130deg);ảnh xoay 130 độ theo trục y*/
+	transform: translate(0,-5px);/*ảnh di chuyển theo trục y 5px đổ bóng ở dưới*/
+	box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.2);
+}
+.gallery-image2:hover img{
+	transform: scale(3);/*phóng to kích thước ảnh lên 1.2 lần*/
+	opacity: 0.8;
+}
+.gallery-image2,.gallery-image3{
+	overflow: hidden;
+}
+/*********************************/
+.gallery-image1 img{
+	padding: 4px;
+	transition: all 0.5s ease;
+	} 
+.gallery-image2 img{
+	transition: all 0.5s linear;
 }
 .back-top{
 	position: fixed;
