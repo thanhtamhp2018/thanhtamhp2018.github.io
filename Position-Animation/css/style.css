@@ -14,14 +14,14 @@ img{
 	height: 200px;
 }
 /*dùng từ khóa keyframes để xác định element cần tạo hiệu ứng*/
-@keyframes title{ /*tạo hiệu ứng cho thẻ title*/
-	/*các giá trị màu thay đổi từ 0-100%*/
-	0%  {/*background-color: #EF7126; */color: #EFD30F;}
-    25%  {/*background-color: #6F3662; */color: #F80A0A;}
-    50%  {/*background-color: #9F6164;*/ color: #00FF12;}
-    75%  {/*background-color: #44B3C2;*/ color: #000CFF;}
-    100% {/*background-color: #218C8D;*/ color: #FF00FC;}
-}
+/*@keyframes title{ tạo hiệu ứng cho thẻ title
+	các giá trị màu thay đổi từ 0-100%
+	0%  {background-color: #EF7126; color: #EFD30F;}
+    25%  {background-color: #6F3662; color: #F80A0A;}
+    50%  {background-color: #9F6164; color: #00FF12;}
+    75%  {background-color: #44B3C2; color: #000CFF;}
+    100% {background-color: #218C8D; color: #FF00FC;}*/
+/*}*/
 @keyframes class{
 	0%   {left:0px; top:0px;}
 	10%   {left:100px; top:0px;}
