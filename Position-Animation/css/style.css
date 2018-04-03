@@ -26,9 +26,9 @@ img{
 	
 	0%   {left:0px; top:0px;}
 	10%   {left:100px; top:0px;}
-    /*25%  {left:100px; top:0px;}*/
+    /*25%  {left:150px; top:0px;}*/
     /*50%  {left:200px; top:0px;}*/
-    80%  {left:300px; top:0px;}
+    80%  {left:250px; top:0px;}
     100% {left:300px; top:0px;opacity: 0}
 }
 /***************************************/
