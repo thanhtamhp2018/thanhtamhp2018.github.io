@@ -1,0 +1,51 @@
+*{
+	margin: auto;
+	max-width: 1000px;
+}
+div {
+    margin: 10%;
+    width: 500px;
+    height: 10px;
+    font-weight: bold;
+    position: relative;
+}
+@keyframes p{ 
+	0%  {background-color: #EF7126; color: #EFD30F;}
+    	25%  {background-color: #6F3662; color: #F80A0A;}
+    	50%  {background-color: #9F6164; color: #00FF12;}
+    	75%  {background-color: #44B3C2; color: #000CFF;}
+    	100% {background-color: #218C8D; color: #FF00FC;}
+}
+p{
+	font-size: 50px;
+	animation: p 5s infinite;
+}
+/* Standard syntax */
+.m-1 {animation-timing-function: ease;
+   animation: mymove 5s infinite;}
+.m-2 {animation-timing-function: ease-in;
+   animation: mymovem 5s infinite;}
+.m-3 {animation-timing-function: ease-out;
+   animation: mymove 5s infinite;}
+.m-4 {animation-timing-function: ease-in-out;
+   animation: mymovem 5s infinite;}
+.m-5 {animation-timing-function: ease;
+   animation: mymove 5s infinite;}
+.m-6 {animation-timing-function: ease-in;
+   animation: mymovem 5s infinite;}
+.m-7 {animation-timing-function: ease-out;
+   animation: mymove 5s infinite;}
+.m-8 {animation-timing-function: ease-in-out;
+   animation: mymovem 5s infinite;}
+.m-9 {animation-timing-function: ease-in-out;
+   animation: mymove 5s infinite;}
+
+/* Standard syntax */
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 300px;}
+}
+@keyframes mymovem {
+    from {left: 300px;}
+    to {left: 0px;}
+}
