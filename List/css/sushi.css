@@ -5,24 +5,30 @@
 	font-size: 100%;
 	vertical-align: baseline;
 }
+
 .page{
 	max-width: 1140px;
 	margin: auto;
 }
-.page-header__logo>a{
-	position: sticky;
+h2{
+	text-transform: uppercase;
+	text-align: center;
+	margin: 50px;
 }
 img{
 	width: 86px;
 	height: 84px;
 }
-ul{
+
+.page-menu__navbar ul{
 	font-size: 20px;
 	/*position:sticky;*/ /*nếu để sticky thì sẽ không hiển thị được menu đa cấp*/
 	list-style-type: none;
 	overflow: hidden;
 	background-color: #333;
+	position: relative;
 }
+
 li{
 	float: left;
 }

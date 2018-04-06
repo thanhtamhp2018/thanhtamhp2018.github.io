@@ -7,10 +7,12 @@ img{
 	height: 300px;
 }
 .m-box-left{
+	margin-top: 50px:;
 	width: 70%;
 	float: left;
 }
 .m-box-right{
+	margin-top: 50px:;
 	padding-top: 10px;
 	/*border: 1px solid #717171;*/
 	border-radius: 5%;
