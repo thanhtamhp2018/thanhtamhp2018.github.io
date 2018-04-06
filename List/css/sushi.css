@@ -2,12 +2,124 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	border: 0;
-	outline: 0;
 	font-size: 100%;
 	vertical-align: baseline;
+}
+.page{
+	max-width: 1140px;
+	margin: auto;
+}
+.page-header__logo>a{
+	position: sticky;
 }
 img{
 	width: 86px;
 	height: 84px;
+}
+ul{
+	font-size: 20px;
+	/*position:sticky;*/ /*nếu để sticky thì sẽ không hiển thị được menu đa cấp*/
+	list-style-type: none;
+	overflow: hidden;
+	background-color: #333;
+}
+li{
+	float: left;
+}
+li a, .drop-menu{
+	display: inline-block;
+	color:white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+li a:hover, .drop:hover .drop-menu{
+	background-color: #4acf50;
+} 
+li.drop{
+	display: inline-block;
+}
+/*Sushi*/
+.drop-sushi{
+	display: none;
+	position: absolute;
+	background-color: #333;
+	min-width: 160px;
+	z-index: 1;
+}
+.drop-sushi a{
+	color: white;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+.drop-sushi a:hover{
+	background-color: #4acf50;
+}
+.drop:hover .drop-sushi{
+	display: block;
+}
+/*Udon*/
+.drop-udon{
+	display: none;
+	position: absolute;
+	background-color: #333;
+	min-width: 160px;
+	z-index: 1;
+}
+.drop-udon a{
+	color: white;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+.drop-udon a:hover{
+	background-color: #4acf50;
+}
+.drop:hover .drop-udon{
+	display: block;
+}
+/*Soba*/
+.drop-soba{
+	display: none;
+	position: absolute;
+	background-color: #333;
+	min-width: 160px;
+	z-index: 1;
+}
+.drop-soba a{
+	color: white;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+.drop-soba a:hover{
+	background-color: #4acf50;
+}
+.drop:hover .drop-soba{
+	display: block;
+}
+/*Ramen*/
+.drop-ramen{
+	display: none;
+	position: absolute;
+	background-color: #333;
+	min-width: 160px;
+	z-index: 1;
+}
+.drop-ramen a{
+	color: white;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+.drop-ramen a:hover{
+	background-color: #4acf50;
+}
+.drop:hover .drop-ramen{
+	display: block;
 }
