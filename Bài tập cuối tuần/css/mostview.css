@@ -14,11 +14,13 @@ div.gallery-view {
 
 div.gallery-view:hover {
     border: 0;
+    transform: translate(0,-5px);
 }
 
 div.gallery-view img{
     width: 100%;
     height: 150px;
+    transition: all 0.5s linear;
 }
 
 div.main-mostview-post a{

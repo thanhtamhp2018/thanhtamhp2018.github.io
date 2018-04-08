@@ -1,7 +1,5 @@
 .main-content-box{
-	width: 100%;
-	margin: auto;
-	clear: both;
+	height: 800px;
 	display: block;
 }
 img{
@@ -9,29 +7,40 @@ img{
 	height: 250px;
 }
 .m-box-left{
-	padding-top: 20px;
+	margin-top: 30px;
+	margin-left: 30px;
+	height: 80%;
 	width: 65%;
+	display: inline-block;
 	float: left;
-}
-.m-box-left img:hover{
-	border-radius: 50%;
-}
-#about-img{
-	width: 80%;
-	height: 250px;
-	margin-left: 35px;
 }
 .m-box-right{
-	margin-left: 50px;
-	border: 2px solid #ff6;
-	padding-top: 10px;
-	width: 30%;
-	float: left;
+	padding-top: 40px;
+	width: 25%;
+	display: inline-block;
+	float: right;
 }
-.m-box-right p>img{
-	margin:auto;
-	width: 50px;
-	height: 50px;
+.m-box-left img{
+	transition: all 0.5s linear;
+}
+.m-box-left img:hover{
+	transform: scale(1.2);
+}
+.about{
+	margin-top: 15px;
+}
+.about__tilte{
+	font-size: 20px;
+	font-weight: bold;
+}
+.about__span{
+	font-size: 15px;
+}
+.about-pic img{
+
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-radius: 50%;
 }
 .box-img{
 	width: 50%;
