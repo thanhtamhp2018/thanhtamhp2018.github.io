@@ -6,12 +6,8 @@
 .clear {
 	clear: both;
 }
-/*body{
-	font-family: Verdana, Geneva, sans-serif;
-    }*/
 .home{
 	max-width: 1000px;
-	/*float: left;*/
 	margin: auto;
 }
 div{
