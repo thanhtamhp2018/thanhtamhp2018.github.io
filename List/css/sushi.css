@@ -129,3 +129,6 @@ li.drop{
 .drop:hover .drop-ramen{
 	display: block;
 }
+.page-content{
+	list-style: none;
+}

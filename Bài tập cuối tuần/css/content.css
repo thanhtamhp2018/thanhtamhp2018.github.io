@@ -33,12 +33,11 @@ img{
 	color: gray;
 }
 .about__span{
-	font-size: 10px;
+	font-size: 16px;
 }
 .about-pic img{
 	margin-top: 10px;
 	margin-bottom: 10px;
-	border-radius: 50%;
 }
 .box-img{
 	width: 50%;
