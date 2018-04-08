@@ -1,27 +1,33 @@
 .main-content-box{
 	width: 1000px;
 	margin: auto;
+	clear: both;
+	display: block;
 }
 img{
 	width: 100%;
-	height: 300px;
+	height: 250px;
 }
 .m-box-left{
-	margin-top: 50px:;
+	padding-top: 20px;
 	width: 70%;
 	float: left;
 }
+.m-box-left img{
+	margin: auto;
+}
+#about-img{
+	width: 80%;
+	height: 250px;
+	margin-left: 35px;
+}
 .m-box-right{
-	margin-top: 50px:;
 	padding-top: 10px;
-	/*border: 1px solid #717171;*/
-	border-radius: 5%;
 	width: 30%;
 	float: left;
 }
 .m-box-right p>img{
-	margin-left: 10px;
-	border-radius: 5px;
+	margin:auto;
 	width: 50px;
 	height: 50px;
 }
@@ -40,17 +46,21 @@ img{
 	text-align: center;
 	padding: 5px;
 	font-size: 30px;
-	font-family: "Chiller";
 }
 .font-me{
+	margin: 10px;
 	text-align: center;
-	font-size: 50px;
-	font-family: "Chiller";
+	font-size: 35px;
+}
+.font-social{
+	 margin-top: 20px;
+	 margin-bottom: 10px;
+	 text-align: center;
+	 font-size: 30px;
 }
 .font-about{
 	margin-left: 5px;
 	font-size: 20px;
-	font-family: "Helvetica";
 }
 .date {
 	font-size: 20px;
@@ -58,12 +68,19 @@ img{
     text-align: center;
 }
 .social img{
-	margin-left: 50px;
-	width: 50px;
-	height: 50px;
+	margin-left: 20px;
+	padding: 5px;
+	width: 35px;
+	height: 35px;
 }
-.social p{
-	float: right;
-	margin-top: 15px;
-	margin-right: 55px;
+.social span{
+	margin-left: 25px;
+	margin-top: 10px;
+	position: absolute;
+}
+.social ul{
+	list-style-position: inside;
+	font-size: 15px;
+	padding: 20px;
+	list-style:none; 
 }

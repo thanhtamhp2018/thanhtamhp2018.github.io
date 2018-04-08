@@ -1,7 +1,16 @@
 .wrap{
-	max-width: 1000px;
+	max-width: 1140px;
 	margin:auto;
+	box-sizing: border-box;
 }
 h1{
 	text-align: center;
+}
+img{
+	width: 800px;
+	height: 800px;
+}
+
+p{
+	font-size: 30px;
 }

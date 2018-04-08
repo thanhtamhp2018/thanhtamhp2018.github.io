@@ -1,51 +1,42 @@
 *{
 	margin: auto;
-	max-width: 1000px;
+	max-width: 1140px;
+        box-sizing: border-box;
 }
-div {
-    margin: 10%;
-    width: 500px;
-    height: 10px;
-    font-weight: bold;
-    position: relative;
+
+.back-img{
+  height: 250px;
+  margin-top: 10%;
+  background-repeat: no-repeat;
 }
+
 @keyframes p{ 
-	0%  {background-color: #EF7126; color: #EFD30F;}
-    	25%  {background-color: #6F3662; color: #F80A0A;}
-    	50%  {background-color: #9F6164; color: #00FF12;}
-    	75%  {background-color: #44B3C2; color: #000CFF;}
-    	100% {background-color: #218C8D; color: #FF00FC;}
+	0%  {color: #EFD30F;}
+    	25%  {color: #F80A0A;}
+    	50%  {color: #00FF12;}
+    	75%  {color: #000CFF;}
+    	100% {color: #FF00FC;}
 }
 p{
-	font-size: 50px;
-	animation: p 5s infinite;
+  font-size: 35px;
+  animation: p 5s infinite;
+  text-align: center;
+  top: 200px;
+  left: 200px;
 }
-/* Standard syntax */
-.m-1 {animation-timing-function: ease;
-   animation: mymove 5s infinite;}
-.m-2 {animation-timing-function: ease-in;
-   animation: mymovem 5s infinite;}
-.m-3 {animation-timing-function: ease-out;
-   animation: mymove 5s infinite;}
-.m-4 {animation-timing-function: ease-in-out;
-   animation: mymovem 5s infinite;}
-.m-5 {animation-timing-function: ease;
-   animation: mymove 5s infinite;}
-.m-6 {animation-timing-function: ease-in;
-   animation: mymovem 5s infinite;}
-.m-7 {animation-timing-function: ease-out;
-   animation: mymove 5s infinite;}
-.m-8 {animation-timing-function: ease-in-out;
-   animation: mymovem 5s infinite;}
-.m-9 {animation-timing-function: ease-in-out;
-   animation: mymove 5s infinite;}
 
+@keyframes topmove {from{top:-300px;opacity:0} to{top:0;opacity:1}}
+@keyframes mzoom {from{transform:scale(0)} to{transform:scale(2)}}
+@keyframes botmove {from{bottom:-300px;opacity:0} to{bottom: 0;opacity:1}}
 /* Standard syntax */
-@keyframes mymove {
-    from {left: 0px;}
-    to {left: 300px;}
-}
-@keyframes mymovem {
-    from {left: 300px;}
-    to {left: 0px;}
-}
+.m-1 {
+  width: 50%;
+  position:relative;animation:topmove 5s infinite}
+.m-2 {
+  width: 50%;
+  animation:mzoom 10s infinite}
+.m-3 {
+  width: 50%;
+  position:relative;animation:botmove 5s infinite}
+/* Standard syntax */
+

@@ -11,9 +11,7 @@ div.gallery-view {
         width: 25%;
         height: 200px;
 }
-p{
-    font-size: 30px;
-}
+
 div.gallery-view:hover {
     border: 0;
 }
