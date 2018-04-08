@@ -8,16 +8,14 @@ img{
 }
 .m-box-left{
 	margin-top: 30px;
-	margin-left: 30px;
 	height: 80%;
 	width: 65%;
-	display: inline-block;
 	float: left;
 }
 .m-box-right{
 	padding-top: 40px;
+	padding-right: 50px;
 	width: 25%;
-	display: inline-block;
 	float: right;
 }
 .m-box-left img{
@@ -32,12 +30,12 @@ img{
 .about__tilte{
 	font-size: 20px;
 	font-weight: bold;
+	color: gray;
 }
 .about__span{
-	font-size: 15px;
+	font-size: 10px;
 }
 .about-pic img{
-
 	margin-top: 10px;
 	margin-bottom: 10px;
 	border-radius: 50%;
@@ -47,31 +45,21 @@ img{
 	float: left;
 	padding: 15px;
 }
-.box-img:hover {
-   border:0;
-}
+
 .subform{
 	margin: 25px;
 }
 .font-blog{
+	overflow: hidden;
 	text-align: center;
 	padding: 5px;
 	font-size: 30px;
-}
-.font-me{
-	margin: 10px;
-	text-align: center;
-	font-size: 35px;
 }
 .font-social{
 	 margin-top: 20px;
 	 margin-bottom: 10px;
 	 text-align: center;
-	 font-size: 30px;
-}
-.font-about{
-	margin-left: 5px;
-	font-size: 20px;
+	 font-size: 20px;
 }
 .date {
 	font-size: 20px;
@@ -79,7 +67,6 @@ img{
     text-align: center;
 }
 .social img{
-	margin-left: 20px;
 	padding: 5px;
 	width: 35px;
 	height: 35px;
