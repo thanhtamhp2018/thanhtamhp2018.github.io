@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sushi Map</title>
+	<link rel="stylesheet" type="text/css" href="css/sushi.css">
+</head>
+<body background="image/backg2.jpg">
+<!-- Page -->
+<div class="page">
+	<!-- /************************************/ -->
+	<!-- Header -->
+	<div class="page-header">
+		<h3>Waoooooooooooooooooo</h3><br><h1>Sushi!</h1>
+	</div>
+	<!-- Header end -->
+		<!-- /***************************************/ -->
+	<!-- Navigation Menu bar start-->
+	<div class="page-menu__navbar">
+		<!-- <a href="#"><img src="image/logo.png" alt="Sushi Map"></a> -->
+		<ul>
+			
+			<li><a class="active" href="#home">Home</a></li>
+			<li class="drop"><a class="drop-menu" href="#sushi">Sushi</a>
+				<div class="drop-sushi">
+					<a href="#sushi">Sushi-Cá</a>
+					<a href="#sushi">Sushi-Tôm</a>
+					<a href="#sushi">Sushi-Mực</a>
+					<a href="#sushi">Sushi-Thịt</a>
+					<a href="#sushi">Sushi-Trứng</a>
+				</div>
+			</li>
+			<li class="drop"><a class="drop-menu" href="#udon">Udon</a>
+		  		<div class="drop-udon">
+					<a href="#udon">Udon-Cá</a>
+					<a href="#udon">Udon-Tôm</a>
+					<a href="#udon">Udon-Mực</a>
+					<a href="#udon">Udon-Thịt</a>
+					<a href="#udon">Udon-Trứng</a>
+				</div>
+			</li>
+			<li class="drop"><a class="drop-menu" href="#soba">Soba</a>
+				<div class="drop-soba">
+					<a href="#soba">Soba-Cá</a>
+					<a href="#soba">Soba-Tôm</a>
+					<a href="#soba">Soba-Mực</a>
+					<a href="#soba">Soba-Thịt</a>
+					<a href="#soba">Soba-Trứng</a>
+				</div>
+			</li>
+			<li class="drop"><a class="drop-menu" href="#ramen">Ramen</a>
+				<div class="drop-ramen">
+					<a href="#ramen">Ramen-Cá</a>
+					<a href="#ramen">Ramen-Tôm</a>
+					<a href="#ramen">Ramen-Mực</a>
+					<a href="#ramen">Ramen-Thịt</a>
+					<a href="#ramen">Ramen-Trứng</a>
+				</div>
+			</li>
+			<li><a href="#take">Take a way</a></li>
+			<li><a href="#contact">Contact us</a></li>
+			<li><a href="#blog">Blog</a></li>
+			<li><a href="#review">Review</a></li>
+			<li><a href="#about">About</a></li>
+		</ul>	
+	</div>	
+	<!-- Navigation menu bar end -->
+	<!-- Content start <-->				
+	<!-- Slideshow container -->
+	<div class="slideshow-container">
+
+  	<!-- Full-width images with number and caption text -->
+	  <div class="mySlides fade">
+	    <img src="image/poster.jpg" style="width:100%">
+	  </div>
+
+	  <div class="mySlides fade">
+	    <img src="image/poster1.jpg" style="width:100%">
+	  </div>
+
+	  <div class="mySlides fade">
+	    <img src="image/poster2.jpg" style="width:100%">
+	  </div>
+
+	  <!-- Next and previous buttons -->
+	  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+	</div>
+	<br>
+
+	<!-- The dots/circles -->
+	<div style="text-align:center">
+	  <span class="dot" onclick="currentSlide(1)"></span> 
+	  <span class="dot" onclick="currentSlide(2)"></span> 
+	  <span class="dot" onclick="currentSlide(3)"></span> 
+	</div>
+	<!-- js start-->
+	<script>	
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		// Next/previous controls
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+
+		// Thumbnail image controls
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("dot");
+		  if (n > slides.length) {slideIndex = 1} 
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+		      slides[i].style.display = "none"; 
+		  }
+		  for (i = 0; i < dots.length; i++) {
+		      dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block"; 
+		  dots[slideIndex-1].className += " active";
+		}
+	</script>
+	<!--<script>
+		var slideIndex = 0;
+		showSlides();
+
+		function showSlides() {
+		    var i;
+		    var slides = document.getElementsByClassName("mySlides");
+		    for (i = 0; i < slides.length; i++) {
+		        slides[i].style.display = "none"; 
+		    }
+		    slideIndex++;
+		    if (slideIndex > slides.length) {slideIndex = 1} 
+		    slides[slideIndex-1].style.display = "block"; 
+		    setTimeout(showSlides, 2000); // Change image every 2 seconds
+		}
+	</script> -->
+	<!-- js end -->
+	<!-- Food gallery start -->
+	<div class="gallery-food">
+		<div class="food__menu">
+				<a href="sushi.html" title="Main-sushi">
+					<img src="image/sushi98.png
+					" alt="Sushi">
+					<p>Sushi</p>
+				</a>
+		</div>
+		<div class="food__menu">
+				<a href="udon.html" title="Main-udon">
+					<img src="image/udon.png
+					" alt="Udon">
+					<p>Udon</p>
+				</a>
+		</div>
+		<div class="food__menu">
+				<a href="soba.html" title="Main-soba">
+					<img src="image/soba.png
+					" alt="Soba">
+					<p>Soba</p>
+				</a>
+		</div>
+		<div class="food__menu">
+				<a href="ramen.html" title="Main-ramen">
+					<img src="image/ramen.png
+					" alt="Ramen">
+					<p>Ramen</p>
+				</a>
+		</div>
+	</div>
+	<!-- Food gallery end -->
+	<!-- Content end -->
+	<div class="clear"></div>
+		<!-- /*************************************/ -->
+	<!-- #Footer start -->
+	<footer class="page-footer">
+		<h1>WaoSushi, Co.ltd &trade; 2018</h1><br>
+		<p>Location: 1<sup>st</sup>, Ginza, Tokyo, Japan.</p>
+		<p>Contact: Call us now 0999999999.</p>
+		<p>Website: www.waosushi.com</p>
+	</footer>
+	<!-- #Footer end -->
+		<!-- /*****************************************/ -->
+</div>
+<!-- #Page end -->
+</body>
+</html>
