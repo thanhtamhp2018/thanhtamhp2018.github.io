@@ -91,7 +91,9 @@ img{
 	max-width: 1140px;
 	margin: auto;
 }
-
+.author{
+	display: inline;
+}
 .gallery{
 	position: relative;
 	width: 100%;
