@@ -14,14 +14,7 @@ img{
 	height: 200px;
 }
 /*dùng từ khóa keyframes để xác định element cần tạo hiệu ứng*/
-/*@keyframes title{ tạo hiệu ứng cho thẻ title
-	các giá trị màu thay đổi từ 0-100%
-	0%  {background-color: #EF7126; color: #EFD30F;}
-    25%  {background-color: #6F3662; color: #F80A0A;}
-    50%  {background-color: #9F6164; color: #00FF12;}
-    75%  {background-color: #44B3C2; color: #000CFF;}
-    100% {background-color: #218C8D; color: #FF00FC;}
-}*/
+
 @keyframes class{
 	
 	0%   {left:0px; top:0px;}
@@ -94,29 +87,35 @@ img{
 .author{
 	display: inline;
 }
+
 .gallery{
+	padding-top: 20px;
 	position: relative;
 	width: 100%;
-	float: left;
+	display: inline-block;
 }
-.home-menu{
-	position: absolute;
-    width: 150px;
+.gallery-menu{
     z-index: 1;
-    top: 320px;
-    left: 25px;
+    width: 15%;
+	height: 100%;
+	position: absolute;
     background: #eee;
-    overflow-x: hidden;
     padding: 8px 0;
+    overflow: hidden;
 }
-.home-menu a{
+.gallery-slide{
+	width: 85%;
+	float: right;
+}
+
+.gallery-menu a{
 	/*animation: title 0.5s ease infinite;*/ /*tạo hiệu ứng chuyển động cho thẻ title trong thẻ a, tên thẻ, thời gian delay, kiểu hiệu ứng, loại hiệu ứng*/
     padding: 5px;
     font-size: 25px;
     color: #2196F3;
     display: block;
 }
-.home-menu a:hover {
+.gallery-menu a:hover {
     color: #064579;
 }
 .gallery-image a:hover {
