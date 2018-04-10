@@ -1,0 +1,30 @@
+.gallery-sushi{
+	width: 100%;
+	display: block;
+	padding: 30px;
+	position: relative;
+}
+.food__sushi{
+	height: 400px;
+	background-color: #000;
+	border-radius: 5px;
+	margin-top: 10px;
+	width: 25%;
+	padding:10px;
+	float: left;
+}
+.food__sushi a{
+	text-decoration: none;
+}
+.food__sushi p{
+	overflow: hidden;
+	color: #fff;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+}
+.food__sushi img{
+	border: 5px solid #000;
+	border-radius: 20%;
+	background-color: white;
+}

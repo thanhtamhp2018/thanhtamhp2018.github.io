@@ -301,7 +301,7 @@ li.drop{
 	float: left;
 }
 .food__menu img{
-	background-color: white;
+	background-color: #fefffe;
     border-radius: 50%;
 }
 .food__menu a{
@@ -318,17 +318,18 @@ li.drop{
 /*Footer*/
 .page-footer {
 	text-align: center;
-    color: #0c1010;
     padding: 50px;
-    border-top: 5px solid #0c1010;
+    border-top: 5px solid white;
     margin-top: 50px;
 	font-weight: bold;
     
 }
 .page-footer p{
+	color: white;
 	font-size: 24px;
 }
 h1{
+	color: white;
 	font-size: 40px;
 	font-weight: bold;
 }
