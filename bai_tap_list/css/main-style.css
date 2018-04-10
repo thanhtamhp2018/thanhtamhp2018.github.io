@@ -14,6 +14,10 @@
 	text-align: center;
 	margin: 20px;
 }
+.page-header img{
+	width: 100%;
+	height: 225px;
+}
 img{
 	width: 100%;
 }
@@ -324,6 +328,13 @@ li.drop{
 	font-weight: bold;
     
 }
+/*.page-footer img{
+	width: 50%;
+	height:200px;
+}
+*/
+
+
 .page-footer p{
 	color: white;
 	font-size: 24px;
