@@ -1,0 +1,29 @@
+.gallery-udon{
+	width: 100%;
+	display: block;
+	padding: 30px;
+	position: relative;
+}
+.mi-udon{
+	width: 33%;
+	padding:10px;
+	float: left;
+}
+.mi-udon a{
+	text-decoration: none;
+}
+.mi-udon p{
+	border: 5px solid #000;
+	border-radius: 10%;
+	background-color: #000;
+	overflow: hidden;
+	color: #fff;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+}
+.mi-udon img{
+	border: 5px solid #000;
+	border-radius: 20%;
+	background-color: white;
+}

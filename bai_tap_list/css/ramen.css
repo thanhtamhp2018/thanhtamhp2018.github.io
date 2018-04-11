@@ -1,0 +1,29 @@
+.gallery-ramen{
+	width: 100%;
+	display: block;
+	padding: 30px;
+	position: relative;
+}
+.mi-ramen{
+	width: 33%;
+	padding:10px;
+	float: left;
+}
+.mi-ramen a{
+	text-decoration: none;
+}
+.mi-ramen p{
+	border: 5px solid #000;
+	border-radius: 10%;
+	background-color: #000;
+	overflow: hidden;
+	color: #fff;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+}
+.mi-ramen img{
+	border: 5px solid #000;
+	border-radius: 20%;
+	background-color: white;
+}
