@@ -1,0 +1,77 @@
+.gallery-ice-cake{
+	width: 100%;
+	display: block;
+	padding: 30px;
+	position: relative;
+}
+.ice-cake{
+	width: 25%;
+	padding:10px;
+	float: left;
+}
+.ice-cake a{
+	text-decoration: none;
+}
+.ice-cake p{
+	border: 5px solid #000;
+	border-radius: 10%;
+	background-color: #000;
+	overflow: hidden;
+	color: #fff;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+}
+.ice-cake img{
+	border: 5px solid #000;
+	border-radius: 20%;
+	background-color: white;
+}
+/*//////////////////////////////////*/
+.ice{
+	width: 25%;
+	padding:10px;
+	float: left;
+}
+.ice a{
+	text-decoration: none;
+}
+.ice p{
+	border: 5px solid #000;
+	border-radius: 10%;
+	background-color: #000;
+	overflow: hidden;
+	color: #fff;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+}
+.ice img{
+	border: 5px solid #000;
+	border-radius: 20%;
+	background-color: white;
+}
+/*////////////////////////////////////////*/
+.cake{
+	width: 25%;
+	padding:10px;
+	float: left;
+}
+.cake a{
+	text-decoration: none;
+}
+.cake p{
+	border: 5px solid #000;
+	border-radius: 10%;
+	background-color: #000;
+	overflow: hidden;
+	color: #fff;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+}
+.cake img{
+	border: 5px solid #000;
+	border-radius: 20%;
+	background-color: white;
+}

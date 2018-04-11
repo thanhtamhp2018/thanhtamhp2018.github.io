@@ -1,0 +1,126 @@
+.gallery-drink{
+	width: 100%;
+	display: block;
+	padding: 30px;
+	position: relative;
+}
+.drink__menu{
+	width: 25%;
+	padding:10px;
+	float: left;
+}
+.drink__menu a{
+	text-decoration: none;
+}
+.drink__menu p{
+	border: 5px solid #000;
+	border-radius: 10%;
+	background-color: #000;
+	overflow: hidden;
+	color: #fff;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+}
+.drink__menu img{
+	border: 5px solid #000;
+	border-radius: 20%;
+	background-color: white;
+}
+/*//////////////////////////////////*/
+.beer{
+	width: 25%;
+	padding:10px;
+	float: left;
+}
+.beer a{
+	text-decoration: none;
+}
+.beer p{
+	border: 5px solid #000;
+	border-radius: 10%;
+	background-color: #000;
+	overflow: hidden;
+	color: #fff;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+}
+.beer img{
+	border: 5px solid #000;
+	border-radius: 20%;
+	background-color: white;
+}
+/*////////////////////////////////////////*/
+.wine{
+	width: 25%;
+	padding:10px;
+	float: left;
+}
+.wine a{
+	text-decoration: none;
+}
+.wine p{
+	border: 5px solid #000;
+	border-radius: 10%;
+	background-color: #000;
+	overflow: hidden;
+	color: #fff;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+}
+.wine img{
+	border: 5px solid #000;
+	border-radius: 20%;
+	background-color: white;
+}
+/*//////////////////////////////////*/
+.juice{
+	width: 25%;
+	padding:10px;
+	float: left;
+}
+.juice a{
+	text-decoration: none;
+}
+.juice p{
+	border: 5px solid #000;
+	border-radius: 10%;
+	background-color: #000;
+	overflow: hidden;
+	color: #fff;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+}
+.juice img{
+	border: 5px solid #000;
+	border-radius: 20%;
+	background-color: white;
+}
+/*/////////////////////*/
+.coffee{
+	width: 25%;
+	padding:10px;
+	float: left;
+}
+.coffee a{
+	text-decoration: none;
+}
+.coffee p{
+	border: 5px solid #000;
+	border-radius: 10%;
+	background-color: #000;
+	overflow: hidden;
+	color: #fff;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+}
+.coffee img{
+	border: 5px solid #000;
+	border-radius: 20%;
+	background-color: white;
+}
+/*////////////////////////////////////*/
