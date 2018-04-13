@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+<script>	
+	// function thong_bao() {
+	// 	// hàm cơ bản thông báo pop-up lên màn hình
+	// 	alert("Không có gì quý hơn độc lập tự do hạnh phúc");
+	// }
+	// function tinh_tong(x,y){
+	// 	alert(x+y); hiện pop-up trên trình duyệt
+	// }
+	//var tinh_tong1 = function(x,y){
+		// alert("Kết quả: " + ((x+y));// ưu tiên tính tổng trước, sau khi tính xong thì chuyển thành chuỗi và hiển thị pop-up ra màn hình
+	//		return x+y; //trả ngay kết quả trên console mà không hiện pop-up
+	//}
+	//Scope là tập hợp các biến mà chúng ta có thể truy xuất trong các ngữ cảnh khác nhau
+	// var z=5;
+	// var tinh_tong = function(x,y)
+	// {
+	// 		return x+y+z; //trả ngay kết quả trên console mà không hiện pop-up
+	// }
+	// 	alert(z);
+	var hero = {
+		name: "Thjenma",
+		level: 100,
+		say: function(){		
+			alert("Xin chào các bạn, tôi là "+this.name+" level: "+this.level);
+		}
+	}
+	// Bài 1. Viết 1 function tính bình phương của 1 số.
+
+	// Tham số truyền vào là 1 số.
+	// Kết quả là bình phương của số đó.
+	function binh_phuong(x){
+		return x*x;
+	}
+	// Bài 2. Cho 3 số a, b và c. Viết function tính bình phương của (3a + 2b - c)
+
+	// Tham số truyền vào là 3 số a, b, c.
+	// Kết quả là bình phương của (3a + 2b - c). Sử dụng hàm viết sẵn của Bài 1.
+	
+	function abc_binhphuong(a,b,c){
+		return binh_phuong(3a+2b-c);
+	}
+	// Bài 3. Cho 1 chuỗi dài hơn 30 ký tự. Viết 1 function cắt chuỗi, lấy ra 10 ký tự đầu tiên và thêm vào dấu "..." ở cuối chuỗi.
+
+	// Tham số truyền vào là 1 chuỗi dài hơn 30 ký tự.
+	// Kết quả là chuỗi đó sau khi cắt đi còn 10 ký tự, cuối chuỗi có dấu "..." biểu thị là chuỗi bị cắt.
+	// Bài 4. Viết 1 function có tác dụng biến 1 chuỗi thành viết hoa từ đầu tiên.
+
+	// Tham số truyền vào là 1 chuỗi.
+	// Kết quả là 1 chuỗi mới chỉ viết hoa từ đầu tiên. Ví dụ "welcome to Techmaster" sẽ được convert thành "Welcome to techmaster".
+	// Bài 5. Viết 1 function lấy ra 1 số nhỏ nhất trong 1 mảng các số.
+
+	// Tham số truyền vào là 1 mảng các số.
+	// Kết quả là số nhỏ nhất trong mảng.
+	// Gợi ý: có thể dùng phương thức sort() hoặc object Math, chú ý khi sort số khác với chữ.
+	// Bài 6. Cho 1 mảng gồm tên của 5 học viên. Hãy viết function sắp xếp lại thứ tự các học viên theo bảng chữ cái và in ra màn hình danh sách học viên.
+
+	// Tham số truyền vào là 1 mảng gồm tên của 5 người.
+	// Kết quả: In ra màn hình danh sách các học viên theo thứ tự bảng chữ cái (tiếng Anh), không phân biệt hoa thường.
+	// Bài 7. Tạo 3 đối tượng là teacher, student và parent. Mỗi đối tượng đều có các thuộc tính: firstName, lastName, age. Cả 3 đối tượng đều có chung 1 phương thức là say(). Hãy viết function aboutMe() in ra màn hình 1 câu giới thiệu bản thân và gán vào phương thức say() của các đối tượng trên.
+
+	// Function aboutMe() không có tham số truyền vào.
+	// Khi truy xuất đến phương thức say() của một đối tượng bất kỳ trong 3 đối tượng tạo sẵn teacher, student và parent thì phải in ra được giá trị các thuộc tính của đối tượng đó.
+	
+	//Cho 3 số a,b,c. Tính bình phương của (3a+2b-c) sử dụng hàm viết sẵn của bài 1
+	
+	
+
+</script>
+</head>
+<body>
+	
+</body>
+</html>
