@@ -33,7 +33,7 @@
 
 	// Tham số truyền vào là 1 số.
 	// Kết quả là bình phương của số đó.
-	function binh_phuong(x){
+	function bai1(x){
 		return x*x;
 	}
 	// Bài 2. Cho 3 số a, b và c. Viết function tính bình phương của (3a + 2b - c)
@@ -41,13 +41,22 @@
 	// Tham số truyền vào là 3 số a, b, c.
 	// Kết quả là bình phương của (3a + 2b - c). Sử dụng hàm viết sẵn của Bài 1.
 	
-	function abc_binhphuong(a,b,c){
-		return binh_phuong(3a+2b-c);
+	function bai2(a,b,c){
+		return bai1(3*a+2*b-c);
 	}
 	// Bài 3. Cho 1 chuỗi dài hơn 30 ký tự. Viết 1 function cắt chuỗi, lấy ra 10 ký tự đầu tiên và thêm vào dấu "..." ở cuối chuỗi.
 
 	// Tham số truyền vào là 1 chuỗi dài hơn 30 ký tự.
 	// Kết quả là chuỗi đó sau khi cắt đi còn 10 ký tự, cuối chuỗi có dấu "..." biểu thị là chuỗi bị cắt.
+	var a="012345678910111211314151617181920";
+	if (a.length>10){
+		console.log(a.slice(0,10)+"...");  
+	}
+
+
+
+
+
 	// Bài 4. Viết 1 function có tác dụng biến 1 chuỗi thành viết hoa từ đầu tiên.
 
 	// Tham số truyền vào là 1 chuỗi.
