@@ -11,18 +11,44 @@
 .page-menu img{
 	position: relative;
 	width: 100%;
+	height: 800px;
 	display: block;
 }
-.page-menu{
-	max-width: 100%;
-}
-.logo{
-	position: absolute;
-	top: 25px;
-	left: 125px;
+li#top-menu{
+	margin-left: 75px;
 }
 .logo a{
+	padding-left: 120px;
 	text-decoration: none;
+	font-size: 30px;
+	color: white;
+}
+.cont1-center{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: #666;
+    font-size: 30px;
+}
+.cont2-center{
+	position: absolute;
+    top: 56%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: #666;
+    font-size: 30px;	
+}
+
+.active{
+	border: 5px solid #32a1ca;
+	padding: 0px 10px 0px 10px;
+	color: #32a1ca !important;
+}
+span{
+	color: #32a1ca;
 }
 body{
 	background-color: white;
@@ -33,43 +59,83 @@ body{
 	list-style-type: none;
 	position: absolute;
 	top: 0;
-	right: 0;
-	opacity: 0.7;
+	width: 100%;
 	background-color: #333;
+	padding: 30px;
+	opacity: 0.7;
 }
 li{
+	letter-spacing: 2px;
 	float: left;
 }
 .clear {
 	clear: both;
 }
-li a, .drop-menu{
+li a, .drop-menu,.bot-cont{
 	display: inline-block;
 	color:white;
-	padding: 25px 35px;
+	padding: 10px 20px;
 	text-decoration: none;
 }
-li a:hover, .drop:hover .drop-menu{
+li a:hover,.drop:hover .drop-menu{
 	background-color: #4acf50;
-} 
+	} 
 li.drop{
 	display: inline-block;
 }
-.page-menu__bottom{
-	background-color: #4acf50;
+/*//////////////content bottom////////////////*/
+.services {
+    width: 100%;
+    height: 300px;
+    background-color: #4bcaff;
+    position: absolute;
+    top: 500px;
+}
+.services-text {
+	margin-top: 20px;
+    float: left;
+    position: absolute;
+    top:0;
+}
+.services-text h1{
 	color: white;
-	width: 100%;
-	bottom: 0;
+    font-size: 28px;
+    font-family: serif;
 }
-.page-menu__bottom-content{
-	left: 100px;
+hr {
+    width: 85px;
+    float: left;
+    position: absolute;
+    top: 55px;
+}
+.wrapt-text{
 	width: 1140px;
+	margin: auto;
 }
-.content{
-	padding-left: 25%;
-	width: 25%;
-	float: left;
+.cont-ser ul{
+	color: white;
+	list-style-type: none;
+}
+.cont-ser{
 	overflow: hidden;
+	width: 25%;
+	height: 250px;
+	float: left;
+	margin-top: 75px;
+}
+.cont-ser ul>img{
+	width: 100px;
+    height: 35px;
+}
+.cont-text{
+	font-size: 16px;
+}
+.cont-ser span{
+	color: white !important;
+}
+.cont-title{
+	text-transform: uppercase;
+	padding-bottom: 10px;
 }
 /*services*/
 .drop-services{
@@ -93,11 +159,45 @@ li.drop{
 	display: block;
 }
 /*Menu bar end*/
-.page-menu__bottom{
-	position: absolute;
-	bottom: 0;
-	display: inline-block;
+/*Page-content*/
+.page-content{
+	position: relative;
+	width: 80%;
+	margin:auto;
 }
+.page-content__menu{
+	display: inline;
+	width: 100%;
+	float: left;
+	position: absolute;
+}
+.page-content__menu ul{
+	list-style-type: none;
+	top: 50px;
+	left: 0;
+}
+.port{
+	margin-left: 50px;
+	display: inline-block;
+	margin-top: 50px;
+	font-weight: bold;
+}
+.menu-gallery{
+	float: right;
+}
+.menu-gallery a{
+	text-decoration: none;
+	color: black;
+}
+.menu-gallery a:hover{
+	color: red;
+}
+.fl-r{
+	float: left;
+	margin-left: 30px;
+	margin-top: 50px;
+}
+/*-------------------------*/
 /*Footer*/
 .page-footer {
 	text-align: center;
@@ -111,7 +211,7 @@ li.drop{
 	color: white;
 	font-size: 24px;
 }
-h1,span{
+h1,p{
 	color: white;
 	font-size: 30px;
 	font-weight: bold;

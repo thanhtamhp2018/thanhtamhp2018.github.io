@@ -1,0 +1,20 @@
+.all-pic img{
+	height: 250px;
+	display: block;
+}
+.all-pic{
+	width: 25%;
+	float: left;
+	position: relative;
+}
+.image{
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.all-pic:hover {
+  opacity: 0.3;
+}

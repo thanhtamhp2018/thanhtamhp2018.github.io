@@ -1,0 +1,122 @@
+#wraper{
+	width: 100%;
+	margin: 0px auto;
+}
+.top {
+    width: 100%;
+    height: 850px;
+    position: relative;
+    background-image: url("banner.jpg");
+}
+.menu{
+	width: 100%;
+	background-color: #414c53;
+	height: 100px;
+	position: absolute;
+	opacity: 0.6;
+}
+.menu ul{
+    list-style-type: none;
+}
+.top a{
+    text-decoration: none;
+}
+.menu h1 {
+    display: inline-block;
+    float: left;
+    margin: 36px 165px;
+    text-indent: -25px;
+    font-size: 24px;
+    font-style: initial;
+    color: white;
+}
+.menu span{
+	color: #4bcaff;
+}
+.menu li {
+    list-style: none;
+    float: left;
+    margin: 15px 20px;
+    color: white;
+}
+.hover a:hover{
+    color: red;
+}
+.menu-home {
+    color: #4bcaff !important;
+    border: 1px solid #4bcaff;
+    line-height: 28px;
+    padding-left: 7px;
+    padding-right: 7px;
+    top: 10px;
+}
+.cont1-center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: #666;
+    font-size: 20px;
+}
+.cont2-center{
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: #666;
+    font-size: 20px;    
+}
+/*style div services*/
+.services {
+    width: 100%;
+    height: 300px;
+    background-color: #4bcaff;
+    position: absolute;
+    top: 550px;
+}
+.text-services {
+    width: 250px;
+    height: 221px;
+    background-color: #ccc;
+    float: left;
+    margin-left: 376px;
+    margin-top: 41px;
+    position: relative;
+}
+.text-services h1{
+	color: white;
+    font-size: 28px;
+    font-family: serif;
+}
+hr {
+    width: 55px;
+    float: left;
+    position: absolute;
+    top: 44px;
+}
+.text-services__1{
+	width: 250px;
+	height: 180px;
+	background-color: red;
+	float: left;
+	margin-left: 30px;
+	margin-top: 83px;
+}
+.text-services__2{
+	width: 250px;
+	height: 180px;
+	background-color: blue;
+	float: left;
+	margin-left: 30px;
+	margin-top: 83px;
+}
+.text-services__3{
+	width: 250px;
+	height: 180px;
+	background-color: orange;
+	float: left;
+	margin-left: 30px;
+	margin-top: 83px;
+}
