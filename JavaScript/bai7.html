@@ -1,0 +1,41 @@
+			<!DOCTYPE html>
+			<html>
+			<head>
+				<meta charset="utf-8">
+				<meta http-equiv="X-UA-Compatible" content="IE=edge">
+				<title></title>
+				<link rel="stylesheet" href="">
+			</head>
+			<body>
+				<script>
+					var giaiThua=1;
+					function tinhGiaiThua(n){
+						var n;
+						for (var i = n; i > 0; i--) 
+						{
+							if (n>1000) {
+								return console.log("Số lớn quá em không tính được anh giai ơi");
+							}
+							else
+							{
+								if (i==n) {
+									giaiThua=i;	
+								}
+								else {
+									giaiThua=giaiThua*(i);
+								}
+							}
+						}
+						console.log("Kết quả giai thừa " + n + " là: " + giaiThua);
+					}
+					s="không có gì quý hơn độc lập tự do hạnh phúc";
+					function reverse (s) {
+						var o = '';
+						for (var i = s.length - 1; i >= 0; i--)
+							o += s[i];
+						return o;
+					}
+				</script>
+			</form>
+		</body>
+		</html>
