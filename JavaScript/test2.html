@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>test2</title>
+    <style>
+        h1.drink{
+            color:brown;
+        }
+        p{
+            font-family:sans-serif;
+        }
+        input[type=text], input[type=number] {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+        }
+        input[type=text]:focus, input[type=number]:focus {
+            background-color: #ddd;
+            outline: none;
+        }
+        /* Set a style for all buttons */
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+        }
+
+            button:hover {
+                opacity: 1;
+            }
+
+        /* Extra styles for the cancel button */
+        .cancelbtn {
+            padding: 14px 20px;
+            background-color: #f44336;
+        }
+
+        /* Float cancel and signup buttons and add an equal width */
+        .cancelbtn, .signupbtn {
+            float: left;
+            width: 50%;
+        }
+
+        /* Add padding to container elements */
+        .container {
+            padding: 16px;
+        }
+
+        /* Clear floats */
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        /* Change styles for cancel button and signup button on extra small screens */
+        @media screen and (max-width: 300px) {
+            .cancelbtn, .signupbtn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 class="drink">Mocha Coffe Latte Machiato</h1>
+    <p>Espresso, steamed milk and chocolate syrup, just the way you like it.</p>
+    
+    <form style="border:1px solid #ccc">
+        <div class="container">
+            <label for="name"><b>Your name</b></label>
+            <input type="text" placeholder="Your name" name="name" required>
+
+            <label for="age"><b>Your age</b></label>
+            <input type="number" placeholder="Your age" name="age" required>
+            <div class="clearfix">
+                <button type="button" class="cancelbtn">Cancel</button>
+                <button type="submit" class="submit">Enter</button>
+            </div>
+        </div>
+    </form>
+    
+    <script>
+        function checkAge() {
+            var age;
+            var name;
+
+            if ( age > 14 ) {
+                alert( "Sorry this page is for kids only!" );
+            } else {
+                alert( "Wellcome " + name + "!" );
+            }
+        }
+    </script>
+</body>
+</html>

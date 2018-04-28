@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        .box{
+            padding:15px;
+            border: 5px solid #ff0000;
+            background:white;
+            width:800px;
+            height:600px;
+        }
+        h1{
+            text-transform:uppercase;
+            margin:auto;
+        }
+        img {
+            width: 300px;
+            height: 300px;
+            /* position:  absolute; */
+            padding-right: 15px;
+            float: left;
+        }
+
+        p#p1 {
+            /* position: absolute; */
+            /* float:  left; */
+        }
+
+        p#p2 {
+            /* position:  absolute; */
+            /* float:  left; */
+        }
+
+        p#p3 {
+            /* float:  left; */
+        }
+
+        p#p4 {
+            /* float:  left; */
+        }
+
+        p#p5 {
+            /* float:  left; */
+        }
+
+        p#p6 {
+            /* float: left; */
+        }   
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        Bài tập
+        <h1></h1>
+        <div class="box">
+            <p id="p1">
+                <img src="Image/biki1.jpg" alt="Alternate Text" />
+                Tạo 1 trang HTML với nội dung là 3 đoạn văn. Hãy viết các function có tác dụng như sau:
+            </p>
+            <p id="p2" class="no-img">
+                function changeFontSize(x): Thay đổi kích thước font chữ của cả 3 đoạn văn thành x pixels.
+            </p>
+            <p id="p3" class="no-img">
+                function increaseFontSize(paragraph): Tăng kích thước font chữ của đoạn văn mong muốn (paragraph) lên 1 pixel so với kích thước hiện tại, kích thước tăng lên không được vượt quá 30 pixels (Sử dụng sau khi gọi hàm changeFontSize()).
+            </p>
+            <p id="p4" class="no-img">
+                function decreaseFontSize(paragraph): Giảm kích thước font chữ của đoạn văn mong muốn (paragraph) xuống 1 pixels so với kích thước hiện tại, kích thước giảm xuống không vượt quá 10 pixels (Sử dụng sau khi gọi hàm changeFontSize()).
+            </p>
+            <p id="p5" class="no-img">
+                function changeColor(): Đổi màu chữ của 3 đoạn văn theo thứ tự xanh, vàng, đỏ.
+                function changeBgColor(color): Thay đổi màu nền của trang thành màu color.
+            </p>
+            <p id="p6" class="no-img">
+                function copyContent(paragraph1, paragraph2): Thay đổi nội dung của đoạn văn paragraph1 thành giống nội dung của đoạn văn paragraph2.
+            </p>
+        </div>
+    </div>
+
+
+
+
+
+</html>

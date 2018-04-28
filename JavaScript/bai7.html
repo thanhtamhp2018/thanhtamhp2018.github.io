@@ -1,41 +1,603 @@
-			<!DOCTYPE html>
-			<html>
-			<head>
-				<meta charset="utf-8">
-				<meta http-equiv="X-UA-Compatible" content="IE=edge">
-				<title></title>
-				<link rel="stylesheet" href="">
-			</head>
-			<body>
-				<script>
-					var giaiThua=1;
-					function tinhGiaiThua(n){
-						var n;
-						for (var i = n; i > 0; i--) 
-						{
-							if (n>1000) {
-								return console.log("Số lớn quá em không tính được anh giai ơi");
-							}
-							else
-							{
-								if (i==n) {
-									giaiThua=i;	
-								}
-								else {
-									giaiThua=giaiThua*(i);
-								}
-							}
-						}
-						console.log("Kết quả giai thừa " + n + " là: " + giaiThua);
-					}
-					s="không có gì quý hơn độc lập tự do hạnh phúc";
-					function reverse (s) {
-						var o = '';
-						for (var i = s.length - 1; i >= 0; i--)
-							o += s[i];
-						return o;
-					}
-				</script>
-			</form>
-		</body>
-		</html>
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <script>
+        //Tính giai thừa
+        var giaiThua = 1;
+        function tinhGiaiThua(n) {
+            var n;
+            for (var i = n; i > 0; i--) {
+                if (n > 1000) {
+                    return console.log("Số lớn quá em không tính được anh giai ơi");
+                }
+                else {
+                    if (i == n) {
+                        giaiThua = i;
+                    }
+                    else {
+                        giaiThua = giaiThua * (i);
+                    }
+                }
+            }
+            console.log("Kết quả giai thừa " + n + " là: " + giaiThua);
+        }
+        //Đảo ngược chuỗi
+        function reverse(s) {
+            var o = '';
+            for (var i = s.length - 1; i >= 0; i--)
+                o += s[i];
+            return o;
+        }
+        //Sao chép chuỗi
+        function duplicate(str) {
+            if (typeof str != 'number') {
+                return 'không phải là chuỗi số';
+            }
+            var res = str;
+            var i = 1;
+            while (i < 10) {
+                res = res + " - " + str;
+                i++;
+            }
+            document.writeln("Chuỗi được sao chép 10 lần: " + res + ".");
+        }
+        //Sắp xếp hiển thị danh sách
+        function sortList(list) {
+            var res = '';
+            list = list.sort();
+            for (var i = 0; i < list.length; i++) {
+                res += i + ". " + list[i] + "." + "<br>";
+            }
+            document.writeln("Danh sách sau khi sắp xếp là: <br>" + res);
+        }
+        //Tăng gấp đôi giá trị số
+        function doubleNum(arr) {
+            for (var i = 0; i < arr.length; i++) {
+                if (typeof arr[i] != 'number') {
+                    return "Không phải là mảng các số";
+                }
+            }
+            var res = [];
+            for (var i = 0; i < arr.length; i++) {
+                res.push(arr[i] * 2);
+            }
+            document.writeln("Chuỗi sau khi gấp đôi giá trị: (" + res + ")<clear><br>");
+        }
+        //Chia phần tử trong mảng cho 2 lấy phần dư đưa vào mảng
+        function divisionNum(arr) {
+            for (var i = 0; i < arr.length; i++) {
+                if (typeof arr[i] != 'number') {
+                    return "Không phải là mảng các số";
+                }
+            }
+            var res = [];
+            for (var i = 0; i < arr.length; i++) {
+                res.push(arr[i] % 2);
+            }
+            document.writeln("Chuỗi sau khi gấp đôi giá trị: (" + res + ")<clear><br>");
+        }
+    </script>
+</body>
+</html>            <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <script>
+        //Tính giai thừa
+        var giaiThua = 1;
+        function tinhGiaiThua(n) {
+            var n;
+            for (var i = n; i > 0; i--) {
+                if (n > 1000) {
+                    return console.log("Số lớn quá em không tính được anh giai ơi");
+                }
+                else {
+                    if (i == n) {
+                        giaiThua = i;
+                    }
+                    else {
+                        giaiThua = giaiThua * (i);
+                    }
+                }
+            }
+            console.log("Kết quả giai thừa " + n + " là: " + giaiThua);
+        }
+        //Đảo ngược chuỗi
+        function reverse(s) {
+            var o = '';
+            for (var i = s.length - 1; i >= 0; i--)
+                o += s[i];
+            return o;
+        }
+        //Sao chép chuỗi
+        function duplicate(str) {
+            if (typeof str != 'number') {
+                return 'không phải là chuỗi số';
+            }
+            var res = str;
+            var i = 1;
+            while (i < 10) {
+                res = res + " - " + str;
+                i++;
+            }
+            document.writeln("Chuỗi được sao chép 10 lần: " + res + ".");
+        }
+        //Sắp xếp hiển thị danh sách
+        function sortList(list) {
+            var res = '';
+            list = list.sort();
+            for (var i = 0; i < list.length; i++) {
+                res += i + ". " + list[i] + "." + "<br>";
+            }
+            document.writeln("Danh sách sau khi sắp xếp là: <br>" + res);
+        }
+        //Tăng gấp đôi giá trị số
+        function doubleNum(arr) {
+            for (var i = 0; i < arr.length; i++) {
+                if (typeof arr[i] != 'number') {
+                    return "Không phải là mảng các số";
+                }
+            }
+            var res = [];
+            for (var i = 0; i < arr.length; i++) {
+                res.push(arr[i] * 2);
+            }
+            document.writeln("Chuỗi sau khi gấp đôi giá trị: (" + res + ")<clear><br>");
+        }
+        //Chia phần tử trong mảng cho 2 lấy phần dư đưa vào mảng
+        function divisionNum(arr) {
+            for (var i = 0; i < arr.length; i++) {
+                if (typeof arr[i] != 'number') {
+                    return "Không phải là mảng các số";
+                }
+            }
+            var res = [];
+            for (var i = 0; i < arr.length; i++) {
+                res.push(arr[i] % 2);
+            }
+            document.writeln("Chuỗi sau khi gấp đôi giá trị: (" + res + ")<clear><br>");
+        }
+    </script>
+</body>
+</html>            <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <script>
+        //Tính giai thừa
+        var giaiThua = 1;
+        function tinhGiaiThua(n) {
+            var n;
+            for (var i = n; i > 0; i--) {
+                if (n > 1000) {
+                    return console.log("Số lớn quá em không tính được anh giai ơi");
+                }
+                else {
+                    if (i == n) {
+                        giaiThua = i;
+                    }
+                    else {
+                        giaiThua = giaiThua * (i);
+                    }
+                }
+            }
+            console.log("Kết quả giai thừa " + n + " là: " + giaiThua);
+        }
+        //Đảo ngược chuỗi
+        function reverse(s) {
+            var o = '';
+            for (var i = s.length - 1; i >= 0; i--)
+                o += s[i];
+            return o;
+        }
+        //Sao chép chuỗi
+        function duplicate(str) {
+            if (typeof str != 'number') {
+                return 'không phải là chuỗi số';
+            }
+            var res = str;
+            var i = 1;
+            while (i < 10) {
+                res = res + " - " + str;
+                i++;
+            }
+            document.writeln("Chuỗi được sao chép 10 lần: " + res + ".");
+        }
+        //Sắp xếp hiển thị danh sách
+        function sortList(list) {
+            var res = '';
+            list = list.sort();
+            for (var i = 0; i < list.length; i++) {
+                res += i + ". " + list[i] + "." + "<br>";
+            }
+            document.writeln("Danh sách sau khi sắp xếp là: <br>" + res);
+        }
+        //Tăng gấp đôi giá trị số
+        function doubleNum(arr) {
+            for (var i = 0; i < arr.length; i++) {
+                if (typeof arr[i] != 'number') {
+                    return "Không phải là mảng các số";
+                }
+            }
+            var res = [];
+            for (var i = 0; i < arr.length; i++) {
+                res.push(arr[i] * 2);
+            }
+            document.writeln("Chuỗi sau khi gấp đôi giá trị: (" + res + ")<clear><br>");
+        }
+        //Chia phần tử trong mảng cho 2 lấy phần dư đưa vào mảng
+        function divisionNum(arr) {
+            for (var i = 0; i < arr.length; i++) {
+                if (typeof arr[i] != 'number') {
+                    return "Không phải là mảng các số";
+                }
+            }
+            var res = [];
+            for (var i = 0; i < arr.length; i++) {
+                res.push(arr[i] % 2);
+            }
+            document.writeln("Chuỗi sau khi gấp đôi giá trị: (" + res + ")<clear><br>");
+        }
+    </script>
+</body>
+</html>            <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <script>
+        //Tính giai thừa
+        var giaiThua = 1;
+        function tinhGiaiThua(n) {
+            var n;
+            for (var i = n; i > 0; i--) {
+                if (n > 1000) {
+                    return console.log("Số lớn quá em không tính được anh giai ơi");
+                }
+                else {
+                    if (i == n) {
+                        giaiThua = i;
+                    }
+                    else {
+                        giaiThua = giaiThua * (i);
+                    }
+                }
+            }
+            console.log("Kết quả giai thừa " + n + " là: " + giaiThua);
+        }
+        //Đảo ngược chuỗi
+        function reverse(s) {
+            var o = '';
+            for (var i = s.length - 1; i >= 0; i--)
+                o += s[i];
+            return o;
+        }
+        //Sao chép chuỗi
+        function duplicate(str) {
+            if (typeof str != 'number') {
+                return 'không phải là chuỗi số';
+            }
+            var res = str;
+            var i = 1;
+            while (i < 10) {
+                res = res + " - " + str;
+                i++;
+            }
+            document.writeln("Chuỗi được sao chép 10 lần: " + res + ".");
+        }
+        //Sắp xếp hiển thị danh sách
+        function sortList(list) {
+            var res = '';
+            list = list.sort();
+            for (var i = 0; i < list.length; i++) {
+                res += i + ". " + list[i] + "." + "<br>";
+            }
+            document.writeln("Danh sách sau khi sắp xếp là: <br>" + res);
+        }
+        //Tăng gấp đôi giá trị số
+        function doubleNum(arr) {
+            for (var i = 0; i < arr.length; i++) {
+                if (typeof arr[i] != 'number') {
+                    return "Không phải là mảng các số";
+                }
+            }
+            var res = [];
+            for (var i = 0; i < arr.length; i++) {
+                res.push(arr[i] * 2);
+            }
+            document.writeln("Chuỗi sau khi gấp đôi giá trị: (" + res + ")<clear><br>");
+        }
+        //Chia phần tử trong mảng cho 2 lấy phần dư đưa vào mảng
+        function divisionNum(arr) {
+            for (var i = 0; i < arr.length; i++) {
+                if (typeof arr[i] != 'number') {
+                    return "Không phải là mảng các số";
+                }
+            }
+            var res = [];
+            for (var i = 0; i < arr.length; i++) {
+                res.push(arr[i] % 2);
+            }
+            document.writeln("Chuỗi sau khi gấp đôi giá trị: (" + res + ")<clear><br>");
+        }
+    </script>
+</body>
+</html>            <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <script>
+        //Tính giai thừa
+        var giaiThua = 1;
+        function tinhGiaiThua(n) {
+            var n;
+            for (var i = n; i > 0; i--) {
+                if (n > 1000) {
+                    return console.log("Số lớn quá em không tính được anh giai ơi");
+                }
+                else {
+                    if (i == n) {
+                        giaiThua = i;
+                    }
+                    else {
+                        giaiThua = giaiThua * (i);
+                    }
+                }
+            }
+            console.log("Kết quả giai thừa " + n + " là: " + giaiThua);
+        }
+        //Đảo ngược chuỗi
+        function reverse(s) {
+            var o = '';
+            for (var i = s.length - 1; i >= 0; i--)
+                o += s[i];
+            return o;
+        }
+        //Sao chép chuỗi
+        function duplicate(str) {
+            if (typeof str != 'number') {
+                return 'không phải là chuỗi số';
+            }
+            var res = str;
+            var i = 1;
+            while (i < 10) {
+                res = res + " - " + str;
+                i++;
+            }
+            document.writeln("Chuỗi được sao chép 10 lần: " + res + ".");
+        }
+        //Sắp xếp hiển thị danh sách
+        function sortList(list) {
+            var res = '';
+            list = list.sort();
+            for (var i = 0; i < list.length; i++) {
+                res += i + ". " + list[i] + "." + "<br>";
+            }
+            document.writeln("Danh sách sau khi sắp xếp là: <br>" + res);
+        }
+        //Tăng gấp đôi giá trị số
+        function doubleNum(arr) {
+            for (var i = 0; i < arr.length; i++) {
+                if (typeof arr[i] != 'number') {
+                    return "Không phải là mảng các số";
+                }
+            }
+            var res = [];
+            for (var i = 0; i < arr.length; i++) {
+                res.push(arr[i] * 2);
+            }
+            document.writeln("Chuỗi sau khi gấp đôi giá trị: (" + res + ")<clear><br>");
+        }
+        //Chia phần tử trong mảng cho 2 lấy phần dư đưa vào mảng
+        function divisionNum(arr) {
+            for (var i = 0; i < arr.length; i++) {
+                if (typeof arr[i] != 'number') {
+                    return "Không phải là mảng các số";
+                }
+            }
+            var res = [];
+            for (var i = 0; i < arr.length; i++) {
+                res.push(arr[i] % 2);
+            }
+            document.writeln("Chuỗi sau khi gấp đôi giá trị: (" + res + ")<clear><br>");
+        }
+    </script>
+</body>
+</html>            <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <script>
+        //Tính giai thừa
+        var giaiThua = 1;
+        function tinhGiaiThua(n) {
+            var n;
+            for (var i = n; i > 0; i--) {
+                if (n > 1000) {
+                    return console.log("Số lớn quá em không tính được anh giai ơi");
+                }
+                else {
+                    if (i == n) {
+                        giaiThua = i;
+                    }
+                    else {
+                        giaiThua = giaiThua * (i);
+                    }
+                }
+            }
+            console.log("Kết quả giai thừa " + n + " là: " + giaiThua);
+        }
+        //Đảo ngược chuỗi
+        function reverse(s) {
+            var o = '';
+            for (var i = s.length - 1; i >= 0; i--)
+                o += s[i];
+            return o;
+        }
+        //Sao chép chuỗi
+        function duplicate(str) {
+            if (typeof str != 'number') {
+                return 'không phải là chuỗi số';
+            }
+            var res = str;
+            var i = 1;
+            while (i < 10) {
+                res = res + " - " + str;
+                i++;
+            }
+            document.writeln("Chuỗi được sao chép 10 lần: " + res + ".");
+        }
+        //Sắp xếp hiển thị danh sách
+        function sortList(list) {
+            var res = '';
+            list = list.sort();
+            for (var i = 0; i < list.length; i++) {
+                res += i + ". " + list[i] + "." + "<br>";
+            }
+            document.writeln("Danh sách sau khi sắp xếp là: <br>" + res);
+        }
+        //Tăng gấp đôi giá trị số
+        function doubleNum(arr) {
+            for (var i = 0; i < arr.length; i++) {
+                if (typeof arr[i] != 'number') {
+                    return "Không phải là mảng các số";
+                }
+            }
+            var res = [];
+            for (var i = 0; i < arr.length; i++) {
+                res.push(arr[i] * 2);
+            }
+            document.writeln("Chuỗi sau khi gấp đôi giá trị: (" + res + ")<clear><br>");
+        }
+        //Chia phần tử trong mảng cho 2 lấy phần dư đưa vào mảng
+        function divisionNum(arr) {
+            for (var i = 0; i < arr.length; i++) {
+                if (typeof arr[i] != 'number') {
+                    return "Không phải là mảng các số";
+                }
+            }
+            var res = [];
+            for (var i = 0; i < arr.length; i++) {
+                res.push(arr[i] % 2);
+            }
+            document.writeln("Chuỗi sau khi gấp đôi giá trị: (" + res + ")<clear><br>");
+        }
+    </script>
+</body>
+</html>            <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <script>
+        //Tính giai thừa
+        var giaiThua = 1;
+        function tinhGiaiThua(n) {
+            var n;
+            for (var i = n; i > 0; i--) {
+                if (n > 1000) {
+                    return console.log("Số lớn quá em không tính được anh giai ơi");
+                }
+                else {
+                    if (i == n) {
+                        giaiThua = i;
+                    }
+                    else {
+                        giaiThua = giaiThua * (i);
+                    }
+                }
+            }
+            console.log("Kết quả giai thừa " + n + " là: " + giaiThua);
+        }
+        //Đảo ngược chuỗi
+        function reverse(s) {
+            var o = '';
+            for (var i = s.length - 1; i >= 0; i--)
+                o += s[i];
+            return o;
+        }
+        //Sao chép chuỗi
+        function duplicate(str) {
+            if (typeof str != 'number') {
+                return 'không phải là chuỗi số';
+            }
+            var res = str;
+            var i = 1;
+            while (i < 10) {
+                res = res + " - " + str;
+                i++;
+            }
+            document.writeln("Chuỗi được sao chép 10 lần: " + res + ".");
+        }
+        //Sắp xếp hiển thị danh sách
+        function sortList(list) {
+            var res = '';
+            list = list.sort();
+            for (var i = 0; i < list.length; i++) {
+                res += i + ". " + list[i] + "." + "<br>";
+            }
+            document.writeln("Danh sách sau khi sắp xếp là: <br>" + res);
+        }
+        //Tăng gấp đôi giá trị số
+        function doubleNum(arr) {
+            for (var i = 0; i < arr.length; i++) {
+                if (typeof arr[i] != 'number') {
+                    return "Không phải là mảng các số";
+                }
+            }
+            var res = [];
+            for (var i = 0; i < arr.length; i++) {
+                res.push(arr[i] * 2);
+            }
+            document.writeln("Mảng sau khi gấp đôi giá trị: [" + res + "]<br>");
+        }
+        //Chia phần tử trong mảng cho 2 lấy phần dư đưa vào mảng
+        function divisionNum(arr) {
+            for (var i = 0; i < arr.length; i++) {
+                if (typeof arr[i] != 'number') {
+                    return "Không phải là mảng các số";
+                }
+            }
+            var res = [];   
+            for (var i = 0; i < arr.length; i++) {
+                res.push(arr[i] % 2);
+            }
+            document.writeln("Mảng sau khi chia lấy dư: [" + res + "]<br>");
+        }
+    </script>
+</body>
+</html>

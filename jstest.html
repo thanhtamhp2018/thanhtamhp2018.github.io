@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>test</title>
+</head>
+<body>
+	<!-- Các toán tử số học -->
+	<script type="text/javascript">
+		var a=33;
+		var b=10;
+		var c="test";
+		var linebreak="<br />";
+
+		document.writeln("a+b=");
+		result=a+b;
+		document.writeln(result);
+		document.writeln(linebreak);
+
+		document.writeln("a-b=");
+		result=a-b;
+		document.writeln(result);
+		document.writeln(linebreak);
+
+		document.writeln("a*b=");
+		result=a*b;
+		document.writeln(result);
+		document.writeln(linebreak);
+		
+		document.writeln("a/b=");
+		result=a/b;
+		document.writeln(result);
+		document.writeln(linebreak);
+
+		document.writeln("a%b=");
+		result=a%b;
+		document.writeln(result);
+		document.writeln(linebreak);
+
+		document.writeln("a+b+c=");
+		result=a+b+c;
+		document.writeln(result);
+		document.writeln(linebreak);
+
+		a=a++;
+		document.writeln("a++=");
+		result=a++;
+		document.writeln(result);
+		document.writeln(linebreak);
+
+		b=b--;
+		document.writeln("b--=");
+		result=b--;
+		document.writeln(result);
+		document.writeln(linebreak);
+	</script>
+					<!-- Kết quả:
+					a + b = 43 
+				a - b = 23 
+				a / b = 3.3 
+				a % b = 3 
+				a + b + c = 43Test 
+				a++ = 33 
+				b- -= 10 -->
+	<!-- /////////////////////////////////////////////// -->
+	<!-- Các toán tử so sánh -->
+	<script type="text/javascript">
+		var a=33;
+		var b=10;
+		var linebreak="<br />";
+
+		document.writeln("(a == b) =>");
+		result=(a==b);
+		document.writeln(result);
+		document.writeln(linebreak);
+
+		document.writeln("(a < b) =>");
+		result=(a<b);
+		document.writeln(result);
+		document.writeln(linebreak);
+
+		document.writeln("(a > b) =>");
+		result=(a>b);
+		document.writeln(result);
+		document.writeln(linebreak);
+		
+		document.writeln("(a != b) =>");
+		result=(a!=b);
+		document.writeln(result);
+		document.writeln(linebreak);
+
+		document.writeln("(a >= b) =>");
+		result=(a>=b);
+		document.writeln(result);
+		document.writeln(linebreak);
+
+		document.writeln("(a <= b) =>");
+		result=(a<=b);
+		document.writeln(result);
+		document.writeln(linebreak);
+	</script>
+			<!-- Kết quả
+		(a == b) => false 
+		(a < b) => true 
+		(a > b) => false 
+		(a != b) => true 
+		(a >= b) => false 
+		a <= b) => true -->
+<!-- ////////////////////////////////////////// -->
+	<!-- Các toán tử logic -->
+	<script type="text/javascript">
+         //<!--
+            var a = true;
+            var b = false;
+            var linebreak = "<br />";
+      
+            document.write("(a && b) => ");
+            result = (a && b);
+            document.write(result);
+            document.write(linebreak);
+         
+            document.write("(a || b) => ");
+            result = (a || b);
+            document.write(result);
+            document.write(linebreak);
+         
+            document.write("!(a && b) => ");
+            result = (!(a && b));
+            document.write(result);
+            document.write(linebreak);
+         //-->
+      </script>
+		      <!-- Kết quả:
+		(a && b) => false 
+		(a || b) => true 
+		!(a && b) => true -->
+
+<!-- ////////////////////////////////////// -->
+      <!-- Các toán tử thao tác bit(bitwise) -->
+      <script type="text/javascript">
+         //<!--
+            var a = 2; // Bit presentation 10
+            var b = 3; // Bit presentation 11
+            var linebreak = "<br />";
+         
+            document.write("(a & b) => ");
+            result = (a & b);
+            document.write(result);
+            document.write(linebreak);
+         
+            document.write("(a | b) => ");
+            result = (a | b);
+            document.write(result);
+            document.write(linebreak);
+         
+            document.write("(a ^ b) => ");
+            result = (a ^ b);
+            document.write(result);
+            document.write(linebreak);
+         
+            document.write("(~b) => ");
+            result = (~b);
+            document.write(result);
+            document.write(linebreak);
+         
+            document.write("(a << b) => ");
+            result = (a << b);
+            document.write(result);
+            document.write(linebreak);
+         
+            document.write("(a >> b) => ");
+            result = (a >> b);
+            document.write(result);
+            document.write(linebreak);
+         //-->
+      </script>
+			<!-- Kết quả:
+			(a & b) => 2 
+			(a | b) => 3 
+			(a ^ b) => 1 
+			(~b) => -4 
+			(a << b) => 16 
+			(a >> b) => 0 -->
+<!-- //////////////////////////////////// -->
+<!-- Các toán tử gán -->
+<script type="text/javascript">
+         //<!--
+            var a = 33;
+            var b = 10;
+            var linebreak = "<br />";
+         
+            document.write("Value of a => (a = b) => ");
+            result = (a = b);
+            document.write(result);
+            document.write(linebreak);
+         
+            document.write("Value of a => (a += b) => ");
+            result = (a += b);
+            document.write(result);
+            document.write(linebreak);
+         
+            document.write("Value of a => (a -= b) => ");
+            result = (a -= b);
+            document.write(result);
+            document.write(linebreak);
+         
+            document.write("Value of a => (a *= b) => ");
+            result = (a *= b);
+            document.write(result);
+            document.write(linebreak);
+         
+            document.write("Value of a => (a /= b) => ");
+            result = (a /= b);
+            document.write(result);
+            document.write(linebreak);
+         
+            document.write("Value of a => (a %= b) => ");
+            result = (a %= b);
+            document.write(result);
+            document.write(linebreak);
+         //-->
+      </script>
+				      <!-- Kết quả:
+				      Value of a => (a = b) => 10
+				Value of a => (a += b) => 20 
+				Value of a => (a -= b) => 10 
+				Value of a => (a *= b) => 100 
+				Value of a => (a /= b) => 10
+				Value of a => (a %= b) => 0 -->
+<!-- ////////////////////////////////////////////////////////////// -->
+<!-- Toán tử hỗn hợp -->
+<script type="text/javascript">
+         //<!--
+            var a = 10;
+            var b = 20;
+            var linebreak = "<br />";
+         
+            document.write ("((a > b) ? 100 : 200) => ");
+            result = (a > b) ? 100 : 200;
+            document.write(result);
+            document.write(linebreak);
+         
+            document.write ("((a < b) ? 100 : 200) => ");
+            result = (a < b) ? 100 : 200;
+            document.write(result);
+            document.write(linebreak);
+         //-->
+      </script>
+			<!-- Kết quả:
+			((a > b) ? 100 : 200) => 200 
+			((a < b) ? 100 : 200) => 100 -->
+<!-- ////////////////////////////////////////////////////////////////// -->
+<!-- Toán tử typeof -->
+<!-- Number	"number"
+String	"string"
+Boolean	"boolean"
+Object	"object"
+Hàm	"function"
+Undefined	"undefined"
+Null	"object" -->
+ <script type="text/javascript">
+         //<!--
+         a.toFixed(fractionDigits: int)
+            var a = 10;
+            var b = "String";
+            var linebreak = "<br />";
+         
+            result = (typeof b == "string" ? "B is String" : "B is Numeric");
+            document.write("Result => ");
+            document.write(result);
+            document.write(linebreak);
+         
+            result = (typeof a == "string" ? "A is String" : "A is Numeric");
+            document.write("Result => ");
+            document.write(result);
+            document.write(linebreak);
+         //-->
+      </script>
+			      <!-- Kết quả:
+			      Result => B is String 
+			Result => A is Numeric -->
+</body>
+</html>

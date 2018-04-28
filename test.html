@@ -4,33 +4,102 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<style>
-    /* The element to apply the animation to */
-div {
-    width: 100px;
-    height: 100px;
-    position: relative;
+  *{
+    box-sizing: border-box;
+}
+body{
+    width: 1000px;
+}
+div{
+    border:1px solid yellow;
+}
+.rectangle1{
+    width: 500px;
+    /*height: 100px;*/
+    /*float: left;*/
+    background-color: green;
+}
+.rectangle2{
+    width: 500px;
+    /*height: 200px;*/
+    /*float: left;*/
+    background-color: blue;
+}
+.rectangle3{
+    width: 800px;
+    /*height: 300px;*/
     background-color: red;
-    -webkit-animation-name: example;
-    -webkit-animation: 1s ease infinite;
-    animation-name: example;
-    animation: 1s ease infinite;
 }
-
-    /* The animation code */
-@-webkit-keyframes example {
-    0%   {background-color:red; left:0px; top:0px;}
-    25%  {background-color:yellow; left:200px; top:0px;}
-    50%  {background-color:blue; left:200px; top:200px;}
-    75%  {background-color:green; left:0px; top:200px;}
-    100% {background-color:red; left:0px; top:0px;}
-}
-
-	</style>
+</style>
 </head>
 <body>
-<div>
-    
-</div>
+    <div>
+        <p class="rectangle1">div1</p>
+        <p class="rectangle2">div2</p>
+        <p class="rectangle3">div3</p>
+    </div>
+    <div class="rectangle1">rec1</div>
+    <div class="rectangle2">rec2</div>
+    <div class="rectangle3">rec3</div>
+    <script type="text/javascript">
+        //cấu trúc if else
+        // var age=10;
 
-</body>
-</html>
+        // if(age>18){
+        //     document.writeln("text...: DOMString");
+        // }else{
+        //     document.writeln("No, don't do that")
+        // }
+        ////////////////////////////////////////////////////////////////
+        //Cấu trúc switch case
+        // var grade="A";
+        // document.writeln("Entering switch block<br>");
+        // switch (grade) {
+        //     case 'A': document.writeln("Good job.<br>");
+        //     // statements_1
+        //     break;
+        //     case 'D': document.writeln("Pretty good.<br>");
+        //     // statements_1
+        //     break;
+        //     case 'C': document.writeln("Passed.<br>");
+        //     // statements_1
+        //     break;
+        //     case 'D': document.writeln("Not so good.<br>");
+        //     // statements_1
+        //     break;
+        //     case 'E': document.writeln("Failed.<br>");
+        //     // statements_1
+        //     break;
+        //     default: document.writeln("Unknown grade.<br>")
+        //         // statements_def
+        //         break;
+        //     }
+        //     document.writeln("Exiting switch block.")
+        //////////////////////////////////////////////////////////////////
+        //Cấu trúc while
+        // var count = 0;
+        // document.writeln("Starting loop.<br>");
+        // while (count<=10) {
+        //     // statement
+        //     document.writeln("Current count: "+count+"<br>");
+        //     count++;
+        // }
+        // document.writeln("Loop stoped.")
+
+////////////////////////////////////////////////////////////////////////////////
+var color = prompt("Nhập màu cần kiểm tra");
+ 
+switch (color){
+    case 'red' : 
+    case 'yellow' : 
+    case 'blue' : 
+        document.write("Bạn nhập màu " + color + ", đúng rồi đó");
+        break; 
+    default :
+        document.write("Màu bạn nhập không có trong hệ thống");
+}
+
+
+        </script>
+    </body>
+    </html>

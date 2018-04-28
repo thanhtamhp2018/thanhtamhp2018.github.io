@@ -1,4 +1,4 @@
-﻿body {
+﻿/*body {
     color:blue !important;
 }
 h1 {
@@ -6,4 +6,32 @@ h1 {
 }
 h2 {
     color: red;
+}*/
+h1,h2{
+    color:yellow;
+    background-color:purple;
+}
+h1::after{
+    content:"";
+    border:5px solid chartreuse;
+    width:50%;
+}
+.para1{
+    color:rebeccapurple;
+    background-color:pink;
+}
+.para2{
+    color:blueviolet;
+    background-color:bisque;
+}
+.para3{
+    color:chartreuse;
+    background-color:chocolate;
+}
+.para1::first-letter{
+    font-size:50px;
+}
+.para2::first-line{
+    color:green;
+    font-size:30px;
 }

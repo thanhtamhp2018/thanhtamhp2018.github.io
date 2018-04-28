@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <p>
+        <!--Bài 1: Một số được gọi là may mắnn nếu nó thỏa mãn các điều kiện sau:
+        - tổng là chữ số chẵn, ví dụ số có 2 chữ số, 4 chữ số...
+        - tổng 1/2 chữ số đầu bằng 1/2 chữ số sau. ví dụ:
+        số 1230 là số may mắn vì 1+2=3+0
+        số 123456 không phải là số may mắn vì 1+2+3!=4+5+6
+        hãy viết 1 function để kiểm tra 1 số có phải là số may mắn hay không
+        - tham số truyền vào là 1 số lớn hơn 10
+        - kết quả trả về là true nếu là số may mắn false nếu không phải-->
+        <!--input: number, num.length>=2,tổng các chữ số là số chẵn, tổng 1/2 các số đầu = tổng 1/2 các chữ số sau, number>10.
+        output: true or false-->
+        <!--Bài 2: Cho một mảng gồm nhiều phần tử, mỗi phần tử là một chuỗi (string). Hãy viết một function để tìm các chuỗi có độ dài lớn nhất trong mảng:
+        - tham số truyền vào là một mảng các chuỗi có ít nhất một phần tử
+        - kết quả trả về là một mảng chứa các phần tử có đọ dài lớn nhất.-->
+    </p>
+    <script>
+        //Bai 1:
+        function luckkyNumber( num ) {
+            //Kiểm tra có phải là số và lớn hơn 10 hay không
+            if ( typeof num == 'number' && num > 10 ) {
+                var str = num.toString();//chuyển thành chuỗi
+                var str1 = str.slice( 0, str.length / 2 );
+                var str2 = str.slice( str.length / 2 );
+                if ( str.length % 2 == 0 ) {//nếu số các chữ số là chẵn vd 2,4,6,8... chữ số
+                    var sumArr, arr1 = 0, arr2 = 0;
+                    for ( var i = 0; i < str1.length; i++ ) {//tính tổng các chữ số
+                        arr1 += parseInt( str1[i] );
+                    }
+                    for ( var i = 0; i < str2.length; i++ ) {
+                        arr2 += parseInt( str2[i] );
+                    }
+
+                    sumArr = arr1 + arr2;
+                    if ( sumArr % 2 == 0 && arr1 == arr2 ) {//kiểm tra nếu tổng là số chẵn
+                        return "True";
+                    } else {
+                        return "False!";
+                    }
+                } else {
+                    return "False";
+                }
+            } else {
+                return "False";
+            }
+        }
+        ///////////////////////////////////////////////////////////////////////////////////
+        //Bai 2:
+        function checkString( arr ) {
+            var res = [];
+            //lay ra do dai lon nhat cua phan tu trong mang
+            var max = 0;
+            for ( var i = 0; i < arr.length; i++ ) {
+                console.log( arr[i] );
+                if ( arr[i].length > max ) {
+                    max = arr[i].length;
+                }
+            }
+            console.log( max );    
+
+            //sau khi co do dai, kiem tra arr dau tien co bao nhieu phan tu cung do dai
+            for ( var i = 0; i < arr.length; i++ ) {
+                if ( arr[i].length==max ) {//res=arr.filter(item()=> item.length==max);
+                    res.push( arr[i] );
+                }
+            }
+            console.log( res );    
+            document.writeln( "Mang cua cac phan tu lon nhat: [" + res + "].<br>" );    
+        }    
+        //arr = ["chim", "chuootj", "ga", "cho", "5984375873497534987"];
+        //checkString(arr);
+    </script>
+</body>
+</html>
