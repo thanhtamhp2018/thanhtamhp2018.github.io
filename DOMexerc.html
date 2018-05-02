@@ -9,11 +9,11 @@
 <body>
     <h1>Demo Document Object Model</h1>
     <h2>//changeFontSize(20);<br />
-        //increaseFontSize(); <br />
-        //decreaseFontSize(); <br />
-        //changeColorText(); <br />
+        //increaseFontSize("p1"); <br />
+        //decreaseFontSize("p2"); <br />
+        //changeColorText("blue","yellow","red");<br />
         //changeBgColor("red"); <br />
-        //coppyContent();<br /></h2>
+        //copyContent("p2","p1");<br /></h2>
     <div class="wrap">
 
         <p1 id="p1" class="all_p">
@@ -40,25 +40,25 @@
             return x;
         }
         //changeFontSize(20);
-        function increaseFontSize() {
-            var sizeInc = document.getElementById( "p1" );
+        function increaseFontSize(p) {
+            var sizeInc = document.getElementById( p );
             if ( parseInt( sizeInc.style.fontSize ) < parseInt( 30 + "px" ) ) {
                 sizeInc.style.fontSize = ( parseFloat( sizeInc.style.fontSize ) + 1 ) + 'px';
             }
         }
         //increaseFontSize()
-        function decreaseFontSize() {
-            var sizeDec = document.getElementById( "p3" );
+        function decreaseFontSize(p) {
+            var sizeDec = document.getElementById( p );
             if ( parseInt( sizeDec.style.fontSize ) > parseInt( 10 + "px" ) ) {
                 sizeDec.style.fontSize = ( parseFloat( sizeDec.style.fontSize ) - 1 ) + 'px';
             }
         }
         //decreaseFontSize()
-        function changeColorText() {
+        function changeColorText(a,b,c) {
             var changeColor = document.getElementsByClassName( "all_p" );
-            changeColor[0].style.color = "cyan";
-            changeColor[1].style.color = "pink";
-            changeColor[2].style.color = "gray";
+            changeColor[0].style.color = a;
+            changeColor[1].style.color = b;
+            changeColor[2].style.color = c;
         }
         //changeColorText()
         function changeBgColor( color ) {
@@ -66,10 +66,10 @@
             changeBg[0].style.backgroundColor = color;
         }
         //changeBgColor("red")
-        function copyContent() {
-            document.getElementById( "p1" ).innerText = document.getElementById( "p2" ).innerText
+        function copyContent(a,b) {
+            document.getElementById( a ).innerText = document.getElementById( b ).innerText;
         }
-            //coppyContent();
+            //copyContent();
     </script>
 </body>
 </html>
