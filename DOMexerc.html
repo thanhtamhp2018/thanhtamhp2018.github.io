@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>DOM</title>
+    <link href="cssDOM.css" rel="stylesheet" />
+</head>
+<body>
+    <h1>Demo Document Object Model</h1>
+    <div class="wrap">
+        <p1 id="p1" class="all_p">
+            In the above picture of a sample layout, we see a on the top of the page and a on the bottom. This paragraph reflects the typical webpage we are used to see, with a logotype on the top of the page, and the footer with some links and copyright notices on the bottom. WordPress users might be accustomed to name this “masthead” and “colophon” respectively.
+            However, HTML5 gives a more semantic meaning to the header and footer elements. A tag can be used in any section or article to include headings, publish date or other introductory content of the article or section. Similarly, the footer can include information about the author of each article, links to related content, etc.
+        <br></p1>
+        <p2 id="p2" class="all_p">
+            We use for a content block that is stand-alone and makes sense without the need to give further context. A tag is used to divide either the page into different subject areas, or to section an individual article. We could say that is a more generic tag than – it denotes content that is related, but not necessarily self-contained, while an article always has the stand-alone property.
+        <br>
+        </p2>
+        <p3 id="p3" class="all_p">
+            A modern website will usually have more than one CSS files. The main stylesheet, a bootstrap or other grid stylesheet, maybe a few plugins or themes stylesheets, etc. Each CSS file makes a separate HTTP request, slowing down the load time of your site. It is a recommended practice, in the final product, to minify and combine all your CSS files for improved load times. It is also usual to keep the unminified file, possibly in a “css/src” folder, because editing/debugging minified files is difficult.
+            Similarly, it is recommended to minify and combine your JavaScript files. It is also a recommended practice to move them to the bottom of the document, just above the closing tag, so that the browser starts to load them after it has served the rest of the document.
+        <br>
+        </p3>
+    </div>
+    <script>
+        function changeFontSize(x) {
+            var size = document.getElementsByClassName( "all_p" );
+            size[0].style.fontSize = x + "px";
+            size[1].style.fontSize = x + "px";
+            size[2].style.fontSize = x + "px";
+            return x;
+        }
+        //changeFontSize(20);
+        function increaseFontSize() {
+            var sizeInc = document.getElementById( "p1" );
+            if ( parseInt( sizeInc.style.fontSize ) < parseInt( 30 + "px" ) ) {
+                sizeInc.style.fontSize = ( parseFloat( sizeInc.style.fontSize ) + 1 ) + 'px';
+            }
+        }
+        //increaseFontSize()
+        function decreaseFontSize() {
+            var sizeDec = document.getElementById( "p3" );
+            if ( parseInt( sizeDec.style.fontSize ) > parseInt( 10 + "px" ) ) {
+                sizeDec.style.fontSize = ( parseFloat( sizeDec.style.fontSize ) - 1 ) + 'px';
+            }
+        }
+        //decreaseFontSize()
+        function changeColorText() {
+            var change = document.getElementsByClassName( "all_p" );
+            change[0].style.color = "cyan";
+            change[1].style.color = "pink";
+            change[2].style.color = "gray";
+        }
+        //changeColorText()
+        function changeBgColor(color) {
+            var backG = document.getElementsByTagName( "body" );
+            backG[0].style.backgroundColor=color;
+        }
+        //changeBgColor("red")
+        function copyContent() {
+            document.getElementById( "p1" ).innerText = document.getElementById( "p2" ).innerText
+        }
+        //coppyContent();
+    </script>
+</body>
+</html>

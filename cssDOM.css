@@ -1,0 +1,19 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+}
+
+.wrap {
+    border: 1px solid #ff0000;
+    width: 1000px;
+    margin: auto;
+    letter-spacing:1px;
+    word-spacing:5px;
+    font-size:10px;
+}
+.all_p{
+    text-indent:50px;
+}
