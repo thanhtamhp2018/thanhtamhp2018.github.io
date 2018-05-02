@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-h1 {
+h1,h2 {
     text-align: center;
 }
 
@@ -13,7 +13,4 @@ h1 {
     letter-spacing:1px;
     word-spacing:5px;
     font-size:10px;
-}
-.all_p{
-    text-indent:50px;
 }
