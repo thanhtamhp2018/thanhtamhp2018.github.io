@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="cal.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <form name="Calculator">
+        <input class="display" name="display" placeholder="0" />
+        <br />
+        <input class="button" type="button" name="clear" value="C" onclick="btnClear()" />
+        <!--<input class="button" type="button" name="+" value="+" onclick="btnPlus()" />
+    <input class="button" type="button" name="+" value="+" onclick="btnPlus()" />
+    <input class="button" type="button" name="+" value="+" onclick="btnPlus()" />-->
+        <br />
+        <input class="button" type="button" name="7" value="7" onclick="document.Calculetor.display.value +='7'" />
+        <input class="button" type="button" name="8" value="8" onclick="document.Calculetor.display.value +='8'" />
+        <input class="button" type="button" name="9" value="9" onclick="document.Calculetor.display.value +='9'" />
+        <input class="button" type="button" name="+" value="+" onclick="btnPlus()" />
+        <br />
+        <input class="button" type="button" name="4" value="4" onclick="document.Calculetor.display.value +='4'" />
+        <input class="button" type="button" name="5" value="5" onclick="document.Calculetor.display.value +='5'" />
+        <input class="button" type="button" name="6" value="6" onclick="document.Calculetor.display.value +='6'" />
+        <input class="button" type="button" name="-" value="-" onclick="btnMinus()" />
+        <br />
+        <input class="button" type="button" name="1" value="1" onclick="document.Calculetor.display.value +='1'" />
+        <input class="button" type="button" name="2" value="2" onclick="document.Calculetor.display.value +='2'" />
+        <input class="button" type="button" name="3" value="3" onclick="document.Calculetor.display.value +='3'" />
+        <input class="button" type="button" name="*" value="*" onclick="btnMulti()" />
+        <br />
+        <input class="button" type="button" name="0" value="0" onclick="document.Calculetor.display.value +='0'" />
+        <input class="button" type="button" name="." value="." onclick="document.Calculetor.display.value +='.'" />
+        <input class="button" type="button" name="=" value="=" onclick="document.Calculetor.display.value +='='" />
+        <input class="button" type="button" name="*" value="*" onclick="btnMulti()" />
+    </form>
+    <script src="cal.js"></script>
+</body>
+</html>

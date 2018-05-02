@@ -1,0 +1,15 @@
+﻿.display{
+    width:255px;
+    height:60px;
+    text-align:right;
+    font-size:30px;
+    border-radius:8px;
+    margin:3px;
+}
+.button{
+    padding:5px;
+    width:60px;
+    height:60px;
+    font-size:30px;
+    border-radius:8px;
+}
