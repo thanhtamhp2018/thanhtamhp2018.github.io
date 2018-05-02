@@ -46,21 +46,21 @@
                 sizeInc.style.fontSize = ( parseFloat( sizeInc.style.fontSize ) + 1 ) + 'px';
             }
         }
-        //increaseFontSize()
+        //increaseFontSize("p1")
         function decreaseFontSize(p) {
             var sizeDec = document.getElementById( p );
             if ( parseInt( sizeDec.style.fontSize ) > parseInt( 10 + "px" ) ) {
                 sizeDec.style.fontSize = ( parseFloat( sizeDec.style.fontSize ) - 1 ) + 'px';
             }
         }
-        //decreaseFontSize()
+        //decreaseFontSize("p2")
         function changeColorText(a,b,c) {
             var changeColor = document.getElementsByClassName( "all_p" );
             changeColor[0].style.color = a;
             changeColor[1].style.color = b;
             changeColor[2].style.color = c;
         }
-        //changeColorText()
+        //changeColorText("blue","yellow","red");
         function changeBgColor( color ) {
             var changeBg = document.getElementsByTagName( "body" );
             changeBg[0].style.backgroundColor = color;
@@ -69,7 +69,7 @@
         function copyContent(a,b) {
             document.getElementById( a ).innerText = document.getElementById( b ).innerText;
         }
-            //copyContent();
+        //copyContent("p1","p2");
     </script>
 </body>
 </html>
