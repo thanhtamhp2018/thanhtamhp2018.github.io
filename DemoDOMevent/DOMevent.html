@@ -1,40 +1,79 @@
 ﻿<!DOCTYPE html>
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title></title>
-    <link href="cal.css" type="text/css" rel="stylesheet" />
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="cal.css">
 </head>
 <body>
-    <form name="Calculator">
-        <input class="display" name="display" placeholder="0" />
-        <br />
-        <input class="button" type="button" name="clear" value="C" onclick="btnClear()" />
-        <!--<input class="button" type="button" name="+" value="+" onclick="btnPlus()" />
-    <input class="button" type="button" name="+" value="+" onclick="btnPlus()" />
-    <input class="button" type="button" name="+" value="+" onclick="btnPlus()" />-->
-        <br />
-        <input class="button" type="button" name="7" value="7" onclick="document.Calculetor.display.value +='7'" />
-        <input class="button" type="button" name="8" value="8" onclick="document.Calculetor.display.value +='8'" />
-        <input class="button" type="button" name="9" value="9" onclick="document.Calculetor.display.value +='9'" />
-        <input class="button" type="button" name="+" value="+" onclick="btnPlus()" />
-        <br />
-        <input class="button" type="button" name="4" value="4" onclick="document.Calculetor.display.value +='4'" />
-        <input class="button" type="button" name="5" value="5" onclick="document.Calculetor.display.value +='5'" />
-        <input class="button" type="button" name="6" value="6" onclick="document.Calculetor.display.value +='6'" />
-        <input class="button" type="button" name="-" value="-" onclick="btnMinus()" />
-        <br />
-        <input class="button" type="button" name="1" value="1" onclick="document.Calculetor.display.value +='1'" />
-        <input class="button" type="button" name="2" value="2" onclick="document.Calculetor.display.value +='2'" />
-        <input class="button" type="button" name="3" value="3" onclick="document.Calculetor.display.value +='3'" />
-        <input class="button" type="button" name="*" value="*" onclick="btnMulti()" />
-        <br />
-        <input class="button" type="button" name="0" value="0" onclick="document.Calculetor.display.value +='0'" />
-        <input class="button" type="button" name="." value="." onclick="document.Calculetor.display.value +='.'" />
-        <input class="button" type="button" name="=" value="=" onclick="document.Calculetor.display.value +='='" />
-        <input class="button" type="button" name="*" value="*" onclick="btnMulti()" />
-    </form>
-    <script src="cal.js"></script>
+    <div class="wrap">
+        <form name="Calculator">
+            <input class="display" name="display" placeholder="0" />
+            <br />
+            <input class="button" type="button" value="C" onclick="btnClear()" />
+            <input class="button" type="button" value="√2" onclick="btnSquare()" />
+            <input class="button" type="button" value="x2" onclick="btnDouble()" />
+            <input class="button" type="button" value="%" onclick="btnMod()" />
+            <br />
+            <input class="button" type="button" value="7" onclick="document.Calculator.display.value +='7'" />
+            <input class="button" type="button" value="8" onclick="document.Calculator.display.value +='8'" />
+            <input class="button" type="button" value="9" onclick="document.Calculator.display.value +='9'" />
+            <input class="button" type="button" value="+" onclick="btnAdd()" />
+            <br />
+            <input class="button" type="button" value="4" onclick="document.Calculator.display.value +='4'" />
+            <input class="button" type="button" value="5" onclick="document.Calculator.display.value +='5'" />
+            <input class="button" type="button" value="6" onclick="document.Calculator.display.value +='6'" />
+            <input class="button" type="button" value="-" onclick="btnSub()" />
+            <br />
+            <input class="button" type="button" value="1" onclick="document.Calculator.display.value +='1'" />
+            <input class="button" type="button" value="2" onclick="document.Calculator.display.value +='2'" />
+            <input class="button" type="button" value="3" onclick="document.Calculator.display.value +='3'" />
+            <input class="button" type="button" value="*" onclick="btnMult()" />
+            <br />
+            <input class="button" type="button" value="0" onclick="document.Calculator.display.value +='0'" />
+            <input class="button" type="button" value="." onclick="btnDot()" />
+            <input class="button" type="button" value="=" onclick="document.Calculator.display.value = eval( document.Calculator.display.value)" />
+            <input class="button" type="button" value="/" onclick="btnDiv()" />
+        </form>
+    </div>
+    <script>
+        function btnSquare(){
+            document.Calculator.display.value = Math.sqrt(document.Calculator.display.value) ;
+            document.Calculator.display.style.textAlign = "right";
+        }
+        function btnDouble(){
+            document.Calculator.display.value *= document.Calculator.display.value;
+            document.Calculator.display.style.textAlign = "right";
+        }
+        function btnAdd() {
+            document.Calculator.display.value += "+";
+            document.Calculator.display.style.textAlign = "right";
+        }
+        function btnSub() {
+            document.Calculator.display.value += "-";
+            document.Calculator.display.style.textAlign = "right";
+        }
+        function btnMult() {
+            document.Calculator.display.value += "*";
+            document.Calculator.display.style.textAlign = "right";
+        }
+        function btnDiv() {
+            document.Calculator.display.value += "/";
+            document.Calculator.display.style.textAlign = "right";
+        }
+        function btnMod() {
+            document.Calculator.display.value += "%";
+            document.Calculator.display.style.textAlign = "right";
+        }
+        function btnDot() {
+            document.Calculator.display.value += ".";
+            document.Calculator.display.style.textAlign = "right";
+        }
+        function btnClear() {
+            document.Calculator.display.value = "";
+            document.Calculator.display.style.textAlign = "right";
+        }
+    </script>
 </body>
 </html>

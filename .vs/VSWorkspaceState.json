@@ -1,9 +1,11 @@
 {
   "ExpandedNodes": [
     "",
+    "\\DemoDOMevent",
+    "\\DisplayCSS",
     "\\JavaScript",
     "\\Learning"
   ],
-  "SelectedNode": "\\jstest.html",
+  "SelectedNode": "\\DemoDOMevent\\DOMevent.html",
   "PreviewInSolutionExplorer": false
 }
