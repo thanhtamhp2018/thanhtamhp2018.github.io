@@ -35,11 +35,16 @@
             <br />
             <input class="button" type="button" value="0" onclick="document.Calculator.display.value +='0'" />
             <input class="button" type="button" value="." onclick="btnDot()" />
-            <input class="button" type="button" value="=" onclick="document.Calculator.display.value = eval( document.Calculator.display.value)" />
+            <input class="button" type="button" value="=" onclick="btnEqual()" />
             <input class="button" type="button" value="/" onclick="btnDiv()" />
         </form>
     </div>
     <script>
+        function btnEqual(){
+            document.Calculator.display.value = eval( document.Calculator.display.value);
+            document.Calculator.display.style.textAlign = "right";
+            document.Calculator.button.keypress=btnClear();
+            }
         function btnSquare(){
             document.Calculator.display.value = Math.sqrt(document.Calculator.display.value) ;
             document.Calculator.display.style.textAlign = "right";

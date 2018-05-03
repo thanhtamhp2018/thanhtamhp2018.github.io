@@ -3,9 +3,20 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Demo BOM</title>
+	<link rel="stylesheet" type="text/css" href="BOM.css">
 </head>
 <body>
-	<h1>quiz</h1>
-	jghsjgjshglslkgjlsdkjgflkjsdglkjsdlkgj
+	<h1>QUIZ</h1>
+    <div class="wrap">
+        <form name="Quiz">
+            <h3>Câu hỏi</h3><br>
+            <input class="display" name="display" value="question()" />
+            <br />
+            <input class="button" type="button" value="C" onclick="btnClear()" />
+            <input class="button" type="button" value="√2" onclick="btnSquare()" />
+            <input class="button" type="button" value="x2" onclick="btnDouble()" />
+            <input class="button" type="button" value="%" onclick="btnMod()" />
+            </form>
+    </div>
 </body>
 </html>

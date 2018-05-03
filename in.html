@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		function print(){
+			var i=0;
+			while (i<100) {
+				// statement
+				while (i%2==0) {
+					// statement
+					i++;
+					document.writeln("<span style='color:blue'>"+i+" </span>")
+				}
+				while (i%2==1) {
+					// statement
+					i++;
+					document.writeln("<span style='color:red'>"+i+" </span>")
+				}
+			}
+		}
+		print();
+		function printSquare(n) {
+			var str = '';
+
+			for (var i = 0; i < n; i ++) {
+				for (var j = 0; j < n; j++) {
+					// In ra n dấu *
+					str += ("<span style='color:green'>*</span>");
+				}
+
+				// In ra dấu xuống dòng
+				str += '<br/>';
+			}
+
+			return str;
+		}
+		//print triangle
+		function triangle(n){
+			let res='*';
+			for (let i = 0; i <n; i++) {
+				document.writeln('<p>${res}');
+				res+=("<span style='color:green'>*</span>");
+			}	
+		}
+		//print emptyTriangle
+		function printEmtyTriangle(a,b){
+			var str='';
+			for (var i = 0; i <=b; i++) {
+				for (var j = 0; j <=a; j++) {
+					if (i==0 || j==0 || i==b || j==a) {
+						str+=("<span style='color:green'>*</span>");
+					}else{
+						str+="&nbsp;&nbsp;";
+					}
+				}
+				str+='<br>';					
+			}
+			return str;
+		}
+
+		</script>
+	</body>
+	</html>
