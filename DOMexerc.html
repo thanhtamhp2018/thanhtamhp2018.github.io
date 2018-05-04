@@ -33,24 +33,32 @@
     </div>
     <script>
         function changeFontSize( x ) {
-            var fontSize = document.getElementsByClassName( "all_p" );
-            fontSize[0].style.fontSize = x + "px";
-            fontSize[1].style.fontSize = x + "px";
-            fontSize[2].style.fontSize = x + "px";
-            return x;
-        }
+            var paragraph = document.querySelectorAll('.all_p');
+            for (let i = 0;i<paragraph.length; i++) {
+                paragraph[i].style.fontSize = x + 'px';
+            }
+            //sử dụng chuẩn ES6
+            // for (const item of paragraph)
+            // {
+            //     item.style.fontSize = x+'px';
+            // }
+            }
         //changeFontSize(20);
         function increaseFontSize(p) {
-            var sizeInc = document.getElementById( p );
-            if ( parseInt( sizeInc.style.fontSize ) < parseInt( 30 + "px" ) ) {
-                sizeInc.style.fontSize = ( parseFloat( sizeInc.style.fontSize ) + 1 ) + 'px';
+            var sizeInc = document.getElementById(p);
+            var getFontSize=sizeInc.style.fontSize;
+            getFontSize=parseInt(getFontSize);
+            if ( getFontSize<30 ) {
+                sizeInc.style.fontSize = ( getFontSize + 1 ) + 'px';
             }
         }
         //increaseFontSize("p1")
         function decreaseFontSize(p) {
-            var sizeDec = document.getElementById( p );
-            if ( parseInt( sizeDec.style.fontSize ) > parseInt( 10 + "px" ) ) {
-                sizeDec.style.fontSize = ( parseFloat( sizeDec.style.fontSize ) - 1 ) + 'px';
+            var sizeInc = document.getElementById(p);
+            var getFontSize=sizeInc.style.fontSize;
+            getFontSize=parseInt(getFontSize);
+            if ( getFontSize>10 ) {
+                sizeInc.style.fontSize = ( getFontSize - 1 ) + 'px';
             }
         }
         //decreaseFontSize("p2")
