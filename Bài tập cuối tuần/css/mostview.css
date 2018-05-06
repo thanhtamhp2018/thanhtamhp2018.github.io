@@ -1,0 +1,53 @@
+.main-mostview-post{
+    margin: auto;
+    clear: both;
+}
+div.gallery-view {
+        margin-top: 20px;
+        /*border: 1px solid #ccc;
+        border-top-width: 5px;*/
+        float: left;
+        padding: 2px;
+        width: 25%;
+        height: 200px;
+}
+
+div.gallery-view:hover {
+    border: 0;
+    transform: translate(0,-5px);
+}
+
+div.gallery-view img{
+    width: 100%;
+    height: 150px;
+    transition: all 0.5s linear;
+}
+
+div.main-mostview-post a{
+    font-size: 20px;
+    padding: 10px;
+    color: #737373;
+    text-decoration: none;
+    height: 100px;
+}
+/*link chưa click*/
+div.main-mostview-post a:link {
+        color: black;
+}
+/*Link sau khi đã click*/
+div.main-mostview-post a:visited {
+        color: grey;
+}
+/*Link sau khi trỏ con chuột vào mà chưa click*/
+div.main-mostview-post a:hover {
+        color: red;
+}
+/*Link sau khi đã click*/
+div.main-mostview-post a:active {
+        color: blue;
+}
+div.image_info {
+    padding: 10px;
+    text-align: center;
+    /*background-color: #ccc;*/
+}
