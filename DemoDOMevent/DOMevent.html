@@ -45,11 +45,12 @@
         }
         function btnEqual(){
             document.Calculator.display.value = eval( document.Calculator.display.value);
-            document.Calculator.display.style.textAlign = "right";
-            for (var i = 0; i <=9; i++) {
-                if (document.getElementById("number").onclick=="number" ) {btnClear();};                    
-                }    
+            if(document.getElementById('number')==document.Calculator.button.value)
+            {
+                document.getElementById('number').reset();
             }
+            document.Calculator.display.style.textAlign = "right";
+        }   
         function btnSquare(){
             document.Calculator.display.value = Math.sqrt(document.Calculator.display.value) ;
             document.Calculator.display.style.textAlign = "right";
