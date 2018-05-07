@@ -1,15 +1,14 @@
 @import url(http://weloveiconfonts.com/api/?family=Arial);
-
-/* brandico */
 [class*="brandico-"]:before {
-  font-family: 'Arial', sans-serif;
+    font-family: 'Arial', sans-serif;
 }
 
 * {
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     height: 100%;
 }
 
@@ -20,21 +19,21 @@ body {
 }
 
 .wrap {
-  position: relative;
-  height: 100%;
-  min-height: 500px;
-  padding-bottom: 20px;
+    position: relative;
+    height: 100%;
+    min-height: 500px;
+    padding-bottom: 20px;
 }
 
 .game {
     transform-style: preserve-3d;
     perspective: 500px;
     min-height: 100%;
-  height: 100%;
+    height: 100%;
 }
 
-@mixin width($max){
-    @media (max-width: $max){
+@mixin width($max) {
+    @media (max-width: $max) {
         @content;
     }
 }
@@ -49,18 +48,18 @@ body {
 }
 
 .card {
-  float: left;
-  width: 16.66666%;
-  height: 25%;
-  padding: 5px;
-  text-align: center;
+    float: left;
+    width: 16.66666%;
+    height: 25%;
+    padding: 5px;
+    text-align: center;
     display: block;
     perspective: 500px;
     position: relative;
     cursor: pointer;
-  z-index: 50; 
-    -webkit-tap-highlight-color: rgba(0,0,0,0);  
-    @include width(800px){
+    z-index: 50;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    @include width(800px) {
         width: 25%;
         height: 16.666%;
     }
@@ -71,8 +70,8 @@ body {
         transform-style: preserve-3d;
         transition: .4s ease-in-out;
         background: white;
-
-        &.picked, &.matched {
+        &.picked,
+        &.matched {
             transform: rotateY(180deg);
         }
         &.matched {
@@ -80,40 +79,39 @@ body {
             animation-delay: .4s;
         }
     }
-
-  .front, .back {
-    border: 1px solid black;
-    backface-visibility: hidden;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    padding: 20px;
-
-    img {
-        max-width: 100%;
-        display: block;
-        margin: 0 auto;
-        max-height: 100%;
+    .front,
+    .back {
+        border: 1px solid black;
+        backface-visibility: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        img {
+            max-width: 100%;
+            display: block;
+            margin: 0 auto;
+            max-height: 100%;
+        }
     }
-  }
-  .front {
-    transform: rotateY(-180deg);
-    @include width(800px){
-        padding: 5px;
+    .front {
+        transform: rotateY(-180deg);
+        @include width(800px) {
+            padding: 5px;
+        }
     }
-  }
-  .back{
-        @include width(800px){
-        padding: 10px;
+    .back {
+        @include width(800px) {
+            padding: 10px;
+        }
     }
-  }
 }
 
 .modal-overlay {
     display: none;
-    background: rgba(0,0,0,.8);
+    background: rgba(0, 0, 0, .8);
     position: fixed;
     top: 0;
     left: 0;
@@ -140,7 +138,7 @@ body {
         font-family: "Arial", sans-serif;
         color: #4d4d4d;
         text-shadow: 0px 3px 0 black;
-        @include width(480px){
+        @include width(480px) {
             font-size: 60px;
         }
     }
@@ -169,13 +167,13 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-  z-index: 0;
+    z-index: 0;
     .disclaimer {
         line-height: 20px;
         font-size: 12px;
         color: #727272;
         text-align: center;
-        @include width(767px){
+        @include width(767px) {
             font-size: 8px;
         }
     }

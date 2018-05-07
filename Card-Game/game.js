@@ -102,8 +102,6 @@
 				frag += '<div class="card" data-id="'+ v.id +'"><div class="inside">\
 				<div class="front"><img src="'+ v.img +'"\
 				alt="'+ v.name +'" /></div>\
-				<div class="back"><img src="http://www.laivanduc.com/wp-content/uploads/2015/08/Logo-laivanducblog.png"\
-				alt="laivanduc" /></div></div>\
 				</div>';
 			});
 			return frag;
@@ -112,64 +110,74 @@
 
 	var cards = [
 		{
-			name: "php",
-			img: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/74196/php-logo_1.png",
+			name: "Peacemaker",
+			img: "image/Peacemaker.png",
 			id: 1,
 		},
 		{
-			name: "css3",
-			img: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/74196/css3-logo.png",
+			name: "Rampant",
+			img: "image/rampant.png",
 			id: 2
 		},
 		{
-			name: "html5",
-			img: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/74196/html5-logo.png",
+			name: "Believe",
+			img: "image/REQ_Card_-_Believe.png",
 			id: 3
 		},
 		{
-			name: "jquery",
-			img: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/74196/jquery-logo.png",
+			name: "Engage",
+			img: "image/REQ_Card_-_Engage.png",
 			id: 4
 		}, 
 		{
-			name: "javascript",
-			img: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/74196/js-logo.png",
+			name: "Support",
+			img: "image/REQ_Card_-_Fire_Support.png",
 			id: 5
 		},
 		{
-			name: "node",
-			img: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/74196/nodejs-logo.png",
+			name: "Resolve",
+			img: "image/REQ_Card_-_Grim_Resolve.png",
 			id: 6
 		},
 		{
-			name: "photoshop",
-			img: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/74196/photoshop-logo.png",
+			name: "Fire",
+			img: "image/REQ_Card_-_Into_the_Fire.png",
 			id: 7
 		},
 		{
-			name: "python",
-			img: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/74196/python-logo.png",
+			name: "Stand",
+			img: "image/REQ_Card_-_Last_Stand.png",
 			id: 8
 		},
 		{
-			name: "rails",
-			img: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/74196/rails-logo.png",
+			name: "Carry",
+			img: "image/REQ_Card_-_Tactical_Carry.png",
 			id: 9
 		},
 		{
-			name: "sass",
-			img: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/74196/sass-logo.png",
+			name: "Recon",
+			img: "image/REQ_Card_-_Urban_Recon.png",
 			id: 10
 		},
 		{
-			name: "sublime",
-			img: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/74196/sublime-logo.png",
+			name: "HammerTime",
+			img: "image/Stance-HammerTime.png",
 			id: 11
 		},
 		{
-			name: "wordpress",
-			img: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/74196/wordpress-logo.png",
+			name: "OldSchool",
+			img: "image/Stance-OldSchool.png",
 			id: 12
+		},
+		{
+			name: "Patrol",
+			img: "image/Stance-Patrol.png",
+			id: 13
+		},
+		{
+			name: "WFree",
+			img: "image/Weapons_free.png",
+			id: 14
 		},
 	];
     
