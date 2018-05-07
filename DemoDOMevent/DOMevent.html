@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 
 <html lang="en">
@@ -46,9 +45,9 @@
         }
         function btnEqual(){
             document.Calculator.display.value = eval( document.Calculator.display.value);
-            if(document.getElementById('number')==document.Calculator.button.value)
+            if(document.getElementById('number').onclick == document.Calculator.button.value(btnEqual()))
             {
-                document.getElementById('number').reset();
+                document.Calculator.display.value.reset();
             }
             document.Calculator.display.style.textAlign = "right";
         }   
@@ -90,96 +89,4 @@
         }
     </script>
 </body>
-=======
-<!DOCTYPE html>
-
-<html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <title>Calculator</title>
-    <link rel="stylesheet" type="text/css" href="cal.css">
-</head>
-<body>
-    <h1>Calculator</h1>
-    <div class="wrap">
-        <form name="Calculator">
-            <h3>fx 590es</h3><br>
-            <input class="display" name="display" placeholder="0" />
-            <br />
-            <input class="button" type="button" value="C" onclick="btnClear()" />
-            <input class="button" type="button" value="√2" onclick="btnSquare()" />
-            <input class="button" type="button" value="x2" onclick="btnDouble()" />
-            <input class="button" type="button" value="%" onclick="btnMod()" />
-            <br />
-            <input id="number" class="button" type="button" value="7" onclick="insert(7)" /> 
-            <input id="number" class="button" type="button" value="8" onclick="insert(8)" />
-            <input id="number" class="button" type="button" value="9" onclick="insert(9)" />
-            <input class="button" type="button" value="+" onclick="btnAdd()" />
-            <br />
-            <input id="number" class="button" type="button" value="4" onclick="insert(4)" />
-            <input id="number" class="button" type="button" value="5" onclick="insert(5)" />
-            <input id="number" class="button" type="button" value="6" onclick="insert(6)" />
-            <input class="button" type="button" value="-" onclick="btnSub()" />
-            <br />
-            <input id="number" class="button" type="button" value="1" onclick="insert(1)" />
-            <input id="number" class="button" type="button" value="2" onclick="insert(2)" />
-            <input id="number" class="button" type="button" value="3" onclick="insert(3)" />
-            <input class="button" type="button" value="*" onclick="btnMult()" />
-            <br />
-            <input id="number" class="button" type="button" value="0" onclick="insert(0)" />
-            <input class="button" type="button" value="." onclick="btnDot()" />
-            <input class="button" type="button" value="=" onclick="btnEqual()" />
-            <input class="button" type="button" value="/" onclick="btnDiv()" />
-        </form>
-    </div>
-    <script>
-        function insert( num ) {
-            document.Calculator.display.value = document.Calculator.display.value + num;
-        }
-        function btnEqual(){
-            document.Calculator.display.value = eval( document.Calculator.display.value);
-            document.Calculator.display.style.textAlign = "right";
-            for (var i = 0; i <=9; i++) {
-                if (document.getElementById("number").onclick=="number" ) {btnClear();};                    
-                }    
-            }
-        function btnSquare(){
-            document.Calculator.display.value = Math.sqrt(document.Calculator.display.value) ;
-            document.Calculator.display.style.textAlign = "right";
-        }
-        function btnDouble(){
-            document.Calculator.display.value *= document.Calculator.display.value;
-            document.Calculator.display.style.textAlign = "right";
-        }
-        function btnAdd() {
-            document.Calculator.display.value += "+";
-            document.Calculator.display.style.textAlign = "right";
-        }
-        function btnSub() {
-            document.Calculator.display.value += "-";
-            document.Calculator.display.style.textAlign = "right";
-        }
-        function btnMult() {
-            document.Calculator.display.value += "*";
-            document.Calculator.display.style.textAlign = "right";
-        }
-        function btnDiv() {
-            document.Calculator.display.value += "/";
-            document.Calculator.display.style.textAlign = "right";
-        }
-        function btnMod() {
-            document.Calculator.display.value += "%";
-            document.Calculator.display.style.textAlign = "right";
-        }
-        function btnDot() {
-            document.Calculator.display.value += ".";
-            document.Calculator.display.style.textAlign = "right";
-        }
-        function btnClear() {
-            document.Calculator.display.value = "";
-            document.Calculator.display.style.textAlign = "right";
-        }
-    </script>
-</body>
->>>>>>> e26f0ef513d4d465aceef7d6b356fb50b10593d0
 </html>
