@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+}
+
+h1{
+    margin: 30px;
+    text-transform: uppercase;
+    font-size: 35px;
+}
+
+.wrap{
+    position: relative;
+    margin: auto;
+    padding: 15px;
+    max-width: 1265px;
+    max-height: 616px;
+    height: 100%;
+}
+
+.content{
+    position: relative;
+    overflow: auto;
+}
+
+.grid{
+    float: left;
+    padding: 20px;
+}
+
+.card{  
+    position: relative;
+    padding: 20px;
+}
+.back{
+    border: groove;
+    border-radius: 5px;    
+}
+.card .back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateY(180deg);
+}
+.back img{
+    border-radius: 10px;
+}
+.card:hover .back{
+    /* transform: rotateY(0deg); */
+    box-shadow: 2px 2px 2px 2px;
+}
+.card:hover .front{
+    /* transform: rotateY(180deg); */
+    box-shadow: 2px 2px 2px 2px;
+}
+.card .front, .card .back{
+    transition: all 0.5s;
+    backface-visibility: hidden;
+}
+.clear{
+    clear: both;
+}

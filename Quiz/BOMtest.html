@@ -1,22 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>Demo BOM</title>
+	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="BOM.css">
 </head>
 <body>
-	<h1>QUIZ</h1>
-    <div class="wrap">
-        <form name="Quiz">
-            <h3>Câu hỏi</h3><br>
-            <input class="display" name="display" value="question()" />
-            <br />
-            <input class="button" type="button" value="C" onclick="btnClear()" />
-            <input class="button" type="button" value="√2" onclick="btnSquare()" />
-            <input class="button" type="button" value="x2" onclick="btnDouble()" />
-            <input class="button" type="button" value="%" onclick="btnMod()" />
-            </form>
-    </div>
+	<div id="wrap">
+        <h1 class="title">Quiz</h1>
+		
+		<div id="questions">
+			<h2 class="questNumber" id="questNumber"></h2>
+			<h2 class="mainQuest" id="mainQuest"></h2>
+
+			
+		</div>	
+
+		<div id="correct">
+			<div class="btnAnswer">
+				<button id="answer1" class="correctAnswer"></button>
+			</div>
+
+			<div class="btnAnswer">
+				<button id="answer2" class="correctAnswer"></button>
+			</div>
+
+			<div class="btnAnswer">
+				<button id="answer3" class="correctAnswer"></button>
+			</div>
+
+			<div class="btnAnswer">
+				<button id="answer4" class="correctAnswer"></button>
+			</div>
+		</div>
+
+        <div class="clear"></div>
+		<div id="result"></div>
+		<div id="resAlert1"></div>
+		<div id="resAlert2"></div>
+		<div id="resAlert3"></div>
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="BOM.js"></script>
 </body>
 </html>

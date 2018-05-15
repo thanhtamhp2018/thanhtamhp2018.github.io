@@ -1,0 +1,32 @@
+* {
+	padding:0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+    background-color: #2d221fbd;
+}
+
+#wrap {
+    background-image: url("image/winner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+	border-radius: 5px;
+	width: 475px;
+	margin: 150px auto;
+	background-color: rgba(255, 255, 255, 0);
+	height: 600px;
+	border: 3px solid #3c612a;
+	text-align: center;
+}
+.title {
+	color:#fff;
+	animation: title 0.8s ease infinite;	
+    padding-top: 50%;
+ }
+ @keyframes title {
+    from {opacity: 0;
+        color: red;
+    }
+    to {opacity: 1}
+}
