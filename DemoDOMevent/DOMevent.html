@@ -46,6 +46,9 @@
         function btnEqual(){
             document.Calculator.display.value = eval( document.Calculator.display.value);
             document.Calculator.display.style.textAlign = "right";
+            if(document.Calculator.display.value == insert(num)){
+                return document.Calculator.display.value = document.Calculator.display.value + num;                    
+            }
         }   
         function btnSquare(){
             document.Calculator.display.value = Math.sqrt(document.Calculator.display.value) ;

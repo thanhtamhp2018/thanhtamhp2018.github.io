@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <style>
+        body {
+            max-width: 100%;
+            background-color: #dededec2;
+            letter-spacing: 1px;
+            word-spacing: 5px;
+        }
+        h1 {
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .login {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            position: absolute;
+        }
+        .f_input{
+            width: 200px;
+            padding: 10px;
+            margin-bottom: 5px;
+        }
+        .f_login{
+            width: 224px;
+            padding: 10px;
+            margin-top:10px;     
+        }
+        .f_year{
+            width: 224px;
+            padding: 10px;
+            margin: 10px 0 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="success.html" class="login" id="f_login">
+        <h1>Đăng ký</h1>        
+        <input class="f_input" type="text" name="name" id="name" placeholder="Họ và tên" required>
+        <br>
+        <input class="f_input" type="email" name="email" id="email" placeholder="Email" required>
+        <br>
+        <input class="f_input" type="password" name="password" id="password" placeholder="Nhập mật khẩu" required>
+        <br>
+        <input class="f_input" type="password" name="confirm" id="confirm" placeholder="Nhập lại mật khẩu" required>
+        <br>
+        <input class="f_input" type="phone" name="phone" id="phone" placeholder="Số điện thoại" required>
+        <br>
+        <input class="f_input" type="address" name="address" id="address" placeholder="Địa chỉ" required>
+        <br>
+        <select class="f_year" name="year" id="year">
+            <option>Chọn năm sinh ...</option>
+            <option value="Năm 1990">1990</option>
+            <option value="Năm 1991">1991</option>
+            <option value="Năm 1992">1992</option>
+            <option value="Năm 1993">1993</option>
+            <option value="Năm 1994">1994</option>
+            <option value="Năm 1995">1995</option>
+        </select>
+        <br>
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="male">Nam</label>
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female">Nữ</label>
+        <input type="radio" name="gender" id="other" value="other">
+        <label for="other">Khác</label>
+        <br>
+        <input class="f_login" type="submit" value="Đăng nhập" onclick="userInfo()">
+    </form>
+    <script>
+        $('#f_login').on('submit',function(){
+            console.log('form submit');
+            return false;        
+        });
+    </script>
+</body>
+
+</html>
