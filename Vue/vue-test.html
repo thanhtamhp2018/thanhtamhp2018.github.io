@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Vue</title>
+  <link rel="stylesheet" type="text/css" href="vue-test.css">
+  <!-- development version, includes helpful console warnings -->
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+  <div class="nav-bar"></div>
+  <div id="app" class="wrap">
+    <div class="cart">
+      <p v-if="cart > 1">Carts {{cart}}</p>
+      <p v-else>Cart {{cart}}</p>
+    </div>
+    <div class="clear"></div>
+    <div class="product">
+      <div class="product-image">
+        <img v-bind:src="image">
+      </div>
+      <div class="product-info">
+        <h1>{{ product }}</h1>
+        <h2>{{description}}</h2>
+        <h3 v-if="inventory > 10">Price: ${{ price }}</h3>
+        <h3 v-else style="text-decoration-line: line-through;color: grey;">Price: ${{ price }}</h3>
+        <h2 v-if="price > 500 && inventory <= 10">{{onSale}}
+          <br>Price down: ${{priceDown}}</h2>
+        <div v-for="variant in variants" v-bind:key="variant.variantId">
+          <button @click="updateProduct(variant.variantImage)" style="display: inline;">Click here to change: {{variant.variantSider}}</button>
+        </div>
+        <div>
+          <button class="btnCart" @click="addToCart">Add to Cart</button><br>
+          <button class="btnCart" @click="decrementToCart">Decrement to Cart</button>
+        </div>
+        <p v-if="inventory > 10">In Stock: {{inventory}}</p>
+        <p v-else-if="inventory <= 10 && inventory > 0">Almost sold out: {{inventory}}</p>
+        <p v-else>Out of Stock</p>
+        <p>Details:</p>        
+        <ul>
+          <li v-for="detail in details">{{ detail }}</li>
+        </ul>
+        <p>Size: </p>
+        <div style="margin: 10px;">
+          <span v-for="size in sizes">{{size}} </span>
+        </div>
+        <!-- <div>
+          <button class="btnCart" @click="addToCart">Add to Cart</button>
+          <button class="btnCart" @click="decrementToCart">Decrement to Cart</button>
+        </div> -->
+      </div>
+    </div>
+  </div>
+  <script src="vue-test.js"></script>
+</body>
+
+</html>

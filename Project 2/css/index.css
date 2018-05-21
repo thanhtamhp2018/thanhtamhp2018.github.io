@@ -10,6 +10,7 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     border-radius: 5px;
 }
+
 body {
     font-family: Arial;
     /* padding: 10px; */
@@ -27,7 +28,7 @@ body {
 .header {
     padding: 15px;
     text-align: center;
-    background: #e1e1e1cc;
+    background: #198fe1;
 }
 .header-logo{
     width: 400px;
@@ -144,11 +145,10 @@ body {
       padding: 30px;
   }
   .btnCollection{
-    /* background-color: #ff9800; */
     position: absolute;
-    top: 60%;
+    top: 61%;
     left: 50%;
-    transform: translate(-60%,-50%);
+    transform: translate(-61%,-50%);
   }
   /* Next & previous buttons */
 .prev, .next {

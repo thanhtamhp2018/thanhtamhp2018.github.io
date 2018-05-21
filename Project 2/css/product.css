@@ -1,9 +1,6 @@
 /* CSS Document */
 @charset "utf-8";
 /* Global Styles */
-a:hover {
-	color: rgba(255,255,255,1.00);
-}
 /*header*/
 header {
 	font-family: 'Montserrat', sans-serif;
@@ -117,6 +114,14 @@ header {
 	position: relative;
 	left: -35px;
 	padding-top: 12px;
+	text-align: center;
+}
+.menu a,.menu ul li a{
+	text-decoration: none;
+	color: black;
+}
+.menu a:hover,.menu ul li a:hover{
+	color:red;
 }
 /* Product rows for catalog */
 #content .mainContent .productRow {
@@ -203,8 +208,11 @@ footer div a {
 	text-decoration: none;
 }
 .sidebar #menubar .menu ul li a:hover {
-	color: rgba(107,97,97,1.00);
+	color: red;
 	text-decoration: none;
+}
+.menubar{
+	position: fixed;	
 }
 /* Menu headings in sidebar */
 #menubar .menu h2 {
