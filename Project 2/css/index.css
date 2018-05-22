@@ -18,7 +18,7 @@ body {
 }
 .page-container{
     /* padding-top: 20px; */
-    width: 1140px;
+    max-width: 1140px;
     margin: auto;
 }
 .clear{
@@ -50,6 +50,7 @@ body {
 
 /* Style the topnav links */
 .topnav li a {
+	max-width: 100%;
     float: left;
     display: block;
     font-size: 18px;

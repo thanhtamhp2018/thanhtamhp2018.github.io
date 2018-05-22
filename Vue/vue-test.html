@@ -13,10 +13,11 @@
   <div class="nav-bar"></div>
   <div id="app" class="wrap">
     <div class="cart">
-      <p v-if="cart > 1">Carts {{cart}}</p>
-      <p v-else>Cart {{cart}}</p>
+      <p v-if="cart > 1">Carts {{cart}} items</p>
+      <p v-else>Cart {{cart}} item</p>
+      <hr>
+      <p>Total: ${{total}}</p>            
     </div>
-    <div class="clear"></div>
     <div class="product">
       <div class="product-image">
         <img v-bind:src="image">

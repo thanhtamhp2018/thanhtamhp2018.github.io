@@ -12,7 +12,7 @@ body {
   margin-bottom: 15px;
 }
 .wrap{
-  width: 1140px;
+  max-width: 1140px;
   margin: auto;
 }
 .product {
@@ -100,4 +100,8 @@ textarea {
 h1,
 h2 {
   color: red;
+}
+
+.cart>button{
+  width: 90px;
 }
