@@ -40,49 +40,39 @@
         </form>
     </div>
     <script>
+        document.Calculator.display.style.textAlign = "right";        
         function insert( num ) {
-            document.Calculator.display.value = document.Calculator.display.value + num;
+            document.Calculator.display.value += num;
         }
         function btnEqual(){
-			var x= document.Calculator.display.value;
-            document.Calculator.display.value = eval(x);
-            document.Calculator.display.style.textAlign = "right";
+            document.Calculator.display.value = eval(document.Calculator.display.value);
         }   
         function btnSquare(){
             document.Calculator.display.value = Math.sqrt(document.Calculator.display.value) ;
-            document.Calculator.display.style.textAlign = "right";
         }
         function btnDouble(){
             document.Calculator.display.value *= document.Calculator.display.value;
-            document.Calculator.display.style.textAlign = "right";
         }
         function btnAdd() {
             document.Calculator.display.value += "+";
-            document.Calculator.display.style.textAlign = "right";
         }
         function btnSub() {
             document.Calculator.display.value += "-";
-            document.Calculator.display.style.textAlign = "right";
         }
         function btnMult() {
             document.Calculator.display.value += "*";
-            document.Calculator.display.style.textAlign = "right";
         }
         function btnDiv() {
             document.Calculator.display.value += "/";
-            document.Calculator.display.style.textAlign = "right";
         }
         function btnMod() {
             document.Calculator.display.value += "%";
-            document.Calculator.display.style.textAlign = "right";
         }
         function btnDot() {
             document.Calculator.display.value += ".";
-            document.Calculator.display.style.textAlign = "right";
         }
         function btnClear() {
             document.Calculator.display.value = "";
-            document.Calculator.display.style.textAlign = "right";
         }
     </script>
 </body>
