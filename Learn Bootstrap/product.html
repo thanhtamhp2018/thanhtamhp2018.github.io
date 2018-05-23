@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KM World</title>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<!-- Bootstrap -->
+<link rel="stylesheet" href="bt-test.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Skranji" rel="stylesheet">
+<!-- development version, includes helpful console warnings -->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<link rel="stylesheet" href="produc.css">
+</head>
+<body>
+<div id="app">
+<!--	Top social and cart-->
+<div class="w3-bar w3-black w3-hide-small"> <a href="https://www.facebook.com/MrTamHP" class="w3-bar-item w3-button"> <i class="fa fa-facebook-official"></i> </a> <a href="https://www.youtube.com/" class="w3-bar-item w3-button"> <i class="fa fa-youtube"></i> </a> <a href="https://twitter.com/Mr_TamFuji" class="w3-bar-item w3-button"> <i class="fa fa-twitter"></i> </a> <a class="w3-bar-item w3-button w3-right"> <i class="fa fa-phone"> Call now: {{telephone}}</i> </a> <a href="shop-cart.html" class="w3-bar-item w3-button w3-right"> <i class="fa fa-shopping-cart"> Shopping cart: {{cart}}</i> </a> <a class="w3-bar-item w3-button w3-right"><i class="fab fa-cc-amazon-pay">Total: ${{total}}</i></a> </div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container"> <a class="navbar-brand" href="#">KM World</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active"> <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#">Hot trends</a> </li>
+        <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Bras</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown"> <a class="dropdown-item" href="#">Sports</a> <a class="dropdown-item" href="#">Perfect Coverage</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Demi</a> </div>
+        </li>
+        <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Panties</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown"> <a class="dropdown-item" href="#">Thongs & V-Strings</a> <a class="dropdown-item" href="#">Cheekies & Cheekinis</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Bikinis & Briefs</a> </div>
+        </li>
+        <li class="nav-item"> <a class="nav-link" href="#">Accessories</a> </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<div class="embed-responsive embed-responsive-16by9 video-responsive">
+  <video autoplay loop class="embed-responsive-item" src="video/top.mp4" type="video/mp4"> </video>
+  <div class="fly-title">
+    <h1>Summer fashion week 2018</h1>
+  </div>
+</div>
+<div class="container mt-3"> </div>
+<div class="container">
+  <div class="row">
+    <div class="col-4">
+      <div class="row">
+        <div class="col-2"><i class="fas fa-shipping-fast"></i></div>
+        <div class="col-lg-6 col-10 ml-1">
+          <h4>Free Shipping</h4>
+          <h5>Standard order over $100</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="row">
+        <div class="col-2"><i class="fas fa-undo-alt"></i></div>
+        <div class="col-lg-6 col-10 ml-1">
+          <h4>Free Returns</h4>
+        </div>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="row">
+        <div class="col-2"><i class="fas fa-hand-holding-usd"></i></div>
+        <div class="col-lg-6 col-10 ml-1">
+          <h4>Low Prices</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+<h2 class="text-center">RECOMMENDED PRODUCTS</h2>
+<hr>
+<div class="container">
+<div class="row text-center">
+  <div class="col-md-4 pb-1 pb-md-0">
+    <div class="card"> <img class="card-img-top" v-bind:src="image" alt="Card image cap">
+      <div class="card-body"> <a class="w3-bar-item w3-button w3-right like"> <i class="fa fa-heart" style="color: red;">{{like}} </i><br><i class="fa fa-shopping-cart" style="color: blue"> {{cart}}</i> </a>
+        <h5 class="card-title">{{product}}</h5>
+        <p class="card-text">{{description}}</p>
+        <div v-for="variant in variants" v-bind:key="variant.variantId">
+          <p @mouseover="updateProduct(variant.variantImage)" style="display: inline;<br>">Hover here to change: {{variant.variantSider}}</p>
+        </div>
+        <p>Size: </p>
+        <div style="margin: 10px;"> <span v-for="size in sizes">{{size}} </span> </div>
+        <h3 v-if="inventory > 10">Price: ${{ price }}</h3>
+        <h3 v-else style="text-decoration-line: line-through;color: grey;">Price: ${{ price }}</h3>
+        <h2 v-if="price > 500 && inventory <= 10">{{onSale}}: Price down: ${{priceDown}}</h2>
+        <div>
+          <button class="btnCart" @click="addToCart">Cart +</button>
+          <button class="btnCart" @click="decrementToCart">Cart -</button>
+          <button class="btnCart" @click="likethis">Like</button>
+          <button class="btnCart" @click="dislike">Dislike</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 pb-1 pb-md-0">
+    <div class="card"> <img class="card-img-top" v-bind:src="image" alt="Card image cap">
+      <div class="card-body"> <a class="w3-bar-item w3-button w3-right like"> <i class="fa fa-heart" style="color: red;">{{like}} </i><br><i class="fa fa-shopping-cart" style="color: blue"> {{cart}}</i> </a>
+        <h5 class="card-title">{{product}}</h5>
+        <p class="card-text">{{description}}</p>
+        <div v-for="variant in variants" v-bind:key="variant.variantId">
+          <p @mouseover="updateProduct(variant.variantImage)" style="display: inline;<br>">Hover here to change: {{variant.variantSider}}</p>
+        </div>
+        <p>Size: </p>
+        <div style="margin: 10px;"> <span v-for="size in sizes">{{size}} </span> </div>
+        <h3 v-if="inventory > 10">Price: ${{ price }}</h3>
+        <h3 v-else style="text-decoration-line: line-through;color: grey;">Price: ${{ price }}</h3>
+        <h2 v-if="price > 500 && inventory <= 10">{{onSale}}: Price down: ${{priceDown}}</h2>
+        <div>
+          <button class="btnCart" @click="addToCart">Cart +</button>
+          <button class="btnCart" @click="decrementToCart">Cart -</button>
+          <button class="btnCart" @click="likethis">Like</button>
+          <button class="btnCart" @click="dislike">Dislike</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 pb-1 pb-md-0">
+    <div class="card"> <img class="card-img-top" v-bind:src="image" alt="Card image cap">
+      <div class="card-body"> <a class="w3-bar-item w3-button w3-right like"> <i class="fa fa-heart" style="color: red;">{{like}} </i><br><i class="fa fa-shopping-cart" style="color: blue"> {{cart}}</i> </a>
+        <h5 class="card-title">{{product}}</h5>
+        <p class="card-text">{{description}}</p>
+        <div v-for="variant in variants" v-bind:key="variant.variantId">
+          <p @mouseover="updateProduct(variant.variantImage)" style="display: inline;<br>">Hover here to change: {{variant.variantSider}}</p>
+        </div>
+        <p>Size: </p>
+        <div style="margin: 10px;"> <span v-for="size in sizes">{{size}} </span> </div>
+        <h3 v-if="inventory > 10">Price: ${{ price }}</h3>
+        <h3 v-else style="text-decoration-line: line-through;color: grey;">Price: ${{ price }}</h3>
+        <h2 v-if="price > 500 && inventory <= 10">{{onSale}}: Price down: ${{priceDown}}</h2>
+        <div>
+          <button class="btnCart" @click="addToCart">Cart +</button>
+          <button class="btnCart" @click="decrementToCart">Cart -</button>
+          <button class="btnCart" @click="likethis">Like</button>
+          <button class="btnCart" @click="dislike">Dislike</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="clear"></div>
+  <div class="col-md-4 pb-1 pb-md-0">
+    <div class="card"> <img class="card-img-top" v-bind:src="image" alt="Card image cap">
+      <div class="card-body"> <a class="w3-bar-item w3-button w3-right like"> <i class="fa fa-heart" style="color: red;">{{like}} </i><br><i class="fa fa-shopping-cart" style="color: blue"> {{cart}}</i> </a>
+        <h5 class="card-title">{{product}}</h5>
+        <p class="card-text">{{description}}</p>
+        <div v-for="variant in variants" v-bind:key="variant.variantId">
+          <p @mouseover="updateProduct(variant.variantImage)" style="display: inline;<br>">Hover here to change: {{variant.variantSider}}</p>
+        </div>
+        <p>Size: </p>
+        <div style="margin: 10px;"> <span v-for="size in sizes">{{size}} </span> </div>
+        <h3 v-if="inventory > 10">Price: ${{ price }}</h3>
+        <h3 v-else style="text-decoration-line: line-through;color: grey;">Price: ${{ price }}</h3>
+        <h2 v-if="price > 500 && inventory <= 10">{{onSale}}: Price down: ${{priceDown}}</h2>
+        <div>
+          <button class="btnCart" @click="addToCart">Cart +</button>
+          <button class="btnCart" @click="decrementToCart">Cart -</button>
+          <button class="btnCart" @click="likethis">Like</button>
+          <button class="btnCart" @click="dislike">Dislike</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 pb-1 pb-md-0">
+    <div class="card"> <img class="card-img-top" v-bind:src="image" alt="Card image cap">
+      <div class="card-body"> <a class="w3-bar-item w3-button w3-right like"> <i class="fa fa-heart" style="color: red;">{{like}} </i><br><i class="fa fa-shopping-cart" style="color: blue"> {{cart}}</i> </a>
+        <h5 class="card-title">{{product}}</h5>
+        <p class="card-text">{{description}}</p>
+        <div v-for="variant in variants" v-bind:key="variant.variantId">
+          <p @mouseover="updateProduct(variant.variantImage)" style="display: inline;<br>">Hover here to change: {{variant.variantSider}}</p>
+        </div>
+        <p>Size: </p>
+        <div style="margin: 10px;"> <span v-for="size in sizes">{{size}} </span> </div>
+        <h3 v-if="inventory > 10">Price: ${{ price }}</h3>
+        <h3 v-else style="text-decoration-line: line-through;color: grey;">Price: ${{ price }}</h3>
+        <h2 v-if="price > 500 && inventory <= 10">{{onSale}}: Price down: ${{priceDown}}</h2>
+        <div>
+          <button class="btnCart" @click="addToCart">Cart +</button>
+          <button class="btnCart" @click="decrementToCart">Cart -</button>
+          <button class="btnCart" @click="likethis">Like</button>
+          <button class="btnCart" @click="dislike">Dislike</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 pb-1 pb-md-0">
+    <div class="card"> <img class="card-img-top" v-bind:src="image" alt="Card image cap">
+      <div class="card-body"> <a class="w3-bar-item w3-button w3-right like"> <i class="fa fa-heart" style="color: red;">{{like}} </i><br><i class="fa fa-shopping-cart" style="color: blue"> {{cart}}</i> </a>
+        <h5 class="card-title">{{product}}</h5>
+        <p class="card-text">{{description}}</p>
+        <div v-for="variant in variants" v-bind:key="variant.variantId">
+          <p @mouseover="updateProduct(variant.variantImage)" style="display: inline;<br>">Hover here to change: {{variant.variantSider}}</p>
+        </div>
+        <p>Size: </p>
+        <div style="margin: 10px;"> <span v-for="size in sizes">{{size}} </span> </div>
+        <h3 v-if="inventory > 10">Price: ${{ price }}</h3>
+        <h3 v-else style="text-decoration-line: line-through;color: grey;">Price: ${{ price }}</h3>
+        <h2 v-if="price > 500 && inventory <= 10">{{onSale}}: Price down: ${{priceDown}}</h2>
+        <div>
+          <button class="btnCart" @click="addToCart">Cart +</button>
+          <button class="btnCart" @click="decrementToCart">Cart -</button>
+          <button class="btnCart" @click="likethis">Like</button>
+          <button class="btnCart" @click="dislike">Dislike</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="clear"></div>
+  <div class="col-md-4 pb-1 pb-md-0">
+    <div class="card"> <img class="card-img-top" v-bind:src="image" alt="Card image cap">
+      <div class="card-body"> <a class="w3-bar-item w3-button w3-right like"> <i class="fa fa-heart" style="color: red;">{{like}} </i><br><i class="fa fa-shopping-cart" style="color: blue"> {{cart}}</i> </a>
+        <h5 class="card-title">{{product}}</h5>
+        <p class="card-text">{{description}}</p>
+        <div v-for="variant in variants" v-bind:key="variant.variantId">
+          <p @mouseover="updateProduct(variant.variantImage)" style="display: inline;<br>">Hover here to change: {{variant.variantSider}}</p>
+        </div>
+        <p>Size: </p>
+        <div style="margin: 10px;"> <span v-for="size in sizes">{{size}} </span> </div>
+        <h3 v-if="inventory > 10">Price: ${{ price }}</h3>
+        <h3 v-else style="text-decoration-line: line-through;color: grey;">Price: ${{ price }}</h3>
+        <h2 v-if="price > 500 && inventory <= 10">{{onSale}}: Price down: ${{priceDown}}</h2>
+        <div>
+          <button class="btnCart" @click="addToCart">Cart +</button>
+          <button class="btnCart" @click="decrementToCart">Cart -</button>
+          <button class="btnCart" @click="likethis">Like</button>
+          <button class="btnCart" @click="dislike">Dislike</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 pb-1 pb-md-0">
+    <div class="card"> <img class="card-img-top" v-bind:src="image" alt="Card image cap">
+      <div class="card-body"> <a class="w3-bar-item w3-button w3-right like"> <i class="fa fa-heart" style="color: red;">{{like}} </i><br><i class="fa fa-shopping-cart" style="color: blue"> {{cart}}</i> </a>
+        <h5 class="card-title">{{product}}</h5>
+        <p class="card-text">{{description}}</p>
+        <div v-for="variant in variants" v-bind:key="variant.variantId">
+          <p @mouseover="updateProduct(variant.variantImage)" style="display: inline;<br>">Hover here to change: {{variant.variantSider}}</p>
+        </div>
+        <p>Size: </p>
+        <div style="margin: 10px;"> <span v-for="size in sizes">{{size}} </span> </div>
+        <h3 v-if="inventory > 10">Price: ${{ price }}</h3>
+        <h3 v-else style="text-decoration-line: line-through;color: grey;">Price: ${{ price }}</h3>
+        <h2 v-if="price > 500 && inventory <= 10">{{onSale}}: Price down: ${{priceDown}}</h2>
+        <div>
+          <button class="btnCart" @click="addToCart">Cart +</button>
+          <button class="btnCart" @click="decrementToCart">Cart -</button>
+          <button class="btnCart" @click="likethis">Like</button>
+          <button class="btnCart" @click="dislike">Dislike</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 pb-1 pb-md-0">
+    <div class="card"> <img class="card-img-top" v-bind:src="image" alt="Card image cap">
+      <div class="card-body"> <a class="w3-bar-item w3-button w3-right like"> <i class="fa fa-heart" style="color: red;">{{like}} </i><br><i class="fa fa-shopping-cart" style="color: blue"> {{cart}}</i> </a>
+        <h5 class="card-title">{{product}}</h5>
+        <p class="card-text">{{description}}</p>
+        <div v-for="variant in variants" v-bind:key="variant.variantId">
+          <p @mouseover="updateProduct(variant.variantImage)" style="display: inline;<br>">Hover here to change: {{variant.variantSider}}</p>
+        </div>
+        <p>Size: </p>
+        <div style="margin: 10px;"> <span v-for="size in sizes">{{size}} </span> </div>
+        <h3 v-if="inventory > 10">Price: ${{ price }}</h3>
+        <h3 v-else style="text-decoration-line: line-through;color: grey;">Price: ${{ price }}</h3>
+        <h2 v-if="price > 500 && inventory <= 10">{{onSale}}: Price down: ${{priceDown}}</h2>
+        <div>
+          <button class="btnCart" @click="addToCart">Cart +</button>
+          <button class="btnCart" @click="decrementToCart">Cart -</button>
+          <button class="btnCart" @click="likethis">Like</button>
+          <button class="btnCart" @click="dislike">Dislike</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--	///////////////////////////////////////-->
+  <hr>
+  <h2 class="text-center">FEATURED PRODUCTS</h2>
+  <hr>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4">
+        <ul class="list-unstyled">
+          <li class="media"> <img class="mr-3" src="image/1.jpg" alt="Generic placeholder image">
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">Hot trend</h5>
+            </div>
+          </li>
+          <li class="media my-4"> <img class="mr-3" src="image/1.jpg" alt="Generic placeholder image">
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">Bras</h5>
+              Bring to you the comfortable. </div>
+          </li>
+          <li class="media"> <img class="mr-3" src="image/1.jpg" alt="Generic placeholder image">
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">Sports</h5>
+              It's very easy to sports activites. </div>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <ul class="list-unstyled">
+          <li class="media"> <img class="mr-3" src="image/1.jpg" alt="Generic placeholder image">
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">Perfect Coverage</h5>
+              Perfect Coverage. </div>
+          </li>
+          <li class="media my-4"> <img class="mr-3" src="image/1.jpg" alt="Generic placeholder image">
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">Demi</h5>
+              Fit to your body. </div>
+          </li>
+          <li class="media"> <img class="mr-3" src="image/1.jpg" alt="Generic placeholder image">
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">Panties</h5>
+              Sexy more. </div>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <ul class="list-unstyled">
+          <li class="media"> <img class="mr-3" src="image/1.jpg" alt="Generic placeholder image">
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">Thongs & V-Strings</h5>
+              More sexiest. </div>
+          </li>
+          <li class="media my-4"> <img class="mr-3" src="image/1.jpg" alt="Generic placeholder image">
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">Chickies & Chickinis</h5>
+              Wellcome to Summer 2018. </div>
+          </li>
+          <li class="media"> <img class="mr-3" src="image/1.jpg" alt="Generic placeholder image">
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">Accessories</h5>
+              It's will make you sexiest. </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="container text-white bg-dark p-4">
+    <div class="row">
+      <div class="col-6 col-md-8 col-lg-7">
+        <div class="row text-center">
+          <div class="col-sm-6 col-md-4 col-lg-4 col-12">
+            <ul class="list-unstyled">
+              <li>
+                <p>HOME</p>
+              </li>
+              <li> <a href="#" style="text-decoration: none;">Help</a> </li>
+              <li> <a href="#" style="text-decoration: none;">Customer Service</a> </li>
+              <li> <a href="#" style="text-decoration: none;">Live chat</a> </li>
+              <li> <a href="#" style="text-decoration: none;">Store offers & events</a> </li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-4 col-12">
+            <ul class="list-unstyled">
+              <li>
+                <p>ACCOUNT</p>
+              </li>
+              <li> <a href="#" style="text-decoration: none;">Your account</a> </li>
+              <li> <a href="#" style="text-decoration: none;">Order status</a> </li>
+              <li> <a href="#" style="text-decoration: none;">Love list</a> </li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-4 col-12">
+            <ul class="list-unstyled">
+              <li>
+                <p>EMAIL SIGN UP</p>
+              </li>
+              <li>
+                <input placeholder="Email address">
+                </input>
+              </li>
+              <li>
+                <p>Get special offers and more!</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-5 col-6">
+        <address>
+        <strong>KM STORE, Inc.</strong><br>
+        Tokyo, Japan<br>
+        Ginza 1<sup>st</sup><br>
+        <abbr title="Phone">Tel:</abbr> (123) 456-7890
+        </address>
+        <address>
+        <strong>Kenny Mery</strong><br>
+        <a href="mailto:#" style="text-decoration: none;">km.world@email.com</a>
+        </address>
+      </div>
+    </div>
+  </div>
+  <footer class="text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <p>Copyright © KM World. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+<!-- development version, includes helpful console warnings --> 
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> 
+<!--VueJS--> 
+<script src="js/vue_product.js"></script> 
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="jquery-3.2.1.min.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="popper.min.js"></script> 
+<script src="bootstrap-4.0.0.js"></script>
+</body>
+</html>

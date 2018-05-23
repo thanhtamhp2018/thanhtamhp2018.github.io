@@ -55,14 +55,14 @@ body {
   clear: both;
 } */
 button {
-  margin-top: 10px;
+  /* margin-top: 10px; */
   border: none;
   background-color: #1E95EA;
   border-radius: 5px;
   color: white;
-  height: 40px;
-  width: 150px;
-  font-size: 14px;
+  /* height: 40px; */
+  /* width: 50px; */
+  /* font-size: 14px; */
 }
 
 .disabledButton {
