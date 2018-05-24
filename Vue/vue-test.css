@@ -4,6 +4,9 @@ body {
   font-family: tahoma;
   color: #282828;
   margin: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav-bar {

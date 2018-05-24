@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div style="text-align: center;">
+    Nhap x = <input type="number" id="x"><br>
+    Nhap y = <input type="number" id="y"><br>
+    <button onclick="tong()" style="text-align: center;">
+    Tinh tong = </button><span id="kq"></span>
+</div>
+    <script>
+        var tong = function(){
+            var x = document.getElementById("x").value;
+            console.log(x);
+            var y = document.getElementById("y").value;            
+            console.log(y);
+            var kq = parseInt(x)+parseInt(y);
+            console.log(kq);
+            document.getElementById("kq").innerHTML=" "+ kq;
+        }
+        function tinhtong(kq,b,c){
+        alert("Ket qua la"+(3*kq+2*b-c));}   
+    </script>
+</body>
+</html>
