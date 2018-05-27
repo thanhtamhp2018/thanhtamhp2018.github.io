@@ -10,7 +10,12 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     border-radius: 5px;
 }
-
+a.button {
+    text-decoration: none;
+    background-color: #ff9800;
+    font-size: 20px;
+    border-radius: 3px;
+}
 body {
     font-family: Arial;
     /* padding: 10px; */
