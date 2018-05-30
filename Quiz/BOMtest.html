@@ -1,47 +1,46 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="BOM.css">
 </head>
+
 <body>
-	<div id="wrap">
-        <h1 class="title">Quiz</h1>
-		
-		<div id="questions">
+	<div class="wrap">
+		<h1 class="title">Quiz</h1>
+
+		<div id="questions" class="questions">
 			<h2 class="questNumber" id="questNumber"></h2>
 			<h2 class="mainQuest" id="mainQuest"></h2>
 
-			
-		</div>	
 
-		<div id="correct">
-			<div class="btnAnswer">
-				<button id="answer1" class="correctAnswer"></button>
+		</div>
+
+		<div id="answer" class="answer">
+			<div class="answerAll">
+				<button id="answer1" class="Answer"></button>
 			</div>
 
-			<div class="btnAnswer">
-				<button id="answer2" class="correctAnswer"></button>
+			<div class="answerAll">
+				<button id="answer2" class="Answer"></button>
 			</div>
 
-			<div class="btnAnswer">
-				<button id="answer3" class="correctAnswer"></button>
+			<div class="answerAll">
+				<button id="answer3" class="Answer"></button>
 			</div>
 
-			<div class="btnAnswer">
-				<button id="answer4" class="correctAnswer"></button>
+			<div class="answerAll">
+				<button id="answer4" class="Answer"></button>
 			</div>
 		</div>
 
-        <div class="clear"></div>
-		<div id="result"></div>
-		<div id="resAlert1"></div>
-		<div id="resAlert2"></div>
-		<div id="resAlert3"></div>
-		</div>
-
+		<div class="clear"></div>
+		<div id="alertFailed"></div>
+		<div id="alertReplay"></div>
 	</div>
 
 	<script type="text/javascript" src="BOM.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+
+div#root {
+    margin: auto;
+    overflow: auto;
+    width: 50%;
+}
+
+td {
+    width: 50px;
+    height:  50px;
+    padding: 10px;
+    text-align:  center;
+    border: 2px solid rebeccapurple;
+    cursor: pointer;
+}
