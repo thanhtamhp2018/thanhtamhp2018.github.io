@@ -4,5 +4,8 @@
   "main": "index.js",
   "repository": "https://github.com/thanhtamhp2018/thanhtamhp2018.github.io.git",
   "author": "Lê Thanh Tâm <37645432+thanhtamhp2018@users.noreply.github.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
 }
