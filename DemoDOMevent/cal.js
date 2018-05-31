@@ -15,7 +15,7 @@ function btnDiv() {
     document.Calculator.display.style.textAlign = "right";
 }
 function btnMod() {
-    document.Calculator.display.value += "%";
+    document.Calculator.display.value /=100 ;
     document.Calculator.display.style.textAlign = "right";
 }
 function btnDot() {
