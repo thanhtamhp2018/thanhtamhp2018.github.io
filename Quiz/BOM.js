@@ -69,10 +69,10 @@ for (var i = 0; i < btnIntermediate.length; i++) {
 	btnIntermediate[i].addEventListener("click", function () {
 		var result = this.innerText;
 		if (result == listQuestion[valueQuest - 1].correct) {
-			document.getElementsByClassName("answerAll").innerHTML="Correct";
+			document.getElementById("answerCheck").innerHTML="Correct";
 			mark += 1;
 		}else{ 
-			document.getElementsByClassName("answerAll").innerHTML="Wrong!!!";
+			document.getElementById("answerCheck").innerHTML="Wrong!!!";
 			mark += 0;
 		}
 		console.log(this.innerText);
@@ -92,8 +92,9 @@ for (var i = 0; i < btnIntermediate.length; i++) {
 		} else {
 			document.getElementById("questions").style.display = "none";
 			document.getElementById("answer").style.display = "none";
-			document.getElementById("alertFailed").innerHTML = "<h1 style='text-align:center;'>Loser!</h1>";
-			document.getElementById("alertReplay").innerHTML = "<button onclick='rePlay()'>Replay!</button>";
+			document.getElementById("Failed").innerHTML = "<h1 style='text-align:center;'>Loser!</h1>";
+			// document.getElementById("win").innerHTML = "<button onclick='rePlay()'>Replay!</button>";			
+			document.getElementById("Replay").innerHTML = "<button onclick='rePlay()'>Replay!</button>";
 		}
 
 		valueQuest += 1;
@@ -102,9 +103,10 @@ for (var i = 0; i < btnIntermediate.length; i++) {
 }
 
 function rePlay() {
-	document.getElementById("alertFailed").innerHTML = "";
-	document.getElementById("alertWin").innerHTML = "";
-	document.getElementById("alertReplay").innerHTML = "";
+	document.getElementById("Failed").innerHTML = "";
+	// document.getElementById("win").innerHTML = "";
+	document.getElementById("answerCheck").innerHTML = "";	
+	document.getElementById("Replay").innerHTML = "";
 	document.getElementById("questions").style.display = "block";
 	document.getElementById("answer").style.display = "block";
 	valueQuest = 1;
