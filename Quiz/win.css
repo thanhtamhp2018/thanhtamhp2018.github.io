@@ -30,13 +30,12 @@ body {
     }
     to {opacity: 1}
 }
+
 a{
 	text-decoration: none;
-	font-size: 50px;
+	font-size: 40px;
 	border:5px solid red;
+	border-radius: 5px;
 	color: white;
 	background-color:green;
-}
-span{
-	margin-top: 50px;
 }

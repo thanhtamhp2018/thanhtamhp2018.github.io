@@ -64,15 +64,15 @@ asw3.innerHTML = listQuestion[0].answer3;
 asw4.innerHTML = listQuestion[0].answer4;
 
 var btnIntermediate = document.getElementsByClassName("Answer");
-
+// setTimeout(function() { click(); }, 5000);
 for (var i = 0; i < btnIntermediate.length; i++) {
 	btnIntermediate[i].addEventListener("click", function () {
 		var result = this.innerText;
 		if (result == listQuestion[valueQuest - 1].correct) {
-			document.getElementById("answerCheck").innerHTML="Correct";
+			document.getElementById("answerCheck").innerHTML = "<p style='text-align:center;color:blue;font-size:30px;'>Correct</p>";
 			mark += 1;
-		}else{ 
-			document.getElementById("answerCheck").innerHTML="Wrong!!!";
+		} else {
+			document.getElementById("answerCheck").innerHTML = "<p style='text-align:center;color:red;font-size:30px;'>Wrong!!!</p>";
 			mark += 0;
 		}
 		console.log(this.innerText);
@@ -92,9 +92,8 @@ for (var i = 0; i < btnIntermediate.length; i++) {
 		} else {
 			document.getElementById("questions").style.display = "none";
 			document.getElementById("answer").style.display = "none";
-			document.getElementById("Failed").innerHTML = "<h1 style='text-align:center;'>Loser!</h1>";
-			// document.getElementById("win").innerHTML = "<button onclick='rePlay()'>Replay!</button>";			
-			document.getElementById("Replay").innerHTML = "<button onclick='rePlay()'>Replay!</button>";
+			document.getElementById("Failed").innerHTML = "<h1 style='text-align:center; font-size:100px;'>Thua nhồi!!!</h1>";
+			document.getElementById("Replay").innerHTML = "<button onclick='rePlay()'>Chai lợi!</button><br><p style='text-align:center;color:red;font-size:30px;'>Correct answer: " + mark + "/" + valueQuest + "</p>";
 		}
 
 		valueQuest += 1;
@@ -104,8 +103,7 @@ for (var i = 0; i < btnIntermediate.length; i++) {
 
 function rePlay() {
 	document.getElementById("Failed").innerHTML = "";
-	// document.getElementById("win").innerHTML = "";
-	document.getElementById("answerCheck").innerHTML = "";	
+	document.getElementById("answerCheck").innerHTML = "";
 	document.getElementById("Replay").innerHTML = "";
 	document.getElementById("questions").style.display = "block";
 	document.getElementById("answer").style.display = "block";
