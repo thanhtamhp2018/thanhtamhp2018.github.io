@@ -1,57 +1,61 @@
 * {
-padding: 0;
-margin: 0;
-box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
+
 body {
-/* background-image: url("image/backg.jpg"); */
-/* background-repeat: no-repeat; */
-/* background-size: cover; */
-background-color: rgb(99, 105, 182);
+	/* background-image: url("image/backg.jpg"); */
+	/* background-repeat: no-repeat; */
+	/* background-size: cover; */
+	background-color: rgb(99, 105, 182);
 }
-.title{
-color: #f00;
-text-align: center;
-font-size: 60px;
-font-family:Arial, Helvetica, sans-serif;
+
+.title {
+	color: #f00;
+	text-align: center;
+	font-size: 60px;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 .wrap {
-border-radius: 5px;
-width: 800px;
-margin:150px auto;
-background-color: rgba(255, 255, 255, 0.76);
-height: 475px;
-border: 5px solid #bb170e;
-}
-.questions {
-color: #f00;
-text-align: center;
-padding-top: 50px;
-font-size: 25px;
+	/* width: 800px; */
+	margin: 150px auto;
+	/* background-color: rgba(255, 255, 255, 0.76); */
+	/* height: 475px; */
 }
 
+.questions {
+	color: #f00;
+	text-align: center;
+	padding-top: 50px;
+	font-size: 25px;
+}
 
 .questionNumber {
-color: #2282d5;      
-text-align: center;        
-text-decoration: underline;
-margin-bottom: 10px;
-padding: 10px;
-}	
-.mainQuestion {
-color: #ffffff;
-}					
-.answer {
-padding: 20px;
-width: 100%;
-height: 240px;
+	color: #2282d5;
+	text-align: center;
+	text-decoration: underline;
+	margin-bottom: 10px;
+	padding: 10px;
 }
+
+.mainQuestion {
+	color: #ffffff;
+}
+
+.answer {
+	padding: 20px;
+	width: 100%;
+	height: 240px;
+}
+
 .answerAll {
 	float: left;
 	width: 50%;
 	padding: 10px;
 }
+
 button {
 	font-style: italic;
 	font-size: 1.5em;
@@ -61,42 +65,44 @@ button {
 	width: 100%;
 	border-radius: 10px;
 	background-color: rgba(255, 255, 255, 0.73);
-	}
+}
 
 button:focus {
 	outline: none;
 }
+
 button:active {
 	background-color: #c18777;
 }
 
-
-
 .result {
-width: 100%;
-height: 200px;
-margin-top: 80px;
-text-align: center;
+	width: 100%;
+	height: 200px;
+	margin-top: 80px;
+	text-align: center;
 }
+
 .alertFailed {
-color: red;
-margin-bottom: 10px;
+	color: red;
+	margin-bottom: 10px;
 }
+
 .alertWin {
-color: red;
-padding: 10px;
-margin-bottom: 10px;
+	color: red;
+	padding: 10px;
+	margin-bottom: 10px;
 }
+
 .alertReplay {
-width: 100%;
+	width: 100%;
 }
 
-#resAlert3 button{
-width: 50%;
-border: 2px solid #bb170e;
-color: #bb170e;
-
+#resAlert3 button {
+	width: 50%;
+	border: 2px solid #bb170e;
+	color: #bb170e;
 }
+
 .clear {
-clear: both;
+	clear: both;
 }

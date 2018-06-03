@@ -78,7 +78,7 @@ var question10 = {
 	answer4: "Bếp củi",
 	correct: "Que diêm"
 }
-var listQuestion = [question1, question2, question3, question4, question5, question6];
+var listQuestion = [question1, question2, question3, question4, question5, question6,question7,question8,question9,question10];
 var qN = document.getElementById("questNumber");
 var q = document.getElementById("mainQuest");
 var asw1 = document.getElementById("answer1");
@@ -119,7 +119,7 @@ for (var i = 0; i < btnIntermediate.length; i++) {
 			asw3.innerHTML = listQuestion[valueQuest].answer3;
 			asw4.innerHTML = listQuestion[valueQuest].answer4;
 
-		} else if (mark == 6) {
+		} else if (mark == 10) {
 			window.location.href = "win.html";
 		} else {
 			document.getElementById("questions").style.display = "none";
