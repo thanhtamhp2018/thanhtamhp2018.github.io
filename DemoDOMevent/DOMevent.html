@@ -14,8 +14,8 @@
             <input class="display" name="display" placeholder="0" />
             <br />
             <input class="button" type="button" value="C" onclick="btnClear()" />
-            <input class="button" type="button" value="√2" onclick="btnSquare()" />
-            <input class="button" type="button" value="x2" onclick="btnDouble()" />
+            <input class="button" type="button" value="√" onclick="btnSquare()" />
+            <input class="button" type="button" value="x&sup2;" onclick="btnDouble()" />
             <input class="button" type="button" value="%" onclick="btnMod()" />
             <br />
             <input id="number" class="button" type="button" value="7" onclick="insert(7)" /> 
@@ -36,7 +36,7 @@
             <input id="number" class="button" type="button" value="0" onclick="insert(0)" />
             <input class="button" type="button" value="." onclick="btnDot()" />
             <input class="button" type="button" value="=" onclick="btnEqual()" />
-            <input class="button" type="button" value="/" onclick="btnDiv()" />
+            <input class="button" type="button" value="÷" onclick="btnDiv()" />
         </form>
     </div>
     <script>
@@ -60,7 +60,7 @@
             document.Calculator.display.value += "-";
         }
         function btnMult() {
-            document.Calculator.display.value += "*";
+            document.Calculator.display.value += "x";
         }
         function btnDiv() {
             document.Calculator.display.value += "/";

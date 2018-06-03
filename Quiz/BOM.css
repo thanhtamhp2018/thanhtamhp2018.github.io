@@ -4,9 +4,10 @@ margin: 0;
 box-sizing: border-box;
 }
 body {
-background-image: url("image/backg.jpg");
-background-repeat: no-repeat;
-background-size: cover;
+/* background-image: url("image/backg.jpg"); */
+/* background-repeat: no-repeat; */
+/* background-size: cover; */
+background-color: rgb(99, 105, 182);
 }
 .title{
 color: #f00;

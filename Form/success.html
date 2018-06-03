@@ -1,21 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Success</title>
 </head>
-<body>
+
+<body style="text-align: center;">
     <h1>Đăng ký thành công!</h1>
+    <br>
+    <p>Thông tin thành viên</p><br>
+    <br>
+    <button type="button" onclick="">Bấm vòa đây</button>
+    <div id="info"></div>
+    <!-- <br>
+    <div id="email1"></div>
+    <br>
+    <div id="phone1"></div>
+    <br>
+    <div id="address1"></div>
+    <br>
+    <div id="year1"></div>
+    <br>
+    <div id="gender1"></div> 
+    <br> -->
     <script>
-        function userInfo() { 
-            document.writeln("Họ và tên: "+document.getElementById("name")+"<br>");
-            document.writeln("Số điện thoại: "+document.getElementById("name")+"<br>");
-            document.writeln("Địa chỉ: "+document.getElementById("name")+"<br>");
-            document.writeln("Năm sinh: "+document.getElementById("name")+"<br>");
-            document.writeln("Giới tính: "+document.getElementById("name")+"<br>");   
-         }
+        function userInfo() {
+            document.getElementById("info").innerHTML = document.getElementById("name").value + "<br>"+document.getElementById("email").value+"<br>"+document.getElementById("phone") +"<br>"+document.getElementById("address") +"<br>"+document.getElementById("year").value +"<br>"+document.getElementById("gender").value;}
     </script>
 </body>
+
 </html>

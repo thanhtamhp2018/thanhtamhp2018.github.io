@@ -46,6 +46,38 @@ var question6 = {
 	answer4: "Chân",
 	correct: "Chim"
 }
+var question7 = {
+	question: "2 con vịt đi trước 2 con vịt, 2 con vịt đi sau 2 con vịt, 2 con vịt đi giữa 2 con vịt. Hỏi có mấy con vịt?",
+	answer1: "2",
+	answer2: "4",
+	answer3: "6",
+	answer4: "8",
+	correct: "4"
+}
+var question8 = {
+	question: "Con đường dài nhất là đường nào?",
+	answer1: "Đường cao tốc",
+	answer2: "Đường quốc lộ",
+	answer3: "Đường mòn",
+	answer4: "Đường đời",
+	correct: "Đường đời"
+}
+var question9 = {
+	question: "Càng chơi càng ra nước",
+	answer1: "Chơi cờ",
+	answer2: "Chơi game",
+	answer3: "Chơi gái",
+	answer4: "Chơi bời",
+	correct: "Chơi cờ"
+}
+var question10 = {
+	question: "Nếu chỉ có một que diêm, trong một ngày mùa đông giá rét, bạn bước vào căn phòng có một cây đèn, một bếp dầu, và một bếp củi, bạn thắp gì trước tiên?",
+	answer1: "Cây đèn",
+	answer2: "Que diêm",
+	answer3: "Bếp dầu",
+	answer4: "Bếp củi",
+	correct: "Que diêm"
+}
 var listQuestion = [question1, question2, question3, question4, question5, question6];
 var qN = document.getElementById("questNumber");
 var q = document.getElementById("mainQuest");
@@ -69,10 +101,10 @@ for (var i = 0; i < btnIntermediate.length; i++) {
 	btnIntermediate[i].addEventListener("click", function () {
 		var result = this.innerText;
 		if (result == listQuestion[valueQuest - 1].correct) {
-			document.getElementById("answerCheck").innerHTML = "<p style='text-align:center;color:blue;font-size:30px;'>Correct</p>";
+			// document.getElementById("answerCheck").innerHTML = "<p style='text-align:center;color:blue;font-size:30px;'>Correct</p>";
 			mark += 1;
 		} else {
-			document.getElementById("answerCheck").innerHTML = "<p style='text-align:center;color:red;font-size:30px;'>Wrong!!!</p>";
+			// document.getElementById("answerCheck").innerHTML = "<p style='text-align:center;color:red;font-size:30px;'>Wrong!!!</p>";
 			mark += 0;
 		}
 		console.log(this.innerText);

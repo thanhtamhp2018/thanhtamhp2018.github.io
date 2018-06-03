@@ -13,6 +13,7 @@
             letter-spacing: 1px;
             word-spacing: 5px;
         }
+
         h1 {
             text-align: center;
             text-transform: uppercase;
@@ -24,17 +25,20 @@
             transform: translate(-50%, -50%);
             position: absolute;
         }
-        .f_input{
+
+        .f_input {
             width: 200px;
             padding: 10px;
             margin-bottom: 5px;
         }
-        .f_login{
+
+        .f_login {
             width: 224px;
             padding: 10px;
-            margin-top:10px;     
+            margin-top: 10px;
         }
-        .f_year{
+
+        .f_year {
             width: 224px;
             padding: 10px;
             margin: 10px 0 10px 0;
@@ -44,7 +48,7 @@
 
 <body>
     <form action="success.html" class="login" id="f_login">
-        <h1>Đăng ký</h1>        
+        <h1>Đăng ký</h1>
         <input class="f_input" type="text" name="name" id="name" placeholder="Họ và tên" required>
         <br>
         <input class="f_input" type="email" name="email" id="email" placeholder="Email" required>
@@ -77,9 +81,9 @@
         <input class="f_login" type="submit" value="Đăng ký" onclick="userInfo()">
     </form>
     <script>
-        $('#f_login').on('submit',function(){
+        $('#f_login').on('submit', function () {
             console.log('form submit');
-            return false;        
+            return false;
         });
     </script>
 </body>
