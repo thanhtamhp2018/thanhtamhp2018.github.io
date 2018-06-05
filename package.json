@@ -6,6 +6,7 @@
   "author": "Lê Thanh Tâm <37645432+thanhtamhp2018@users.noreply.github.com>",
   "license": "MIT",
   "dependencies": {
+    "bootstrap": "^4.1.1",
     "jquery": "^3.3.1",
     "phaser": "^3.9.0"
   }
