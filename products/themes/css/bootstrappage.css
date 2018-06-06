@@ -1,5 +1,8 @@
 @media (min-width: 1200px) {
-    .pageBanner{width:100%; padding-bottom:8px;}
+    .pageBanner {
+        width: 100%;
+        padding-bottom: 8px;
+    }
     input,
     textarea,
     .uneditable-input {
@@ -68,7 +71,7 @@
     .thumbnails {
         margin-left: -20px;
     }
-    .thumbnails > li {
+    .thumbnails>li {
         margin-left: 20px;
     }
     .row-fluid .thumbnails {
@@ -81,11 +84,9 @@
 */
 
 @media (max-width: 979px) and (min-width: 768px) {
-
     .navbar .container {
-        width: 724px!important;
+        width: 724px !important;
     }
-
 }
 
 /*
@@ -101,19 +102,16 @@
     }
     /* padding on screen sides */
     .container {
-        width:90%!important;
+        width: 90% !important;
     }
-
     .navbar-inner {
-        padding:0 0 10px 0px!important;
+        padding: 10px 0 10px 0px !important;
     }
-
     .btn.btn-navbar {
-        margin-top:20px;
+        margin-top: 20px;
     }
-
     /* separate span* classes horizontally */
     [class*="span"] {
-        margin-bottom:20px;
+        margin-bottom: 20px;
     }
 }
