@@ -936,7 +936,8 @@ section.our_client .row {
 	}
 	.navbar-inner.main-menu a.logo {
 		left: 50%;
-		margin-left: -99px;
+		transform: translate(-50%);
+		/* margin: auto; */
 	}
 	#copyright,
 	#footer-bar {
