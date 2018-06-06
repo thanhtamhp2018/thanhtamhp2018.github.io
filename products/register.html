@@ -21,6 +21,9 @@
 	<script src="bootstrap/js/bootstrap.min.js"></script>
 	<script src="themes/js/superfish.js"></script>
 	<script src="themes/js/jquery.scrolltotop.js"></script>
+	<!-- <link href="themes/css/font-awesome.min.css" rel="stylesheet"> -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+	    crossorigin="anonymous">
 	<!--[if lt IE 9]>			
 			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 			<script src="js/respond.min.js"></script>
@@ -32,14 +35,14 @@
 		<div class="row">
 			<div class="span4">
 				<form method="POST" class="search_form">
-					<input type="text" class="input-block-level search-query" Placeholder="eg. T-sirt">
+					<input type="text" class="input-block-level search-query" Placeholder="Search for somethings">
 				</form>
 			</div>
 			<div class="span8">
 				<div class="account pull-right">
 					<ul class="user-menu">
 						<li>
-							<a href="#">My Account</a>
+							<a href="">My Account</a>
 						</li>
 						<li>
 							<a href="cart.html">Your Cart</a>
@@ -58,50 +61,50 @@
 	<div id="wrapper" class="container">
 		<section class="navbar main-menu">
 			<div class="navbar-inner main-menu">
-				<a href="index.html" class="logo pull-left">
-					<img src="themes/images/logo.png" class="site_logo" alt="">
-				</a>
+				<!-- <a href="index.html" class="logo pull-left">
+					<img src="themes/images/logoKM.png" class="site_logo" alt="">
+				</a> -->
 				<nav id="menu" class="pull-right">
 					<ul>
-						<li>
-							<a href="index.html">New-in</a>
+						<li class="active">
+							<a href="index.html">Home</a>
 						</li>
 						<li>
-							<a href="./products.html">Bras</a>
-							<ul>
-								<li>
-									<a href="./products.html">Sports</a>
-								</li>
-								<li>
-									<a href="./products.html">Perfect Coverages</a>
-								</li>
-								<li>
-									<a href="./products.html">Demi</a>
-								</li>
-							</ul>
+							<a href="index.html#new-in">New-in</a>
 						</li>
 						<li>
-							<a href="./products.html">Panties</a>
-							<ul>
-								<li>
-									<a href="./products.html">Thongs & V-Strings</a>
-								</li>
-								<li>
-									<a href="./products.html">Cheekies & Cheekinis</a>
-								</li>
-								<li>
-									<a href="./products.html">Bikinis & Briefs</a>
-								</li>
-							</ul>
+							<a href="index.html#bras">Bras</a>
+							<!--<ul>
+									<li>
+										<a href="index.html#bras">Sports</a>
+									</li>
+									<li>
+										<a href="index.html#bras">Perfect Coverages</a>
+									</li>
+									<li>
+										<a href="index.html#bras">Demi</a>
+									</li>
+								</ul>-->
 						</li>
 						<li>
-							<a href="./products.html">Accessories</a>
+							<a href="index.html#panties">Panties</a>
+							<!--<ul>
+									<li>
+										<a href="index.html#panties">Thongs & V-Strings</a>
+									</li>
+									<li>
+										<a href="index.html#panties">Cheekies & Cheekinis</a>
+									</li>
+									<li>
+										<a href="index.html#panties">Bikinis & Briefs</a>
+									</li>
+								</ul>-->
 						</li>
 						<li>
-							<a href="./products.html">Best Seller</a>
+							<a href="index.html#accessories">Accessories</a>
 						</li>
 						<li>
-							<a href="./products.html">Top Seller</a>
+							<a href="index.html#feature">Feature Products</a>
 						</li>
 					</ul>
 				</nav>
@@ -117,7 +120,8 @@
 				<div class="span5">
 					<h4 class="title">
 						<span class="text">
-							<strong>Login</strong></span>
+							<strong>Login</strong>
+						</span>
 					</h4>
 					<form action="#" method="post">
 						<input type="hidden" name="next" value="/">
@@ -138,7 +142,7 @@
 								<input tabindex="3" class="btn btn-inverse large" type="submit" value="Sign into your account">
 								<hr>
 								<p class="reset">Recover your
-									<a tabindex="4" href="#" title="Recover your username or password">password</a>
+									<a tabindex="4" href="" title="Recover your username or password">password</a>
 								</p>
 							</div>
 						</fieldset>
@@ -147,7 +151,8 @@
 				<div class="span7">
 					<h4 class="title">
 						<span class="text">
-							<strong>Register</strong></span>
+							<strong>Register</strong>
+						</span>
 					</h4>
 					<form action="#" method="post" class="form-stacked">
 						<fieldset>
@@ -185,69 +190,81 @@
 		<section id="footer-bar">
 			<div class="row">
 				<div class="span3">
-					<h4>Navigation</h4>
-					<ul class="nav">
+					<h4 class="text-center">KM CREATIVE</h4>
+					<ul class="nav text-center">
 						<li>
-							<a href="./index.html">Homepage</a>
+							<a href="index.html">Homepage</a>
 						</li>
 						<li>
-							<a href="./about.html">About Us</a>
+							<a href="">Store: 1st Ginza Tokyo Japan</a>
 						</li>
 						<li>
-							<a href="./contact.html">Contac Us</a>
+							<a href="cart.html">Your Cart</a>
 						</li>
 						<li>
-							<a href="./cart.html">Your Cart</a>
-						</li>
-						<li>
-							<a href="./register.html">Login</a>
+							<a href="register.html">Login</a>
 						</li>
 					</ul>
 				</div>
-				<div class="span4">
-					<h4>My Account</h4>
-					<ul class="nav">
+				<div class="span3">
+					<h4 class="text-center">My Account</h4>
+					<ul class="nav text-center">
 						<li>
-							<a href="#">My Account</a>
+							<a href="register.html">My Account</a>
 						</li>
 						<li>
-							<a href="#">Order History</a>
+							<a href="register.html">Order History</a>
 						</li>
 						<li>
-							<a href="#">Wish List</a>
+							<a href="register.html">Wish List</a>
 						</li>
 						<li>
-							<a href="#">Newsletter</a>
+							<a href="register.html">Newsletter</a>
 						</li>
 					</ul>
 				</div>
-				<div class="span5">
-					<p class="logo">
-						<img src="themes/images/logo.png" class="site_logo" alt="">
-					</p>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. the Lorem Ipsum has been the industry's standard
-						dummy text ever since the you.</p>
-					<br/>
-					<span class="social_icons">
-						<a class="facebook" href="#">Facebook</a>
-						<a class="twitter" href="#">Twitter</a>
-						<a class="skype" href="#">Skype</a>
-						<a class="vimeo" href="#">Vimeo</a>
-					</span>
+				<div class="span6">
+					<h4 class="text-center">About</h4>
+					<span>
+						<strong>KM CREATIVE</strong> is an Japanese designer, manufacturer, and marketer of women's lingerie, womenswear, and beauty
+						products. Founded in 1955 as a response to packaged underwear, which the company's founder considered to be "ugly,
+						floral-print nylon nightgowns", the company is now the largest Japanese retailer of women's lingerie.</span>
 				</div>
 			</div>
 		</section>
 		<section id="copyright">
-			<span>Copyright 2013 bootstrappage template All right reserved.</span>
+			<div class="row">
+				<div class="span6 text-center">
+					<span>Copyright 2018 KM CREATIVE. All right reserved.</span>
+				</div>
+				<div class="span6 text-center ">
+					<span class="social_icons">
+						<a class="social" href="https://www.facebook.com/">
+							<i class="fab fa-facebook-square" style="font-size:20px;"></i>
+						</a>
+						<a class="social" href="https://www.twitter.com/">
+							<i class="fab fa-twitter-square" style="font-size:20px;"></i>
+						</a>
+						<a class="social" href="https://www.youtube.com/">
+							<i class="fab fa-youtube-square" style="font-size:20px;"></i>
+						</a>
+						<a class="social" href="https://www.instagram.com/">
+							<i class="fab fa-instagram" style="font-size:20px;"></i>
+						</a>
+					</span>
+				</div>
+
+
+			</div>
 		</section>
 	</div>
 	<script src="themes/js/common.js"></script>
-	<script>
-		$(document).ready(function () {
-			$('#checkout').click(function (e) {
-				document.location.href = "checkout.html";
-			})
-		});
+	<script src="themes/js/js/register.js">
+		// $(document).ready(function () {
+		// 	$('#checkout').click(function (e) {
+		// 		document.location.href = "checkout.html";
+		// 	})
+		// });
 	</script>
 </body>
 

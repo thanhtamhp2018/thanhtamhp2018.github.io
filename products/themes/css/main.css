@@ -19,7 +19,7 @@ textarea {
 
 ul li a,
 a {
-	color: #333;
+	color: #f00;
 	outline: 0;
 	-webkit-transition: all 0.2s linear;
 	-moz-transition: all 0.2s linear;
@@ -219,9 +219,9 @@ section#copyright {
 section#footer-bar {
 	margin-top: 20px;
 	padding-top: 10px;
-	background-color: #242424;
+	background-color: #000000;
 	border-top: 1px solid #ddd;
-	color: #777;
+	color: #ffffff;
 }
 
 section#footer-bar .post {
@@ -274,11 +274,11 @@ section#footer-bar h4 {
 section#footer-bar .social_icons a {
 	display: block;
 	float: left;
-	width: 29px;
-	height: 28px;
-	text-indent: -9999px;
-	background-image: url(../images/social-icons.png);
-	background-repeat: no-repeat;
+	/* width: 29px; */
+	/* height: 28px; */
+	/* text-indent: -9999px; */
+	/* background-image: url(../images/social-icons.png); */
+	/* background-repeat: no-repeat; */
 	margin-right: 10px;
 	-webkit-transition: all 0.4s;
 	-moz-transition: all 0.4s;
@@ -955,4 +955,11 @@ section.our_client .row {
 	.feature_box .service {
 		border-bottom: 1px solid #eee;
 	}
+}
+/* //add to cart// */
+button:hover{
+	background-color:#eb4800;
+}
+a.social {
+    margin-left: 20px;
 }
