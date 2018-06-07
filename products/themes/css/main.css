@@ -541,7 +541,7 @@ section.navbar {
 }
 
 .product-box:hover {
-	background-color: #eb4800;
+	background-color: #dfd8d6;
 	-webkit-transition: all 0.2s linear;
 	-moz-transition: all 0.2s linear;
 	-o-transition: all 0.2s linear;
@@ -602,7 +602,9 @@ h4.title.m {
 h4.title strong {
 	color: #eb4800;
 }
-
+span strong{
+	color:#eb4800;
+}
 h4.title span.text {
 	background-color: #fff;
 	padding-right: 10px;
