@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap-4.0.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/css.css">
+</head>
+
+<body>
+    <ul class="nav justify-content-center bg-dark">
+        <a class="nav-link active display-1" href="#">Kanban - Board</a>
+    </ul>
+    <section class="container sorted-list">
+        <div class="row">
+            <div class="col m4">
+                <div class="card">
+                    <div class="card-header text-center active">TODO(5)</div>
+                    <div class="list-group list-group-flush sorted-list">
+                        <a href="#!" class="list-group-item">Have job to do</a>
+                        <a href="#!" class="list-group-item">Have job to do</a>
+                        <a href="#!" class="list-group-item">Have job to do</a>
+                        <a href="#!" class="list-group-item">Have job to do</a>
+                        <a href="#!" class="list-group-item">Have job to do</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col m4">
+                <div class="card">
+                    <div class="card-header text-center active">DOING(1)</div>
+                    <div class="list-group list-group-flush sorted-list">
+                        <a href="#!" class="list-group-item">Doing</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col m4">
+                <div class="card">
+                    <div class="card-header text-center active">DONE(4)</div>
+                    <div class="list-group list-group-flush sorted-list">
+                        <a href="#!" class="list-group-item">I'm done!</a>
+                        <a href="#!" class="list-group-item">I'm done!</a>
+                        <a href="#!" class="list-group-item">I'm done!</a>
+                        <a href="#!" class="list-group-item">I'm done!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="./css/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    <script src="js/js.js"></script>
+    <script src="js/js-fcc.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(function() {
+            $(".sorted-list").sortable({
+                connectWith: ".sorted-list"
+            });
+
+        });
+
+    </script>
+</body>
+
+</html>
